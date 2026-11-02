@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Widgets, Siri and Shortcuts – Libretto Help</title>
+<meta name="description" content="Every Libretto widget, Siri phrase and Shortcuts action, plus the Focus filter, Spotlight and the Action button.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html" aria-current="page">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Widgets, Siri and Shortcuts</h1>
+        <p class="doc__lede">Libretto outside the app: every widget for your Home Screen and Lock Screen, what to say to Siri, every action in the Shortcuts app, and the Focus filter, Spotlight and the Action button.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li>Six widgets, in Home Screen and Lock Screen sizes: <b>Currently Reading</b>, <b>Reading Stats</b>, <b>Reading Streak</b>, <b>Weekly Pages</b>, <b>Yearly Goal</b> and <b>Finish By</b>. They count your reading on every device.</li>
+          <li>Ask Siri with no setup: “Continue reading in Libretto”, “Resume listening in Libretto”, “How’s my reading in Libretto”, “Catch me up in Libretto”.</li>
+          <li>The Shortcuts app has about 30 Libretto actions, for reading, listening, appearance, stats, highlights, your library and Hardcover. Many run without opening Libretto.</li>
+          <li>A Focus filter can switch Libretto to Night pages while Sleep is on, and back after.</li>
+          <li>Spotlight finds your books, audiobooks and highlights, and the Action button can run any Libretto shortcut.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="widgets">
+        <h2>Widgets</h2>
+        <p>Libretto’s widgets keep your book and your reading a glance away. They show the newest progress from any of your devices, and count your reading and listening on all of them (with <a href="sync.html">Sync with iCloud</a> on). They move on at midnight by themselves, so a new day, week or goal pace shows without opening Libretto.</p>
+
+        <h3>Adding one</h3>
+        <ol class="steps">
+          <li><p>Touch and hold an empty spot on your Home Screen, then tap <b>Edit</b> → <b>Add Widget</b>.</p></li>
+          <li><p>Find <b>Libretto</b>, swipe to the widget and size you want, and tap <b>Add Widget</b>.</p></li>
+          <li><p>To change what it shows, touch and hold it and choose <b>Edit Widget</b>.</p></li>
+        </ol>
+        <p>For the Lock Screen, touch and hold it, tap <b>Customize</b>, choose the Lock Screen, and tap the widget area to add Libretto’s.</p>
+
+        <h3>Currently Reading</h3>
+        <p>The book you’re reading, with its cover, chapter, progress and when you last read it (or, for an audiobook, the time left). Tap it and the reader opens at your place with nothing in between; an audiobook opens Now Playing, ready to play.</p>
+        <ul>
+          <li><b>Sizes:</b> small, medium and large (which lists the next three books you’re reading too); on the Lock Screen, circular, rectangular and inline.</li>
+          <li><b>With nothing in progress:</b> the last book you finished and “Pick your next book”.</li>
+        </ul>
+        <dl class="opts">
+          <div><dt>Book <span class="opts__default">Most Recent</span></dt><dd>What you read or listened to last, from Continue on Home. Or choose a book to keep it there.</dd></div>
+        </dl>
+
+        <h3>Reading Stats</h3>
+        <p>One stat per widget, from the same numbers as the Reading Stats page. Tap it to open Reading Stats at that period and chart.</p>
+        <ul>
+          <li><b>Sizes:</b> small, medium and large; on the Lock Screen, circular, rectangular and inline.</li>
+        </ul>
+        <dl class="opts">
+          <div><dt>Stat <span class="opts__default">Reading Goal</span></dt><dd><b>Reading Goal</b>, <b>Books Read</b>, <b>Pages Read</b>, <b>Books per Month</b>, <b>Top Genres</b>, <b>Top Moods</b>, <b>Average Rating</b>, <b>Reading Now &amp; Want to Read</b>, <b>Highlights</b> (a different one each day), <b>Dashboard</b>, <b>Time Read</b> and <b>Days Read</b>.</dd></div>
+          <div><dt>Period <span class="opts__default">This Year</span></dt><dd><b>This Year</b> or <b>All Time</b>.</dd></div>
+        </dl>
+        <aside class="note note--heads-up"><p><b>Good to know</b> Most of these stats come from your <a href="hardcover.html">Hardcover</a> shelves; without it, the widget says “Connect Hardcover to see your stats”. <b>Time Read</b> and <b>Days Read</b> come from Libretto’s own reading log, so they work without Hardcover.</p></aside>
+
+        <h3>Reading Streak</h3>
+        <p>Your streak’s number with its bolt (gray once it’s broken), and the last seven days, today last: each day you met your Daily Reading Goal lit up, a run of them joined together, and today a ring that fills as you read. Tap it to open the book you’re reading.</p>
+        <ul>
+          <li><b>Small</b> adds your best streak, with a trophy while this one is it.</li>
+          <li><b>Medium</b> adds the weekdays and what’s left today (“3 more min today makes it 13”).</li>
+          <li><b>Large</b> is five weeks as a calendar ending today, shaded by time read, with your best streak and the days met this month.</li>
+          <li><b>Lock Screen:</b> the number in a ring of today’s progress (circular), the streak with the seven days and “3 min to go today” (rectangular), and inline.</li>
+        </ul>
+        <p>What counts toward a streak is in <a href="goals.html">Goals, stats and sharing</a>.</p>
+
+        <h3>Weekly Pages</h3>
+        <p>The pages you read on each of the last 7 days as bars, today last, with each day’s pages on top and your Daily Page Goal as a dotted line across. A day’s bar turns green once it reaches the goal. It shows the seven days’ total, too. Tap it to open the book you’re reading.</p>
+        <ul>
+          <li><b>Medium</b> adds how many days met the goal; <b>large</b> adds what’s left today (“38 pages to go today”).</li>
+          <li><b>Lock Screen:</b> the total in a ring that fills toward a week of goals (circular), the total over the bars (rectangular), and “561 pages in 7 days” (inline).</li>
+        </ul>
+
+        <h3>Yearly Goal</h3>
+        <p>This year’s book goal: how many so far (“18 of 30”), and whether you’re ahead of or behind an even pace (“1 book behind”). From the medium size up, the year as a line: your books as a rising step against the even pace, dashed, and after two weeks, your own pace carried on to December, dotted. Large adds where an even pace has you today, what it takes from here (“A book every 9 days”) and where your pace ends up. Tap it to open the goal in Reading Stats.</p>
+        <ul>
+          <li><b>Lock Screen:</b> the count in a ring toward the target, the count and standing over a bar, and “18/30 · 1 book behind”.</li>
+        </ul>
+
+        <h3>Finish By</h3>
+        <p>A book you’ve given a date to finish by: ahead or behind, and what today asks for (“Read 37 pages today to catch up”, “18 pages to go today”). Tap it to read the book.</p>
+        <ul>
+          <li><b>Small</b> shows the book’s pages as a bar, with a mark where tonight should find you.</li>
+          <li><b>Medium</b> and up chart the plan day by day: the page each day ended on, against the plan’s dashed line to the last page by the due date, so below the line is behind. <b>Large</b> adds what’s left today, the page to reach by tonight, pages a day to finish on time, and where your pace gets you (“Done by Mon, Oct 19”).</li>
+          <li><b>Extra large</b> (iPad) puts the large one beside your other books with a date.</li>
+          <li><b>Lock Screen:</b> today’s pages still to read in a ring that fills as you read, the book with its standing, and “Moby-Dick · 12 pages behind”.</li>
+        </ul>
+        <dl class="opts">
+          <div><dt>Book <span class="opts__default">Most Pressing</span></dt><dd>The book due soonest, or one you choose.</dd></div>
+        </dl>
+
+        <h3>On Apple Watch</h3>
+        <p>Reading Streak, Today’s Goal and Currently Reading are complications for your watch face and Smart Stack. See <a href="devices.html#apple-watch">iPad, Duo, Watch and TV</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="siri">
+        <h2>Siri and ready-made shortcuts</h2>
+        <p>These ten work with no setup: say them to Siri, find them as tiles on Libretto’s page in the Shortcuts app, or put one on the Action button. Where a phrase has a title in it, use one of your own books; Siri learns your library’s titles as it changes.</p>
+        <dl class="opts">
+          <div><dt>Continue Reading</dt><dd>“Continue reading in Libretto”, “Keep reading in Libretto”, “Open my book in Libretto”. Opens what you were last reading or listening to, where you left off.</dd></div>
+          <div><dt>Open Book</dt><dd>“Open Dune in Libretto”, “Read Dune in Libretto”. Opens that book at your place.</dd></div>
+          <div><dt>Resume Listening</dt><dd>“Resume my audiobook in Libretto”, “Resume listening in Libretto”, “Keep listening in Libretto”. Plays the audiobook you were listening to, without opening Libretto.</dd></div>
+          <div><dt>Play Audiobook</dt><dd>“Play The Odyssey in Libretto”, “Listen to The Odyssey in Libretto”. Plays that audiobook from where you left off.</dd></div>
+          <div><dt>Pause</dt><dd>“Pause Libretto”, “Pause my audiobook in Libretto”.</dd></div>
+          <div><dt>Sleep Timer</dt><dd>“Set a sleep timer in Libretto”, “Start a Libretto sleep timer”.</dd></div>
+          <div><dt>Reading Stats</dt><dd>“How’s my reading in Libretto”, “Show my reading stats in Libretto”, “How much have I read today in Libretto”. Siri answers in a sentence (“You’ve read 18 pages today, in 25 minutes. 82 more for your goal of 100. Your streak is 5 days.”) over a card of today’s pages.</dd></div>
+          <div><dt>Catch Me Up</dt><dd>“Catch me up in Libretto”, “Recap my book in Libretto”, “Catch me up on Jane Eyre in Libretto”. A recap up to your place, and no further, written on your device. Needs Apple Intelligence.</dd></div>
+          <div><dt>Random Highlight</dt><dd>“Show me a highlight from Libretto”, “Give me a quote from Libretto”.</dd></div>
+          <div><dt>Page Theme</dt><dd>“Switch Libretto to Night”, “Set the Libretto page theme to Sepia”. Changes the page in every book.</dd></div>
+        </dl>
+        <aside class="note note--tip"><p><b>Tip</b> If Siri doesn’t catch it, say “Libretto” in the phrase, as above. Anything else Libretto can do is an action in the Shortcuts app: make a shortcut with it, give the shortcut a name, and that name is your phrase.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="shortcuts-actions">
+        <h2>Every Shortcuts action</h2>
+        <p>In the Shortcuts app, search for Libretto or tap it in the list of apps to see its actions. Actions that play, pause, change the look or fetch information run in the background, without opening Libretto. If something can’t be done, the action says why in plain words (“No audiobook is playing in Libretto.”).</p>
+
+        <h3>Reading</h3>
+        <dl class="opts">
+          <div><dt>Continue Reading</dt><dd>Opens what you were last reading or listening to, where you left off.</dd></div>
+          <div><dt>Open Book</dt><dd>Opens a book at your place.</dd></div>
+          <div><dt>Get Current Book</dt><dd>The book you’re reading: the first ebook in Continue on Home, for the next action to use.</dd></div>
+        </dl>
+
+        <h3>Catch Me Up</h3>
+        <dl class="opts">
+          <div><dt>Catch Me Up</dt><dd>Recaps a book up to where you are, written on your device, without opening it. <b>Book</b>: leave it empty for the book you’re reading. <b>Recap</b>: the last few pages, this chapter so far, the last chapter and this one, or the story so far; leave it empty to go by how long you’ve been away. Needs Apple Intelligence. More in <a href="story.html">Recaps, Story Map and the AI</a>.</dd></div>
+        </dl>
+
+        <h3>Appearance</h3>
+        <p>These change every book, without opening Libretto, and an open book follows straight away.</p>
+        <dl class="opts">
+          <div><dt>Set Page Theme</dt><dd>Paper, Sepia, Stone, Rose, Sage, Night, Slate, Cocoa, Forest or Black.</dd></div>
+          <div><dt>Set Text Size</dt><dd>From 12 to 34 points.</dd></div>
+          <div><dt>Make Text Bigger or Smaller</dt><dd>By 1 to 10 points (2 if you don’t say).</dd></div>
+          <div><dt>Set Line Spacing</dt><dd>Compact, Normal or Relaxed.</dd></div>
+        </dl>
+
+        <h3>Listening</h3>
+        <p>These work in the background too, and listening started from a shortcut counts toward your day as it does in the app.</p>
+        <dl class="opts">
+          <div><dt>Play Audiobook</dt><dd>Plays an audiobook from where you left off.</dd></div>
+          <div><dt>Resume Listening</dt><dd>Plays the audiobook you were listening to, from where you left off.</dd></div>
+          <div><dt>Pause Audiobook</dt><dd>Pauses whatever’s playing in Libretto.</dd></div>
+          <div><dt>Skip in Audiobook</dt><dd><b>Back</b> or <b>Forward</b> (15 seconds back and 30 forward, unless you give a number), or <b>To the Previous Chapter</b> or <b>To the Next Chapter</b>.</dd></div>
+          <div><dt>Set Playback Speed</dt><dd>From 0.5× to 3×.</dd></div>
+          <div><dt>Set Sleep Timer</dt><dd>Stops the audiobook after a number of minutes (1 to 240), at the end of the chapter, or turns the timer off.</dd></div>
+          <div><dt>Open Audiobook</dt><dd>Opens an audiobook in Now Playing, ready to play.</dd></div>
+          <div><dt>Get Current Audiobook</dt><dd>The audiobook in Libretto’s player, or the one you listened to last.</dd></div>
+        </dl>
+
+        <h3>Reading Stats</h3>
+        <dl class="opts">
+          <div><dt>Get Reading Stats</dt><dd>Today’s pages and minutes (reading and listening), your Daily Page Goal and the pages left, whether you’ve met your Daily Reading Goal, the last seven days’ pages, minutes and days, and your streak.</dd></div>
+        </dl>
+
+        <h3>Journal</h3>
+        <dl class="opts">
+          <div><dt>Get Today’s Reading</dt><dd>A day’s reading as a journal entry: the time, pages and streak, then each book you read, listened to or highlighted in, with where you got to and that day’s highlights and notes. <b>Day</b>: leave it empty for today. <b>Include What Happened</b> (off unless you turn it on) adds a few spoiler-free sentences on what you read in each book, written by Apple Intelligence on your device; it takes longer. <b>Format</b>: Markdown or Plain Text. On a day with no reading, it stops with “You haven’t read anything in Libretto today.”</dd></div>
+        </dl>
+
+        <h3>Highlights</h3>
+        <dl class="opts">
+          <div><dt>Find Highlights</dt><dd>Your highlights, filtered by their text, note, color, chapter, book or date, and sorted by date or book.</dd></div>
+          <div><dt>Get Highlights as Text</dt><dd>A book’s highlights and notes, in reading order, as Markdown or Plain Text: for Notes, Bear, Obsidian or a journal.</dd></div>
+          <div><dt>Get a Random Highlight</dt><dd>One of your highlights at random, from one book or any.</dd></div>
+          <div><dt>Open Highlight</dt><dd>Opens a highlight’s book at the highlight, without moving your place.</dd></div>
+        </dl>
+
+        <h3>Library</h3>
+        <dl class="opts">
+          <div><dt>Find Books</dt><dd>Your books, filtered and sorted by title, author, format, percent read, finished or started, last opened, date added, how many highlights, or whether it has a paired audiobook.</dd></div>
+          <div><dt>Find Audiobooks</dt><dd>The same for audiobooks: percent listened, length, time left, speed, last played, or a paired ebook.</dd></div>
+          <div><dt>Add to Libretto</dt><dd>Adds files from another app or an earlier action: EPUB, PDF, text, comics, audio, or a zip of any of them.</dd></div>
+          <div><dt>Download to Libretto</dt><dd>Downloads a book or audiobook from a web link into your library.</dd></div>
+          <div><dt>Mark Book as Read</dt><dd>Marks a book as read in Libretto and, if it’s linked, on Hardcover, with a rating (½ to 5 stars) if you give one.</dd></div>
+          <div><dt>Rate Book on Hardcover</dt><dd>Gives a book your rating on Hardcover, in half stars.</dd></div>
+          <div><dt>Send to Hardcover</dt><dd>Sends your reading progress to Hardcover and brings your shelves up to date, like <b>Send Now</b> in Settings.</dd></div>
+        </dl>
+      </section>
+
+      <section class="doc__sec" id="journal">
+        <h2>Your reading in the Journal app</h2>
+        <p>A Shortcuts automation can add each day’s reading to Apple’s Journal app every night. <span class="path">Settings → Journal</span> in Libretto shows how, and shows today’s entry as it would go in.</p>
+        <ol class="steps">
+          <li><p>In Shortcuts, open <b>Automation</b>, tap <b>+</b>, then <b>Time of Day</b>. Pick a time, like 9 PM, <b>Daily</b>, and <b>Run Immediately</b>.</p></li>
+          <li><p>Add <b>Get Today’s Reading</b> from Libretto. Turn on <b>Include What Happened</b> for a few sentences on each book.</p></li>
+          <li><p>Add <b>Create Entry</b> from Journal, and put <b>Today’s Reading</b> in its text.</p></li>
+        </ol>
+        <p>On a day without reading, the shortcut stops at Get Today’s Reading, and no entry is made. On iOS 27 with Apple Intelligence, <b>Describe It to Shortcuts</b> in the same settings page has a prompt to copy into Shortcuts, which builds the automation for you; check its steps before you save it.</p>
+
+        <!-- DIAGRAM: "A nightly Journal entry". Three Shortcuts-style action blocks joined top to bottom: "Time of Day · 9:00 PM · Daily · Run Immediately" → "Get Today’s Reading (Libretto) · Include What Happened on · Markdown" → "Create Entry (Journal) · Today’s Reading". Beside the last block, a small journal card: "Read 42 min · 36 pages · Streak 12 days", a book title with “Chapter 4” to “Chapter 6”, and one highlighted quote. -->
+
+        <aside class="note note--heads-up"><p><b>Good to know</b> Apps can’t add their own Journal suggestions, which is why it’s an automation. Audiobooks you play in Libretto may already show among Journal’s suggestions, as media you listened to.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="use-model">
+        <h2>Shortcuts with Apple Intelligence</h2>
+        <p>On a device with Apple Intelligence, the Shortcuts app’s <b>Use Model</b> action can work with what Libretto’s actions give it: a highlight’s text and note, a book’s title and progress. A few ideas:</p>
+        <ul>
+          <li><b>Find Highlights</b> (one book) → <b>Use Model</b> “make flashcards from these” → <b>Create Note</b>.</li>
+          <li><b>Get Highlights as Text</b> → <b>Use Model</b> “pick the three lines that matter most and say why”.</li>
+          <li><b>Get Reading Stats</b> → <b>Use Model</b> “write me one encouraging sentence” → <b>Show Notification</b>.</li>
+        </ul>
+
+        <!-- DIAGRAM: "Highlights into flashcards". Three action blocks joined top to bottom: "Find Highlights · Book is Pride and Prejudice" → "Use Model · make flashcards from these" → "Create Note". Beside it, a small note with two question-and-answer cards. -->
+      </section>
+
+      <section class="doc__sec" id="focus-filter">
+        <h2>Focus filter</h2>
+        <p>Libretto can change its look while a Focus is on (Night pages and the Midnight app theme for Sleep, say) and put yours back when it ends.</p>
+        <ol class="steps">
+          <li><p>In the Settings app, open <b>Focus</b> and choose a Focus.</p></li>
+          <li><p>Under Focus Filters, tap <b>Add Filter</b>, then <b>Libretto</b>.</p></li>
+          <li><p>Choose a <b>Page Theme</b> (Paper, Sepia, Stone, Rose, Sage, Night, Slate, Cocoa, Forest or Black), an <b>App Theme</b> (System, Light, Sepia, Dark or Midnight), or both.</p></li>
+        </ol>
+      </section>
+
+      <section class="doc__sec" id="spotlight">
+        <h2>Spotlight</h2>
+        <p>Libretto adds your books, audiobooks and highlights to Spotlight, with their covers. Swipe down on the Home Screen and type a title, an author, or a few words of a line you highlighted; tap the result and Libretto opens it, at the highlight for a highlight. Libretto’s ready-made shortcuts show up there too when you search for Libretto.</p>
+        <aside class="note note--privacy"><p><b>Privacy</b> Spotlight’s index stays on your device. Requests you make through Siri are handled by Apple, under Apple’s privacy policy.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="action-button">
+        <h2>The Action button and Control Center</h2>
+        <p>On an iPhone with the Action button, open the Settings app → <b>Action Button</b>, swipe to <b>Shortcut</b>, and choose one of Libretto’s: <b>Continue Reading</b> to pick up your book in one press, <b>Resume Listening</b> for your audiobook, or any shortcut you’ve made.</p>
+        <p>For Control Center, add Control Center’s own Shortcut control and choose a Libretto shortcut for it.</p>
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>My widget looks out of date.</summary>
+          <div><p>Widgets update as Libretto saves, and the day, week and goal pace move on at midnight by themselves. If one still looks behind, open Libretto for a moment: it writes everything new as it goes to the background. Reading on another device shows once that reading has synced to this one.</p></div>
+        </details>
+        <details class="qa">
+          <summary>My Reading Stats widget says “Connect Hardcover to see your stats”.</summary>
+          <div><p>Most of its stats come from Hardcover. Choose <b>Time Read</b> or <b>Days Read</b> in Edit Widget, which come from Libretto’s own log, or connect Hardcover in <span class="path">Settings → Hardcover</span>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I keep one book on the Currently Reading widget?</summary>
+          <div><p>Yes. Touch and hold the widget, choose <b>Edit Widget</b>, and pick the book instead of <b>Most Recent</b>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why isn’t Get Today’s Reading one of the Siri phrases?</summary>
+          <div><p>Apps can offer ten ready-made shortcuts, and Libretto’s ten are taken. Make a shortcut with it and give it a name, and that name works with Siri.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does Catch Me Up through Siri need Apple Intelligence?</summary>
+          <div><p>Yes, as in the reader: an iPhone 15 Pro or later, or an iPad with an M-series or A17 Pro chip, with Apple Intelligence turned on. It writes the recap on your device, from nothing after your place.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do the actions open Libretto?</summary>
+          <div><p>Only the ones that open something: Continue Reading, Open Book, Open Audiobook and Open Highlight. Listening, appearance, stats, highlights and library actions run in the background.</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="devices.html"><small>Previous</small>iPad, Duo, Watch and TV</a>
+      <a class="pager__next" href="settings.html"><small>Next</small>Every setting</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

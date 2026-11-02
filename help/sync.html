@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sync with iCloud – Libretto Help</title>
+<meta name="description" content="How Libretto keeps your library, your place, highlights, recaps and reading stats the same on every device through your own iCloud, and what stays on each one.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html" aria-current="page">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Sync with iCloud</h1>
+        <p class="doc__lede">How Libretto keeps your library, your place and your reading the same on your iPhone, iPad, Apple Watch and Apple TV: what travels through your iCloud, what stays on each device, and what to do when something hasn’t arrived.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li>Libretto syncs through your own iCloud. There’s no Libretto account and no Libretto server: sign in to the same Apple Account on each device and that’s it.</li>
+          <li>It’s on from the start. You’ll find it in <span class="path">Settings → iCloud &amp; Storage</span>.</li>
+          <li>Your whole library comes along: every book’s details and cover, your place, highlights, notes and bookmarks, recaps and Story Maps, Read-Along pairs, your reading log, goals and streak, and your Hardcover sign-in.</li>
+          <li>Open a book anywhere and it’s at the newest page you reached on any device. A “Continued from iPad” pill takes you back if you’d rather not.</li>
+          <li>With <b>Store Books in iCloud</b> on, your other devices can download the books themselves: under 100 MB by themselves, bigger ones (most audiobooks) with a tap.</li>
+          <li>Settings like page themes and fonts stay with each device.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="how-it-works">
+        <h2>How sync works</h2>
+        <p>Libretto keeps a copy of your library’s details in your own iCloud, in a private space that belongs to your Apple Account. Each of your devices sends what changed on it and picks up what changed on the others. There’s nothing to sign up for, and nobody else can see it, Libretto’s developer included.</p>
+        <p>All it needs:</p>
+        <ul>
+          <li>Every device signed in to the same Apple Account, with iCloud turned on for Libretto (in the Settings app, tap your name, then <b>iCloud</b>).</li>
+          <li><b>Sync with iCloud</b> on in Libretto on each of them. It’s on unless you’ve turned it off.</li>
+          <li>For the book files themselves, iCloud Drive turned on as well (see <a href="#other-devices-books">Books on your other devices</a>).</li>
+        </ul>
+        <p>Libretto recognizes a book by what’s inside the file, not by its name. The same EPUB added on your iPhone and on your iPad is one book, wherever each copy came from, so its place, highlights and recaps line up. A different file of the same title (another edition, or a copy from another store) is a different book with its own place, because its words don’t line up page for page.</p>
+
+        <figure class="diagram" aria-labelledby="dg-sync-cap">
+          <svg viewBox="0 0 680 286" role="img" aria-label="Your iPhone, iPad and Apple TV each exchange changes with your own iCloud. Apple Watch goes through your iPhone. A Libretto server is crossed out: there isn't one, and nothing points to it.">
+            <defs>
+              <marker id="dg-s-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1l8 4-8 4" fill="none" style="stroke: var(--ink-2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+            </defs>
+            <!-- Your iCloud. -->
+            <path d="M276 170h136a38 38 0 0 0 4-75.8 54 54 0 0 0-105 13.5A32 32 0 0 0 276 170z" class="d-navy"/>
+            <text x="344" y="138" font-size="17" font-weight="600" class="d-cream" text-anchor="middle">Your iCloud</text>
+            <text x="344" y="157" font-size="12" text-anchor="middle" style="fill: #BEBBD3">your Apple Account</text>
+            <text x="344" y="196" font-size="12.5" class="d-ink2" text-anchor="middle">your place, highlights, recaps, reading log…</text>
+            <text x="344" y="213" font-size="12.5" class="d-ink2" text-anchor="middle">and, if you like, your books</text>
+
+            <g fill="none" stroke-width="2" style="stroke: var(--ink-2)">
+              <path d="M176 76 C 220 84, 250 98, 280 114" marker-end="url(#dg-s-a)" marker-start="url(#dg-s-a)"/>
+              <path d="M176 222 C 220 214, 252 196, 282 168" marker-end="url(#dg-s-a)" marker-start="url(#dg-s-a)"/>
+              <path d="M512 76 C 470 84, 444 96, 418 110" marker-end="url(#dg-s-a)" marker-start="url(#dg-s-a)"/>
+            </g>
+
+            <!-- Devices. -->
+            <g fill="none" stroke-width="2.2" style="stroke: var(--ink)">
+              <rect x="128" y="40" width="34" height="62" rx="8"/>
+              <rect x="112" y="196" width="66" height="50" rx="7"/>
+              <rect x="524" y="48" width="80" height="48" rx="5"/>
+              <path d="M548 108h32" stroke-linecap="round"/>
+            </g>
+            <g font-size="15" font-weight="600" class="d-ink" text-anchor="middle">
+              <text x="145" y="124">iPhone</text>
+              <text x="145" y="270">iPad</text>
+              <text x="564" y="132">Apple TV</text>
+            </g>
+
+            <!-- The watch, through the iPhone. -->
+            <rect x="34" y="54" width="28" height="36" rx="8" fill="none" stroke-width="2.2" style="stroke: var(--ink)"/>
+            <path d="M70 72h48" fill="none" stroke-width="2" style="stroke: var(--ink-2)" marker-end="url(#dg-s-a)" marker-start="url(#dg-s-a)"/>
+            <text x="48" y="114" font-size="14" font-weight="600" class="d-ink" text-anchor="middle">Watch</text>
+            <text x="48" y="132" font-size="12" class="d-ink2" text-anchor="middle">through your</text>
+            <text x="48" y="147" font-size="12" class="d-ink2" text-anchor="middle">iPhone</text>
+
+            <!-- No server. -->
+            <g opacity=".7">
+              <rect x="506" y="180" width="118" height="62" rx="10" fill="none" stroke-width="1.8" stroke-dasharray="5 5" style="stroke: var(--ink-2)"/>
+              <path d="M520 194l90 34M610 194l-90 34" stroke-width="1.8" style="stroke: var(--story-ink)"/>
+              <text x="565" y="264" font-size="13" font-weight="600" class="d-ink2" text-anchor="middle">Libretto server</text>
+              <text x="565" y="280" font-size="12" class="d-ink2" text-anchor="middle">there isn’t one</text>
+            </g>
+          </svg>
+          <figcaption id="dg-sync-cap">Each device talks only to your own iCloud. Apple Watch goes through your iPhone.</figcaption>
+        </figure>
+
+        <p>Apple Watch works a little differently: it talks to your iPhone, and your iPhone passes its place and reading time on. There’s more in <a href="#watch-and-tv">Apple Watch and Apple TV</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="turning-it-on">
+        <h2>Turning it on, and seeing how it’s going</h2>
+
+        <figure class="shot shot--side">
+          <img src="../assets/shots/settings-icloud.jpg" alt="Libretto’s iCloud &amp; Storage settings with Sync with iCloud switched off: the switch, the list of what it keeps in step, and a Storage row." width="720" height="1565" loading="lazy">
+          <figcaption>Shown here switched off. Once it’s on, a line under the switch says how sync is going, and the Books in iCloud switches appear.</figcaption>
+        </figure>
+
+        <p>Open Settings (the last item in any tab’s <b>⋯</b> menu) and tap <b>iCloud &amp; Storage</b>. <b>Sync with iCloud</b> is at the top, and it’s on unless you’ve turned it off. Under it, a line says how it’s going:</p>
+        <ul>
+          <li><b>Up to date</b>, or “Up to date · 2 min ago”: everything’s been sent and fetched.</li>
+          <li><b>Syncing…</b>: it’s working on it.</li>
+          <li><b>Waiting for a connection</b>: you’re offline. It carries on when you’re back.</li>
+          <li><b>iCloud storage is full. Libretto will try again.</b>: make room in iCloud (or get more), and it picks up from there.</li>
+          <li><b>Sign in to iCloud in the Settings app, and turn on iCloud for Libretto.</b>: this device isn’t signed in, or iCloud is off for Libretto.</li>
+          <li><b>iCloud is restricted on this device.</b>: something like Screen Time or a work profile is stopping it.</li>
+        </ul>
+        <p>Settings’ first page shows the short version beside <b>iCloud &amp; Storage</b>: Sync On, Sync Off, Not signed in to iCloud, iCloud storage is full, or Couldn’t sync.</p>
+      </section>
+
+      <section class="doc__sec" id="icloud-settings">
+        <h2>Every option on iCloud &amp; Storage</h2>
+        <dl class="opts">
+          <div><dt>Sync with iCloud <span class="opts__default">On</span></dt><dd>Keeps this device in step with your others. Off, this device keeps everything it has and stops sending and fetching (see <a href="#turning-off">Turning sync off</a>).</dd></div>
+          <div><dt>Store Books in iCloud <span class="opts__default">On</span></dt><dd>Keeps the files of the books and audiobooks you add in Libretto’s storage in your iCloud Drive, so your other devices can download them. Each book goes up once, when you add it or when you turn this on. Off, books you add stay on this device, and books already in iCloud stay there.</dd></div>
+          <div><dt>Download Larger Books Automatically <span class="opts__default">Off</span></dt><dd>Books under 100 MB download to your other devices by themselves. Larger ones, like most audiobooks, wait for a tap unless this is on.</dd></div>
+          <div><dt>Other Devices</dt><dd>Each of your other devices that has synced, with its days of reading, finished books, books, and when it last synced, and a <b>Remove</b> button (below).</dd></div>
+          <div><dt>Storage</dt><dd>What Libretto keeps on this device, and clearing what can be downloaded or made again.</dd></div>
+        </dl>
+        <p>The two Books in iCloud switches show while Sync with iCloud is on. They need iCloud Drive turned on for Libretto in the Settings app, and until it is, the page says so. Their footer also says how much room your books take in iCloud.</p>
+        <aside class="note note--tip"><p><b>Tip</b> Once a book is safely in iCloud, Libretto lets go of iCloud’s own extra copy on that device, so a book never takes its space twice.</p></aside>
+
+        <h3>Removing another device’s reading</h3>
+        <p>Sold an iPad, or signed a borrowed device in to your account for a while? Under <b>Other Devices</b>, tap <b>Remove</b> beside it, then <b>Remove from iCloud</b>. Its reading days, sessions, finished books and places in books are deleted from iCloud and from all your devices, so they stop counting in your stats and streak. Your books, highlights and notes stay. If that device syncs again later, what it reads from then on comes back.</p>
+      </section>
+
+      <section class="doc__sec" id="what-syncs">
+        <h2>What syncs</h2>
+        <ul>
+          <li><b>Your library:</b> every book’s and audiobook’s title, author and cover, including a title you fixed with Edit Details and a cover you chose with Change Cover. Books that are only on another device still show (see <a href="#other-devices-books">Books on your other devices</a>).</li>
+          <li><b>Your place and progress</b> in every ebook, PDF and audiobook (see <a href="#your-place">Your place on every device</a>).</li>
+          <li><b>Highlights, notes and bookmarks.</b> Change a note on one device and it changes on the others; delete a highlight and it goes everywhere. If two devices change the same highlight before they hear from each other, the newest change wins.</li>
+          <li><b>Book details:</b> Mark as Read, the day you started, Remove from Continue, and Libretto’s own rating and shelf for books that aren’t on Hardcover.</li>
+          <li><b>Chapter Recaps and Story Maps,</b> and which chapters you’ve read on each device, so recaps stay spoiler-free everywhere. A chapter recapped on one device isn’t written again on another, and an iPhone or iPad without Apple Intelligence shows the recaps your other devices wrote. More in <a href="story.html">Recaps, Story Map and the AI</a>.</li>
+          <li><b>Read-Along pairs,</b> once they’re prepared. Pair a book with its audiobook on one device, and every device that has both is ready to read along, with nothing to prepare again.</li>
+          <li><b>Your reading log:</b> reading and listening days and sessions, with the device each was on (Reading History says “On iPad”), and the books you’ve finished. Pages and minutes from every device add up, so your streak and stats are the same on all of them.</li>
+          <li><b>Your goals:</b> the Daily Reading Goal, Daily Page Goal, Yearly Book Goal and each book’s Finish By date. If two devices change different goals before they hear from each other, both changes stick. More in <a href="goals.html">Goals, stats and sharing</a>.</li>
+          <li><b>Hardcover:</b> your sign-in, through iCloud Keychain, and which Hardcover book and edition each of your books is, so a match you confirm on one device isn’t asked about on another. More in <a href="hardcover.html">Hardcover</a>.</li>
+          <li><b>Book files,</b> while Store Books in iCloud is on.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="what-stays">
+        <h2>What stays on each device</h2>
+        <p>Some things are better set per device, so they don’t sync:</p>
+        <ul>
+          <li><b>Appearance:</b> page theme, font, text size, layout, page controls and page turns, plus the app theme and app icon. Your iPad can have Night pages while your iPhone stays on Sepia.</li>
+          <li><b>Listening and hands-free settings,</b> like playback speed, the Read-Along marker, Auto-Scroll and Blink to Turn Pages.</li>
+          <li><b>Home and the tabs:</b> Home’s sections, which tabs you show, and how each library tab is sorted, filtered and laid out.</li>
+          <li><b>The Streak Reminder,</b> which each device schedules for itself.</li>
+          <li><b>Catch Me Up and Remind Me,</b> which are written fresh on the device you ask on.</li>
+          <li><b>Book files,</b> unless Store Books in iCloud is on.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="your-place">
+        <h2>Your place on every device</h2>
+        <p>Libretto saves your place as the words at the top of the screen, not as a percentage. So another device opens on the page with those same words, whatever its screen size, font or layout.</p>
+
+        <h3>The newest place wins</h3>
+        <p>Open a book and Libretto goes to the newest place you reached in it, on any device. If that isn’t where this device left off, a glass pill floats at the bottom of the page, the same kind as Back to Narration:</p>
+        <p>“<b>Continued from iPhone</b> · Tap to go back to Chapter 9 · 23 pages back”</p>
+        <ul>
+          <li><b>Tap the pill</b> to go back to where you were on this device. That becomes your newest place.</li>
+          <li><b>Tap ✕</b> to keep the new place and put the pill away. Or just read on: after six pages it goes by itself.</li>
+        </ul>
+        <p>It’s the newest place that wins, not the furthest. If you went back to reread a chapter, jumped to the notes at the end, or used Reset Progress, that’s where your other devices open next.</p>
+
+        <figure class="diagram" aria-labelledby="dg-place-cap">
+          <svg viewBox="0 0 680 266" role="img" aria-label="At 8:05 in the morning you read Chapter 9 on your iPhone. At 9:30 at night you read on to Chapter 12 on your iPad. Next morning the iPhone opens the book at Chapter 12, the newest place, with a Continued from iPad pill. Tap it to go back to Chapter 9, or close it and keep reading.">
+            <defs>
+              <marker id="dg-p-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4" fill="none" style="stroke: var(--ink-2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+            </defs>
+            <!-- The day: two readings. -->
+            <path d="M24 54h372" stroke-width="2" style="stroke: var(--line)"/>
+            <circle cx="70" cy="54" r="7" style="fill: #7C86C8"/>
+            <text x="70" y="30" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">8:05 am</text>
+            <text x="70" y="82" font-size="13" class="d-ink" text-anchor="middle">iPhone</text>
+            <text x="70" y="99" font-size="12.5" class="d-ink2" text-anchor="middle">Chapter 9</text>
+            <circle cx="300" cy="54" r="9" class="d-gold"/>
+            <text x="300" y="30" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">9:30 pm</text>
+            <text x="300" y="82" font-size="13" class="d-ink" text-anchor="middle">iPad</text>
+            <text x="300" y="99" font-size="12.5" class="d-ink2" text-anchor="middle">Chapter 12, newer</text>
+
+            <!-- Next morning, on the iPhone. -->
+            <path d="M330 120 C 380 140, 410 150, 452 150" fill="none" stroke-width="2" style="stroke: var(--ink-2)" marker-end="url(#dg-p-a)"/>
+            <text x="352" y="178" font-size="12.5" class="d-ink2">next morning</text>
+            <rect x="466" y="18" width="150" height="232" rx="26" class="d-card" stroke-width="1.8"/>
+            <text x="541" y="50" font-size="12" class="d-ink2" text-anchor="middle">iPhone</text>
+            <text x="541" y="80" font-size="14" font-weight="600" class="d-ink" text-anchor="middle">Chapter 12</text>
+            <g style="stroke: var(--ink-2)" stroke-width="3" stroke-linecap="round" opacity=".5">
+              <path d="M486 100h110M486 113h110M486 126h110M486 139h110M486 152h80"/>
+            </g>
+            <rect x="478" y="184" width="126" height="44" rx="22" class="d-navy"/>
+            <text x="531" y="202" font-size="11" class="d-cream" text-anchor="middle">Continued from iPad</text>
+            <text x="531" y="218" font-size="10" text-anchor="middle" style="fill: #BEBBD3">Tap to go back</text>
+            <circle cx="590" cy="206" r="9" style="fill: #39428A"/>
+            <path d="M586.5 202.5l7 7M593.5 202.5l-7 7" stroke-width="1.6" stroke-linecap="round" style="stroke: #F5EFE2"/>
+
+            <!-- What the pill does. -->
+            <path d="M478 214 C 420 236, 160 236, 82 110" fill="none" stroke-width="1.8" stroke-dasharray="5 5" style="stroke: var(--ink-2)" marker-end="url(#dg-p-a)"/>
+            <text x="250" y="254" font-size="13" class="d-ink" text-anchor="middle">tap the pill: back to Chapter 9</text>
+            <text x="640" y="206" font-size="12.5" class="d-ink2">or ✕:</text>
+            <text x="640" y="222" font-size="12.5" class="d-ink2">stay</text>
+          </svg>
+          <figcaption id="dg-place-cap">The newest place wins, whichever device it was on, and the page never moves while you’re reading.</figcaption>
+        </figure>
+
+        <h3>It never moves the page while you’re reading</h3>
+        <p>Libretto only moves you when you open the book, when you come back to Libretto with the book open, or when you’ve left it alone for a couple of minutes. A newer place that arrives while you’re turning pages waits its turn. So two devices open side by side don’t tug the page back and forth.</p>
+
+        <h3>Books you haven’t opened on this device</h3>
+        <p>A book you started somewhere else opens straight at your newest place, with no pill and no “Start Reading?” question.</p>
+
+        <h3>PDFs and audiobooks</h3>
+        <p>PDFs get the same pill, by page. Audiobooks get it in Now Playing, above the controls, when another device is more than 30 seconds away. Now Playing doesn’t jump while it’s playing.</p>
+
+        <h3>Progress everywhere is the newest</h3>
+        <p>The percentage on Home, in Continue, in the Books and Audiobooks tabs, in Book Details, in the widgets and in Shortcuts is your newest anywhere, so every device shows the same number. A book you read on another device moves to the front of Continue, and books you’re reading only on another device are listed there too, with where they are (“38% · On iPad”). <b>Remove from Continue</b> works on every device at once.</p>
+      </section>
+
+      <section class="doc__sec" id="other-devices-books">
+        <h2>Books on your other devices</h2>
+        <p>With sync on, the Books and Audiobooks tabs show your whole library, not just what’s on this device. A book that isn’t here shows a little dimmed, with a badge in its corner: the symbol of the device it’s on, or a cloud if it’s in iCloud. Under it, a line says where it is (“On iPad”, “In iCloud · 12 MB”) or how far you are.</p>
+
+        <h3>Show just what’s here, or just what isn’t</h3>
+        <p>While sync is on, the chip row under the tab’s title (and <b>Filter</b> in its <b>⋯</b> menu) has <b>On This iPhone</b> (<b>On This iPad</b> on an iPad) and <b>Elsewhere</b>. Tap one to show only those books, and tap it again to show everything.</p>
+
+        <h3>Downloading a book</h3>
+        <p>Tap a book that’s in iCloud to download it. A ring on its badge fills as it comes. Books under 100 MB don’t need the tap: they download by themselves as soon as they reach iCloud. Bigger ones, like most audiobooks, wait for you, unless <b>Download Larger Books Automatically</b> is on.</p>
+        <p>When a book arrives, everything else comes with it: your edited title, Mark as Read, highlights, notes, bookmarks and reading history. It opens at your newest place.</p>
+        <p>Touch and hold a book that isn’t here for <b>Book Details</b>: how far you are and where you read it last, each device that has it, and, if it’s in iCloud, a <b>Download</b> button with its size.</p>
+
+        <h3>A book that’s only on another device</h3>
+        <p>If a book isn’t in iCloud (Store Books in iCloud was off on the device that has it, say), this device can’t download it. Turn on Store Books in iCloud on the device that has it, or add the same file here from Files or AirDrop. Libretto recognizes it and brings your place, highlights and notes along.</p>
+        <aside class="note note--heads-up"><p><b>Good to know</b> A book you removed from this device doesn’t download again by itself. Tap it when you want it back.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="removing-books">
+        <h2>Removing a book: from here, or from your library</h2>
+        <p>A book can go in three ways. Libretto always asks first, and says what goes.</p>
+        <dl class="opts">
+          <div><dt>Remove… (a book on this device)</dt><dd>Touch and hold it and choose <b>Remove…</b>, or in Book Details, <span class="path">⋯ → Remove from Library…</span>. It leaves this device only: its file, reading history, Read-Along pairing, Story Map, Finish By date and Hardcover link go from here. Your other devices keep their copies. Its highlights and bookmarks wait in iCloud and come back if you add the same file again. If another device or iCloud still has the book, it stays in your library here, as a book that’s elsewhere.</dd></div>
+          <div><dt>Remove… (a book that isn’t on this device)</dt><dd>It leaves the library on every device that doesn’t have it, and its copy in iCloud is deleted. Devices that have it keep it. Add the file again any time to bring it back, with your place, highlights and notes.</dd></div>
+          <div><dt>Delete from iCloud… (a book that’s in iCloud but not here)</dt><dd>Deletes only the copy in iCloud. Devices that have the book keep it, and others can’t download it any more. Your place, highlights and notes stay.</dd></div>
+        </dl>
+
+        <h3>To remove a book from every device</h3>
+        <ol class="steps">
+          <li><p>On each device that has the book’s file, touch and hold it and choose <b>Remove…</b>.</p></li>
+          <li><p>The book now shows under <b>Elsewhere</b>. On any device, touch and hold it and choose <b>Remove…</b> again. That takes it out of your library everywhere and deletes its copy in iCloud.</p></li>
+        </ol>
+        <aside class="note note--heads-up"><p><b>Good to know</b> Removing a book doesn’t take it out of your stats: you still read it. To take a book out of your finished count, touch and hold it in <span class="path">Reading Stats → In Libretto → Finished</span> and choose <b>Remove from Finished</b>. That goes for every device.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="watch-and-tv">
+        <h2>Apple Watch and Apple TV</h2>
+        <h3>Apple Watch</h3>
+        <p>The watch doesn’t use iCloud itself: it talks to your iPhone. Your place on the watch goes to your iPhone, which passes it to iCloud as the watch’s own, so your iPad opens with “Continued from Apple Watch”. The other way, the watch gets your newest place from any device. Reading and listening on the watch count toward your streak and goal, and show in Reading History as “On Apple Watch”. All this travels whenever your watch is near your iPhone.</p>
+        <h3>Apple TV</h3>
+        <p>Apple TV gets your library from iCloud, so it needs to be signed in to the same Apple Account, with Sync with iCloud on in Libretto on your iPhone or iPad. Apple TV can’t open ebooks itself, so your iPhone or iPad prepares each book’s text for it and puts it in iCloud, by itself; audiobooks go when you ask for one on the TV. The TV opens at your newest place, and its place, reading time and the chapters it’s read go back to your other devices.</p>
+        <p>More in <a href="devices.html">iPad, Duo, Watch and TV</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="timing">
+        <h2>How long it takes, and when something hasn’t arrived</h2>
+        <p>Small things go quickly. While you read or listen, your place goes up about every 30 seconds, and straight away when you close the book, pause, or leave Libretto. Highlights, notes and other changes go as you make them. Your other devices usually hear about it within moments. And whenever Libretto opens or comes back to the front, it checks iCloud itself, so nothing waits long even if a notice goes astray. Book files take as long as their size and your connection need.</p>
+
+        <h3>If something hasn’t arrived</h3>
+        <ol class="steps">
+          <li><p>Look at <span class="path">Settings → iCloud &amp; Storage</span> on both devices. The line under Sync with iCloud says if a device is offline, isn’t signed in, or is out of iCloud storage.</p></li>
+          <li><p>Check both are signed in to the same Apple Account, with iCloud on for Libretto (in the Settings app, tap your name, then <b>iCloud</b>).</p></li>
+          <li><p>Open Libretto on the device where you read or made the change, so it can send anything it hadn’t yet.</p></li>
+          <li><p>On the device that’s missing it, switch away from Libretto and back. It fetches whatever it missed.</p></li>
+        </ol>
+        <p>If it’s a book that’s missing:</p>
+        <ul>
+          <li>Make sure it’s the same file on both. A different edition, or the same title from another store, is a different book to Libretto.</li>
+          <li>A book won’t download? iCloud Drive needs to be on for Libretto on both devices, and Store Books in iCloud on the device that has it.</li>
+        </ul>
+        <p>If your Hardcover sign-in hasn’t reached another device, check that iCloud Keychain is on for both (in the Settings app, under your name → iCloud). Or just connect again in <span class="path">Settings → Hardcover</span>.</p>
+        <p>Still stuck? <a href="troubleshooting.html">Troubleshooting</a> has more.</p>
+      </section>
+
+      <section class="doc__sec" id="turning-off">
+        <h2>Turning sync off</h2>
+        <p>Turn off <b>Sync with iCloud</b> and this device carries on by itself:</p>
+        <ul>
+          <li>Everything on it stays: books, places, highlights, notes, your reading log and recaps.</li>
+          <li>Nothing more is sent or fetched. Books that are only on your other devices leave this device’s tabs.</li>
+          <li>What’s already in iCloud stays there, for your other devices.</li>
+          <li>Your Hardcover sign-in stays, as this device’s own.</li>
+        </ul>
+        <p>Turn it back on and Libretto catches up both ways, including whatever you changed while it was off.</p>
+
+        <h3>Signing in with a different Apple Account</h3>
+        <p>Libretto forgets what came from the old account (books on its other devices, their places and reading days) and starts syncing with the new one. Your own books and reading on this device stay.</p>
+
+        <h3>Deleting what’s in iCloud</h3>
+        <p>Turning sync off doesn’t delete anything from iCloud. To delete Libretto’s data there, open the Settings app, tap your name, then <b>iCloud</b>, and choose Libretto from what’s using your storage. To take just one device’s reading out, use <b>Remove</b> under Other Devices instead (see <a href="#icloud-settings">Every option on iCloud &amp; Storage</a>).</p>
+      </section>
+
+      <section class="doc__sec" id="privacy">
+        <h2>Privacy</h2>
+        <aside class="note note--privacy"><p><b>Privacy</b> Everything Libretto syncs lives in your own iCloud account, in a private database that only devices signed in to it can read. There’s no Libretto account or server, and Libretto’s developer has no way to see any of it. The words themselves (book titles, highlights, notes and your devices’ names) go in encrypted fields.</p></aside>
+        <p>It counts toward your iCloud storage. The library’s details are small, a few megabytes even for a big, well-used library; the books are what take room, and only if you keep them in iCloud. Apple stores it all under its own privacy policy. Libretto’s <a href="../privacy.html">Privacy Policy</a> has the full list.</p>
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>Do I need to set anything up?</summary>
+          <div><p>No. If your devices are signed in to the same Apple Account with iCloud on, Libretto syncs from the first time you open it. The only extra is iCloud Drive, if you want your book files in iCloud too.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why did my book open on a different page?</summary>
+          <div><p>You read further somewhere else more recently, so Libretto took you there. Tap the “Continued from…” pill at the bottom of the page to go back to where this device was.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I have the same book from two places, and they don’t share a place. Why?</summary>
+          <div><p>Libretto goes by the file, not the title, because two editions don’t line up word for word. Use the same file on every device (Store Books in iCloud makes that easy) and everything lines up.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Will it fill my iCloud storage?</summary>
+          <div><p>The sync itself takes very little: a few megabytes, mostly recaps and Read-Along timings. Books take more, audiobooks especially. If space is tight, turn off <b>Store Books in iCloud</b>: your place, highlights and everything else still sync.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do my page themes and fonts sync?</summary>
+          <div><p>No. Appearance, listening and hands-free settings stay with each device, so each one can be set up for how you use it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can my family share my library?</summary>
+          <div><p>Not through sync: it’s for one Apple Account. Each person gets their own library and reading by signing in with their own.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it sync while Libretto is closed?</summary>
+          <div><p>Your devices can hear about changes in the background, when iOS allows. A device sends its own changes while Libretto is open and as you leave it, and every time Libretto opens it checks for anything it missed.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I gave away my old iPad. How do I stop its reading counting?</summary>
+          <div><p>In <span class="path">Settings → iCloud &amp; Storage</span>, find it under <b>Other Devices</b> and tap <b>Remove</b>. Its reading days, sessions, finished books and places come out of iCloud and your stats. Your books, highlights and notes stay.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do I need sync for Apple Watch?</summary>
+          <div><p>No. The watch works with your iPhone directly. With sync on, the watch’s place and reading time also reach your iPad and your other devices. Apple TV does need sync, since it gets your library through iCloud.</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="story.html"><small>Previous</small>Recaps, Story Map and the AI</a>
+      <a class="pager__next" href="goals.html"><small>Next</small>Goals, stats and sharing</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

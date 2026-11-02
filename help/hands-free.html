@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hands-free reading – Libretto Help</title>
+<meta name="description" content="Auto-Scroll, When I Look Away, Sleep Detection, Blink to Turn Pages and the Apple Watch page turner, and how Libretto uses the camera.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html" aria-current="page">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Hands-free reading</h1>
+        <p class="doc__lede">Read without touching the screen: let the book scroll itself, pause or switch to the audiobook when you look away, turn pages with a blink, or turn them from your Apple Watch. For reading in bed, at the stove, or with a cup in each hand.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li><b>Auto-Scroll</b> moves the book up at a steady speed, set in words a minute. Start it from <span class="path">⋯ → Hands-Free → Start Auto-Scroll</span> in a book.</li>
+          <li><b>When I Look Away</b> decides what Auto-Scroll does when your eyes leave the page: <b>Keep Scrolling</b>, <b>Pause</b>, or <b>Listen Instead</b>, which plays the paired audiobook until you look back.</li>
+          <li><b>Sleep Detection</b> notices you’ve dozed off, saves your place and lets the screen sleep.</li>
+          <li><b>Blink to Turn Pages</b>: two quick blinks for the next page, close your eyes and hold to go back.</li>
+          <li>With a book open on your iPhone, Apple Watch becomes a page turner: tap, Double Tap or turn the Digital Crown.</li>
+          <li>The front camera is on only while a green eye shows. Nothing it sees is recorded, kept or sent anywhere.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="auto-scroll">
+        <h2>Auto-Scroll</h2>
+        <p>Auto-Scroll moves the book up the screen at one steady pace, so you can read without lifting a finger. It works in EPUBs and other text books (not PDFs or comics).</p>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/this-book.jpg" alt="The reader’s ⋯ This Book menu, with sections for finding things, listening, hands-free reading and the book itself." width="720" height="1565" loading="lazy">
+          <figcaption>The book’s ⋯ menu: Hands-Free has Start Auto-Scroll, its speed, and Blink to Turn Pages.</figcaption>
+        </figure>
+
+        <h3>Starting it</h3>
+        <p>In a book, open <span class="path">⋯ → Hands-Free → Start Auto-Scroll</span>. Its speed is shown under it, and <b>Auto-Scroll Speed</b> picks another. To keep a button for it on the page, turn on <span class="path">Settings → Hands-Free → Auto-Scroll → Show on Page Controls</span>: the button goes on the page controls, or in the menu’s bottom bar if you don’t use page controls.</p>
+        <p>The button is a down arrow, never play and pause (those belong to the narration): outlined when stopped or paused, filled and gently pulsing while it scrolls. If you read with Slide or Curl page turns, the book switches to Scroll while Auto-Scroll runs, and goes back to your page style, at the same place, when you stop.</p>
+
+        <h3>Speed</h3>
+        <p>Speed is in words a minute, from 100 to 600 (250 to start with), and it’s the same in every book. Libretto works out how far to move from the lines on the page, so the pace is steady through short lines and long ones. It eases up to speed over a second and a half when it starts, after every pause, and at each new chapter, so the text never lurches.</p>
+
+        <h3>The reading guide</h3>
+        <p>With <b>Reading Guide</b> on (the default), a band one line high sits a third of the way down the screen, and the text scrolls up through it. Keep your eyes on the band and the book comes to you. It dims while Auto-Scroll is paused, and takes its color from Read-Along’s marker (see <a href="read-along.html#reading-along">The marker</a>).</p>
+
+        <h3>While it runs</h3>
+        <ul>
+          <li>The page controls hold pause, slower and faster, with the speed between them.</li>
+          <li>The menu’s bottom bar has <b>Pause</b> or <b>Resume</b>, the speed, the minutes left in the chapter at this speed, and Stop.</li>
+          <li>The page buttons still jump a screen, and it carries on from there.</li>
+          <li>At the end of a chapter it holds for two seconds (“Keep scrolling for …”) and goes on. At the end of the book it stops.</li>
+          <li>With a keyboard, the space bar pauses and resumes, and ↑ and ↓ change the speed by 10.</li>
+          <li>The screen stays awake while it scrolls, and for 10 minutes after a pause.</li>
+        </ul>
+
+        <h3>Pausing</h3>
+        <ul>
+          <li>Tap the middle of the page to pause, and again to carry on. (With page controls showing and Lock Page on, use their pause button.)</li>
+          <li>Bringing up the menu pauses it, with <b>Resume</b> in the bar.</li>
+          <li>Drag the text to look back, and it picks up from the new spot a moment after the text comes to rest.</li>
+          <li>A sheet over the page pauses it until the sheet closes. Leaving the app pauses it until you tap Resume.</li>
+          <li>It stops when you close the book, and doesn’t run while Read-Along narration plays (the narration moves the page then). Blinks don’t turn pages while it runs.</li>
+        </ul>
+        <aside class="note note--tip"><p><b>Tip</b> Find the speed that suits you by starting slow and tapping faster a few times in the first chapter. Once it feels right you’ll stop noticing it; 250 is a comfortable place to start.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="look-away">
+        <h2>When I look away</h2>
+        <p>Auto-Scroll can keep an eye on you through the front camera. <span class="path">Settings → Hands-Free → When I Look Away</span> is one choice, and it applies whenever Auto-Scroll runs:</p>
+        <dl class="opts">
+          <div><dt>Keep Scrolling <span class="opts__default">Default</span></dt><dd>It keeps going whether you’re looking or not. No camera.</dd></div>
+          <div><dt>Pause</dt><dd>It pauses when you look away or close your eyes, and goes back to where you were.</dd></div>
+          <div><dt>Listen Instead</dt><dd>In a book paired with its audiobook, looking away plays the narration from the line you were on, until you look back.</dd></div>
+        </dl>
+
+        <h3>Pause</h3>
+        <p>Looking away (turning your head, your eyes off to the side, or looking up over the phone) for a moment (under a second at Medium sensitivity), leaving the camera’s view, or closing your eyes pauses Auto-Scroll. Blinking never does, and looking down at the page doesn’t count as closed eyes. It then scrolls back to where the text was when you looked away, so nothing went by unseen. Look back, eyes open, for half a second and it carries on.</p>
+        <p>While it’s paused, the footer says why: “Paused: looked away”, “Paused: eyes closed” or “Can’t see you”. The eye beside it is green while the camera is watching.</p>
+
+        <h3>Sensitivity, and the live check</h3>
+        <p><b>Sensitivity</b> (from Relaxed to Strict) sets how far counts as away. Strict pauses at a smaller turn of the head (about 20° rather than 38° at Medium) and sooner; Relaxed lets more go (about 56°). Under the slider, a live check says what the camera makes of you right now (“Right now: looking at the screen”, “Right now: looking away”). Prop your phone up the way you read, look off the way you do, and move the slider until it notices.</p>
+
+        <h3>Beep and red edges</h3>
+        <p><b>Beep When I Look Away</b> plays two falling notes, and <b>Red Edges When I Look Away</b> makes the screen’s edges glow red until you look back; both are on to start with. Neither happens for closed eyes or for “Can’t see you”, so dozing off isn’t disturbed. The live check in Settings beeps and glows too, so you can try them there.</p>
+
+        <h3>Listen Instead</h3>
+        <p>For a book paired with its audiobook (see <a href="read-along.html">Read-Along and audiobooks</a>). Look away, or put the phone down so the camera loses you, and the audiobook plays from the first word of the line that was in the reading guide. The page goes back to that line and follows the narration with Read-Along’s marker, and the footer says “Listening: look back to read”. There’s no beep or red glow.</p>
+        <p>Look back and the line the narration reached scrolls into the guide, Auto-Scroll carries on from there, and the audio fades away over five seconds (look away again meanwhile, and it comes back up). As it starts, the audio rises gently over a second.</p>
+        <ul>
+          <li><b>Start Listening After</b> (from Right away to 30 seconds) waits that long after you look away before it plays. Until then it’s paused as usual.</li>
+          <li>Closing your eyes still only pauses, so Sleep Detection works as before.</li>
+          <li>In a book without an audiobook, or a part of the book that isn’t prepared yet, it pauses as usual.</li>
+          <li>If the screen locks while it’s listening, the audio carries on; tap <b>Resume</b> (or the middle of the page) to take the book back. While it reads, the Auto-Scroll button shows headphones, and tapping it does the same.</li>
+        </ul>
+
+        <h3>Listening on Apple Watch</h3>
+        <p>With a watch paired, Listen Instead has <b>Play on Apple Watch</b> (off to start with). The narration then plays on your watch’s speaker instead of the iPhone’s, with Libretto open on the watch. While you read with Auto-Scroll, the iPhone copies the audiobook ahead of you to the watch, a few minutes first so it’s ready in seconds, then more as you go. The status under the switch says how much your watch has.</p>
+        <ul>
+          <li>If the watch isn’t ready when you look away, the iPhone stays quiet and the footer says what it’s waiting for (“Copying audio to your watch: 45%”, “Open Libretto on your watch to listen”), then the watch starts from your line as soon as it can.</li>
+          <li>On the watch: <b>Pause</b> and <b>Play</b> (Double Tap too), and the Digital Crown for volume. The footer on the iPhone says “Listening on Apple Watch: look back to read”.</li>
+          <li><b>Turn Pages Instead</b> on the watch stops reading aloud there at once, and stops Auto-Scroll on the iPhone.</li>
+          <li>The watch app has to be open for this, so on the watch set <span class="path">Settings → General → Return to Clock → Libretto</span> to <b>After 1 Hour</b>. Playing on the watch uses more of its battery.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="sleep-detection">
+        <h2>Sleep Detection</h2>
+        <p>Reading in bed? Turn on <span class="path">Settings → Hands-Free → Sleep Detection</span> (it’s off to start with). While Auto-Scroll runs, if your eyes stay closed, or you’re out of the camera’s view, for the time set in <b>Eyes Closed For</b> (30 seconds to 10 minutes; 2 minutes to start with), Libretto:</p>
+        <ul>
+          <li>goes back to the start of the paragraph that was in the reading guide when your eyes closed;</li>
+          <li>stops Auto-Scroll and the camera, and saves your place there;</li>
+          <li>fades the page to black over five seconds, turns the brightness right down, and lets the screen sleep, so Auto-Lock locks the phone.</li>
+        </ul>
+        <p>In the morning, touch the screen or come back to the app: the brightness comes back, the page says “Picked up where you closed your eyes”, and Auto-Scroll is paused at that paragraph. With Auto-Lock set to Never, the screen stays on, dark, until you touch it.</p>
+        <p>A longer time means a long blink or a glance away never stops the book; a shorter one means less to find again. Sleep Detection works with any When I Look Away choice, Keep Scrolling included.</p>
+      </section>
+
+      <section class="doc__sec" id="blink">
+        <h2>Blink to Turn Pages</h2>
+        <p>Turn pages with your eyes: two quick blinks for the next page, and close both eyes and hold to go back. It works in EPUBs, other text books and PDFs.</p>
+
+        <h3>Turning it on</h3>
+        <p>In a book, turn on <span class="path">⋯ → Hands-Free → Blink to Turn Pages</span>. The first time, iOS asks to let Libretto use the camera. A book always opens with the camera off, so you start it each time. To keep an eye button handy, turn on <span class="path">Settings → Hands-Free → Blink to Turn Pages → Show on Page Controls</span>: the eye goes on the page controls (or in the menu, if you don’t use page controls). Tap it to start and stop watching for blinks.</p>
+
+        <h3>How to blink</h3>
+        <ul>
+          <li><b>Next page:</b> blink twice, quickly, with both eyes. Each blink should be an ordinary quick one, and the second has to come within the <b>Double-Blink Speed</b> gap (0.6 seconds to start with). A single blink never turns the page.</li>
+          <li><b>Previous page:</b> close both eyes and keep them closed for the <b>Hold to Go Back</b> time (1 second to start with). The page turns, and the beep tells you to open your eyes, as soon as you’ve held long enough.</li>
+          <li>Give it a moment between turns: right after one, it waits briefly so the end of one gesture can’t start another.</li>
+        </ul>
+        <aside class="note note--tip"><p><b>Tip</b> If pages turn when you didn’t mean them to, move Double-Blink Speed toward Quick. If your double blinks are missed, move it toward Relaxed. <b>Play the Beeps</b> in Settings lets you hear what each one sounds like.</p></aside>
+
+        <h3>The green eye</h3>
+        <p>While the camera is on, the eye button is green. Without page controls, a green eye also sits beside the chapter title in the footer (in a PDF, in the bottom corner), so you always know when it’s watching.</p>
+
+        <h3>Beeps</h3>
+        <p>With <b>Beep When Recognized</b> on (the default), a short beep means next page and a longer one means back. The beeps play at media volume, even with your phone on silent, and music from other apps keeps playing.</p>
+
+        <h3>When it’s off</h3>
+        <p>Blinks don’t turn pages while an audiobook plays (the pages follow the narration then), while Auto-Scroll runs or Read Aloud reads, while a sheet covers the page, or once the book is closed. The screen stays awake while it runs, until 10 minutes pass without a blink turn.</p>
+      </section>
+
+      <section class="doc__sec" id="watch">
+        <h2>Turning pages from Apple Watch</h2>
+        <p>Prop your iPhone up, open a book (or a PDF) on it, and open Libretto on your watch: it opens to a page turner. (If you’ve already gone elsewhere in the watch app, tap <b>Turn Pages</b> under the book that’s open on your iPhone.) It shows the chapter, the page you’re on in it, and how far through the book you are.</p>
+        <ul>
+          <li><b>Buttons:</b> big ◀ and ▶ turn back and forward.</li>
+          <li><b>Double Tap:</b> on a watch that has it, tap your finger and thumb together twice for the next page.</li>
+          <li><b>Digital Crown:</b> turn it one click for a page, forward or back.</li>
+        </ul>
+        <p>Page turns from the watch aren’t touches, so the iPhone would normally lock; instead its screen stays on for 10 minutes after each turn from the watch, then locks as usual. While Auto-Scroll runs, the arrows skip a screen and <b>Stop Auto-Scroll</b> sits under them. While the narration plays with Turn Pages While Listening off, the buttons are dimmed (“The pages follow the narration while it plays”). If a turn doesn’t reach the iPhone, the watch buzzes and says “Can’t reach your iPhone”.</p>
+        <p>The watch app needs watchOS 11 or later. Reading and listening on the watch itself is in <a href="devices.html">iPad, Duo, Watch and TV</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="camera-privacy">
+        <h2>The camera and your privacy</h2>
+        <p>Blink to Turn Pages, Pause and Listen Instead, and Sleep Detection use the front camera through Apple’s face tracking. Here’s exactly what that means:</p>
+        <ul>
+          <li><b>It’s on only while a green eye shows</b>: while Blink is watching; while Auto-Scroll runs, or waits for you to look back, with Pause, Listen Instead or Sleep Detection on; and on the Hands-Free settings page while its live check is showing.</li>
+          <li><b>Each frame is looked at on your device as it arrives</b>, for two things: whether your eyes are open or closed, and which way you’re facing.</li>
+          <li><b>Nothing is recorded, kept or sent.</b> No pictures, no video, no face data. It isn’t used for anything but turning, scrolling and pausing the page and starting or stopping the narration.</li>
+        </ul>
+        <aside class="note note--privacy"><p><b>Privacy</b> With Keep Scrolling chosen and Sleep Detection off, Auto-Scroll never turns the camera on at all.</p></aside>
+        <p>If you turned down camera access, <span class="path">Settings → Hands-Free</span> says “Libretto doesn’t have access to the camera.”, with <b>Open Settings</b> to change it. On a device that can’t track faces, it says so, and the camera features won’t work there.</p>
+      </section>
+
+      <section class="doc__sec" id="settings">
+        <h2>Settings → Hands-Free</h2>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/settings-handsfree.jpg" alt="Libretto’s Hands-Free settings: Blink to Turn Pages, Auto-Scroll, When I Look Away and Sleep Detection." width="720" height="1565" loading="lazy">
+          <figcaption>Settings → Hands-Free. The Show on Page Controls switches only add buttons: Auto-Scroll and Blink always start from a book’s ⋯ menu.</figcaption>
+        </figure>
+        <h3>Blink to Turn Pages</h3>
+        <dl class="opts">
+          <div><dt>Show on Page Controls <span class="opts__default">Off</span></dt><dd>Puts the eye button with the page controls. Blink to Turn Pages starts from ⋯ in a book whatever this says.</dd></div>
+          <div><dt>Double-Blink Speed <span class="opts__default">0.6 s</span></dt><dd>The longest gap between the two blinks, from 0.3 s (Quick) to 1.2 s (Relaxed).</dd></div>
+          <div><dt>Hold to Go Back <span class="opts__default">1 s</span></dt><dd>How long to keep both eyes closed to go back a page, from 0.6 to 2.5 s.</dd></div>
+          <div><dt>Beep When Recognized <span class="opts__default">On</span></dt><dd>A short beep for next, a longer one for back. <b>Play the Beeps</b> plays them.</dd></div>
+        </dl>
+        <h3>Auto-Scroll</h3>
+        <dl class="opts">
+          <div><dt>Show on Page Controls <span class="opts__default">Off</span></dt><dd>Puts the Auto-Scroll button with the page controls (or in the menu’s bottom bar). Auto-Scroll starts from ⋯ in a book whatever this says.</dd></div>
+          <div><dt>Speed <span class="opts__default">250 wpm</span></dt><dd>100 to 600 words a minute, the same in every book.</dd></div>
+          <div><dt>Reading Guide <span class="opts__default">On</span></dt><dd>The band a third of the way down the screen for the text to scroll through.</dd></div>
+        </dl>
+        <h3>When I Look Away</h3>
+        <dl class="opts">
+          <div><dt>Keep Scrolling, Pause or Listen Instead <span class="opts__default">Keep Scrolling</span></dt><dd>What Auto-Scroll does when you look away. See <a href="#look-away">When I look away</a>.</dd></div>
+          <div><dt>Sensitivity <span class="opts__default">Medium</span></dt><dd>How small a turn of the head or glance aside counts as looking away, with a live check under it. For Pause and Listen Instead.</dd></div>
+          <div><dt>Beep When I Look Away <span class="opts__default">On</span></dt><dd>Two falling notes when it stops because you looked away. Not for closed eyes.</dd></div>
+          <div><dt>Red Edges When I Look Away <span class="opts__default">On</span></dt><dd>The screen’s edges glow red until you look back. Not for closed eyes.</dd></div>
+          <div><dt>Start Listening After <span class="opts__default">Right away</span></dt><dd>For Listen Instead: how long after you look away before the audiobook plays, up to 30 seconds.</dd></div>
+          <div><dt>Play on Apple Watch <span class="opts__default">Off</span></dt><dd>For Listen Instead, with a watch paired: the narration plays on the watch’s speaker. See <a href="#look-away">Listening on Apple Watch</a>.</dd></div>
+        </dl>
+        <h3>Sleep Detection</h3>
+        <dl class="opts">
+          <div><dt>Sleep Detection <span class="opts__default">Off</span></dt><dd>While Auto-Scroll runs, eyes closed or out of view for a while goes back to the paragraph and lets the screen go dark.</dd></div>
+          <div><dt>Eyes Closed For <span class="opts__default">2 min</span></dt><dd>How long before Sleep Detection steps in, from 30 seconds to 10 minutes.</dd></div>
+        </dl>
+        <p>For every setting in one place, see <a href="settings.html">Every setting</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>Is the camera recording me?</summary>
+          <div><p>No. Each frame is checked on your device, as it arrives, for whether your eyes are open and which way you’re facing, and then it’s gone. Nothing is recorded, kept or sent anywhere. The camera is on only while a green eye shows.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why doesn’t Auto-Scroll pause when I look away?</summary>
+          <div><p>When I Look Away is set to Keep Scrolling to start with, which doesn’t use the camera. Choose <b>Pause</b> or <b>Listen Instead</b> in <span class="path">Settings → Hands-Free</span>. If it still misses you looking off to the side, move <b>Sensitivity</b> toward Strict and use the live check under it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>It keeps pausing when I’m still reading.</summary>
+          <div><p>Move <b>Sensitivity</b> toward Relaxed. Holding the phone so the camera can see your whole face helps too; if it can’t see you, it pauses with “Can’t see you”.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why is the Auto-Scroll button dimmed?</summary>
+          <div><p>Read-Along narration is playing, and the narration moves the page then. Pause it to scroll. Auto-Scroll also isn’t available in PDFs or comics.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does Listen Instead work without an audiobook?</summary>
+          <div><p>It needs the book paired with its audiobook, and that part of the book prepared. Otherwise, looking away just pauses. See <a href="read-along.html#pairing">Pairing a book with its audiobook</a>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Blinks aren’t turning the page.</summary>
+          <div><p>Check that the eye is green; a book always opens with the camera off. Blinks are also off while an audiobook plays, while Auto-Scroll runs and while a sheet is open. Then try blinking a little more deliberately, or move Double-Blink Speed toward Relaxed.</p></div>
+        </details>
+        <details class="qa">
+          <summary>My iPhone locks while I’m turning pages from my watch.</summary>
+          <div><p>It stays awake for 10 minutes after each turn from the watch. If you go longer between turns, it locks as usual. Unlock it and carry on; your place is kept.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does Sleep Detection stop my audiobook too?</summary>
+          <div><p>Sleep Detection is part of Auto-Scroll: it stops the scrolling and lets the screen sleep. For an audiobook, use the player’s sleep timer (see <a href="read-along.html#player">The audiobook player</a>).</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="read-along.html"><small>Previous</small>Read-Along and audiobooks</a>
+      <a class="pager__next" href="story.html"><small>Next</small>Recaps, Story Map and the AI</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

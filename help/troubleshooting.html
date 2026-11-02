@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Troubleshooting – Libretto Help</title>
+<meta name="description" content="Practical fixes for Libretto: books that won’t open, sync, Read-Along, Apple Intelligence features, Hardcover, Apple Watch, Apple TV, widgets and Siri.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html" aria-current="page">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Troubleshooting</h1>
+        <p class="doc__lede">Practical fixes for the things that most often go wrong, grouped by what you were doing. Find the heading that matches what you’re seeing, and each one says why it happens and what to do.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li>Libretto usually says what’s wrong: look at <span class="path">Settings → iCloud &amp; Storage</span> for sync, <span class="path">Settings → Story</span> for Apple Intelligence, a book’s <b>⋯ → Read Along</b> for its pairing, and <span class="path">Settings → Hardcover</span> for what was last sent.</li>
+          <li>Opening Libretto, or bringing it back to the front, catches up on anything iCloud hasn’t delivered yet. Try that on both devices first.</li>
+          <li>Books locked with DRM by another store can’t be opened in Libretto, and neither can Kindle formats.</li>
+          <li>The Story features need Apple Intelligence on the device, and they only cover chapters you’ve actually read.</li>
+          <li>Still stuck? <a href="../support.html">Write to support</a>.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="books">
+        <h2>Books and importing</h2>
+
+        <h3>A book won’t import or open</h3>
+        <p>The usual reasons, most likely first:</p>
+        <ul>
+          <li><b>It’s locked with DRM.</b> Books bought from Kindle, Apple Books, Kobo and most other stores are locked so only that store’s app can open them, and Libretto can’t. Look for a DRM-free copy: many publishers and stores sell them, and <span class="path">⋯ → Add to Library → Free Classics</span> has thousands of public-domain books.</li>
+          <li><b>It’s a format Libretto doesn’t read.</b> Libretto opens EPUB, PDF, TXT, Markdown, HTML, RTF, FB2 and CBZ comics, and MP3, M4A, M4B, AAC, FLAC, WAV, AIFF and CAF audio. Kindle formats (AZW, AZW3, MOBI) and CBR comics aren’t supported. You’ll see “… isn’t a supported book format.”</li>
+          <li><b>The file is damaged or incomplete.</b> Messages like “The file isn’t a valid EPUB (ZIP) archive.”, “The archive is damaged” or “This EPUB has no readable chapters.” mean the file itself is broken, often from a download that didn’t finish. Download it again and add it again.</li>
+        </ul>
+
+        <h3>It says the book is already in your library</h3>
+        <p>Libretto doesn’t add a book twice: one with the same title, author and format as one you have (even one you’ve renamed with Edit Details) is skipped, with “… is already in your library.” Search the Books tab for it. If you want to replace it with a different copy, remove the old one first (<span class="path">Book Details → ⋯ → Remove from Library…</span>), then add the new one.</p>
+
+        <h3>An audiobook came in as several books, or in the wrong order</h3>
+        <p>Audio files only become one audiobook when they arrive together. Pick all the files at once in <span class="path">⋯ → Add to Library → Choose Files…</span>, or put them in a zip, or drop a folder of them (one book per folder) into Libretto’s folder in the Files app. Files that came in one by one are separate books: remove them and add them again together.</p>
+        <p>Without chapter markers in the files, each file is a chapter, in file-name order. If the order is wrong, rename the files with numbers at the front (01, 02, 03…) and add them again.</p>
+
+        <h3>The title or author is wrong</h3>
+        <p>Files from around the web often have odd titles, like “Moby Dick (z-lib.org) [Retail]”. Open the book’s Book Details and choose <span class="path">⋯ → Edit Details…</span> (for an audiobook, long-press it and choose <b>Edit Details…</b>). Your library, the reader, Home, the widgets, the Lock Screen and Hardcover matching all use the new title and author. <b>Use the File’s Title and Author</b> puts the original back.</p>
+
+        <h3>“Not enough free space”</h3>
+        <p>Libretto checks there’s room before it imports or downloads, and keeps some to spare for your device. Free up space, then try again:</p>
+        <ul>
+          <li>In Libretto, open <span class="path">Settings → iCloud &amp; Storage → Storage</span>. <b>Largest Books</b> and <b>Largest Audiobooks</b> show what takes the most room (tap one to open it and remove it), and <b>Free Up Space</b> clears what can be downloaded or made again. See <a href="settings.html#storage">Storage</a>.</li>
+          <li>In the Settings app, <span class="path">General → iPhone Storage</span> (or iPad Storage) shows what else is using space.</li>
+        </ul>
+
+        <h3>Libretto is taking up a lot of space</h3>
+        <p>Audiobooks are almost always the biggest part. Open <span class="path">Settings → iCloud &amp; Storage → Storage</span> to see it by kind. Removing an audiobook you’ve finished frees the most. With <b>Store Books in iCloud</b> on, a book you remove from this device stays in iCloud and shows with a cloud, so you can download it again later. <b>Free Up Read-Along Data</b> deletes the transcripts Libretto made while preparing your pairs, and reading along keeps working.</p>
+      </section>
+
+      <section class="doc__sec" id="reading">
+        <h2>Reading</h2>
+
+        <h3>Tapping or swiping doesn’t turn the page</h3>
+        <ul>
+          <li><b>Lock Page is on.</b> While the page controls are showing, only their buttons turn pages. Turn it off with <b>⋯ → Lock Page</b> in the book, or in <span class="path">Settings → Appearance → Layout</span>.</li>
+          <li><b>The narration is playing.</b> With <b>Turn Pages While Listening</b> off, the pages follow the narration until you pause it, and a turn shows “Pages follow the narration while it plays”. Pause, or turn the setting on in <span class="path">Settings → Listening</span>.</li>
+          <li><b>Auto-Scroll is running.</b> Your page style switches to scrolling while it runs. Stop it from the menu or <b>⋯ → Stop Auto-Scroll</b>, and your pages come back at the same place.</li>
+        </ul>
+
+        <h3>Pages turn when I don’t mean them to</h3>
+        <p>Turn on <b>Lock Page</b> (<b>⋯ → Lock Page</b>, or <span class="path">Settings → Appearance → Layout</span>). While the page controls show, only their buttons turn pages, so holding the device never turns one by accident. Long-press still selects text. If you use Blink to Turn Pages, set <b>Double-Blink Speed</b> nearer <b>Quick</b> in <span class="path">Settings → Hands-Free</span>, so ordinary blinking isn’t taken for a turn.</p>
+
+        <h3>The font or text size won’t change</h3>
+        <p>In a PDF the text is fixed in place, so the <b>Aa</b> sheet has only the page theme, layout, page turns and Today’s Target Bar. In an ebook, the <b>Original</b> font uses whatever the book’s publisher chose: pick another under <span class="path">Aa → Font</span>.</p>
+
+        <h3>My place or reading time wasn’t saved</h3>
+        <ul>
+          <li><b>You chose Just Browse.</b> Opening a book you haven’t started asks <b>Start Reading?</b>. Just Browse saves nothing: not your place, reading time, stats or Hardcover progress. The menu says “Browsing: your progress isn’t saved” with a <b>Start Reading</b> button. Close it after reading on and it asks <b>Save Your Progress?</b>.</li>
+          <li><b>You opened it from your Notebook.</b> A visit to a highlight keeps your place where it was. Tap <b>Read from Here</b> to move it.</li>
+          <li><b>You jumped there.</b> Pages you skip with the contents, search or the scrubber don’t count toward your pages read, so a big jump adds nothing to your stats.</li>
+        </ul>
+
+        <h3>I want to start a book over</h3>
+        <p>Open its Book Details and choose <span class="path">⋯ → Reset Progress…</span> (for an audiobook, long-press it and choose <b>Reset Progress…</b>). It goes back to the beginning, and opening it asks again whether to start reading. A paired book and audiobook share a place, so both go back. Your highlights, bookmarks and reading stats stay, and your shelf and progress on Hardcover aren’t changed. It asks first.</p>
+
+        <h3>I dismissed a tip and want to see it again</h3>
+        <p>Tips appear once each, the first time a feature helps. To bring them all back, open <span class="path">Settings → About → Tips &amp; Guide</span> and tap <b>Show Tips Again</b>. Each one shows again the next time it helps (sometimes from the next time you open Libretto). The same page explains every feature in a paragraph, with <b>Show Me</b> to go there.</p>
+
+        <figure class="shot">
+          <img src="../assets/shots/tips-guide.jpg" alt="Settings, About, Tips &amp; Guide: groups of features, each a short paragraph with a Show Me button." width="720" height="1565" loading="lazy">
+          <figcaption>Tips &amp; Guide: every feature in a paragraph, and Show Tips Again at the bottom.</figcaption>
+        </figure>
+      </section>
+
+      <section class="doc__sec" id="read-along">
+        <h2>Read-Along and audiobooks</h2>
+
+        <h3>“Couldn’t Prepare Read-Along”</h3>
+        <p>Preparing listens to the audiobook on your device and matches it to the book word by word. The message under the alert says what stopped it:</p>
+        <ul>
+          <li><b>“Read-Along works with EPUB and text books, not PDFs or comics.”</b> Pair the audiobook with an EPUB of the book instead.</li>
+          <li><b>“The book’s or audiobook’s files are missing. Try importing them again.”</b> One of the two was removed or didn’t finish downloading. Add it again; if it’s in iCloud, tap it to download it first.</li>
+          <li><b>“On-device speech recognition isn’t available on this device.”</b> Your device can’t transcribe audio, so Read-Along can’t be prepared on it. If your other device can, pair them there: with Sync with iCloud on, the finished pairing reaches this device, which then reads along without preparing (it needs both the book and the audiobook on it too).</li>
+          <li><b>Anything else.</b> The first pairing downloads Apple’s speech model, which needs an internet connection. Connect and try again.</li>
+        </ul>
+        <ol class="steps">
+          <li><p>Open the Read-Along page (Home’s Read-Along section → <b>See All</b>, or its tab).</p></li>
+          <li><p>Tap the pair, then <b>Try Again</b>. (Or long-press it and choose <b>Try Again</b>.)</p></li>
+          <li><p>If it fails again, long-press the pair, choose <b>Unpair…</b>, and pair them again. The book and audiobook stay in your library.</p></li>
+        </ol>
+
+        <h3>It’s still preparing</h3>
+        <p>Read-Along is ready once 20 minutes from where you’ll listen are matched, usually within a minute (“Ready · preparing 42%”). The rest carries on while you read, and in the background when iOS allows. Open a part that isn’t matched yet and the work moves there (“Preparing this part of the book…”). If it seems stuck, check the pair on the Read-Along page: if it says <b>Paused</b>, long-press it and choose <b>Resume Preparing</b>.</p>
+
+        <h3>“These files may be different editions”</h3>
+        <p>This shows under <b>⋯ → Read Along</b> when preparing has finished and fewer than six in ten of the book’s words could be matched to the narration. Common causes:</p>
+        <ul>
+          <li>The audiobook is abridged, or it’s a different translation or edition from the ebook.</li>
+          <li>The audiobook is in a different language from your device. Libretto listens in your device’s language (or English if it can’t), so a French audiobook on an English iPhone matches poorly.</li>
+        </ul>
+        <p>Reading along may still work in the parts that match. For the best result, pair an ebook and audiobook of the same edition. To start over, <b>Unpair…</b> and pair them again.</p>
+
+        <h3>The marker drifts, or the narration is somewhere else</h3>
+        <ul>
+          <li><b>The audio isn’t in the book.</b> Opening credits, closing music and bonus excerpts show a grayed-out cover with a countdown to the text and <b>Skip to Text</b>.</li>
+          <li><b>You turned away from it.</b> With Turn Pages While Listening on, the narration plays on while you look around. <b>Back to Narration</b> takes you back to it, and <b>Play from Here</b> moves it to your page.</li>
+          <li><b>That part isn’t matched yet.</b> Wait for preparing to reach it, or open it to move the work there.</li>
+          <li><b>It’s a little off everywhere.</b> Long-press the word being read and choose <b>Play from Here</b>. If the whole book is off, see “These files may be different editions” above.</li>
+        </ul>
+
+        <h3>Read Aloud sounds robotic</h3>
+        <p><b>Automatic</b> uses the most natural voice installed on your device. Download Enhanced or Premium voices in the Settings app under <span class="path">Accessibility → Spoken Content → Voices</span>, then choose one in <span class="path">Settings → Listening → Read Aloud → Voice</span> (or <b>⋯ → Read Aloud → Voice</b> in the book). <b>Hear a Sample</b> lets you try it. Apps can’t use Siri’s own voice.</p>
+
+        <h3>Pressing my headphones twice skips a whole chapter</h3>
+        <p>That’s the default. To skip by a few seconds instead, set <span class="path">Settings → Listening → Headphone Presses</span> to <b>Skip Forward and Back</b>. The skip lengths are just above it.</p>
+      </section>
+
+      <section class="doc__sec" id="story">
+        <h2>Story features and Apple Intelligence</h2>
+
+        <h3>There’s no ✨ button, or Catch Me Up isn’t working</h3>
+        <p>Catch Me Up, Remind Me and Chapter Recaps are written by Apple Intelligence on your device. Go through these in order:</p>
+        <ol class="steps">
+          <li><p><b>Does your device support Apple Intelligence?</b> It needs an iPhone 15 Pro or later, or an iPad with an M-series or A17 Pro chip. On other devices the ✨ button doesn’t appear, and <span class="path">Settings → Story</span> says the device doesn’t support it. Recaps and Story Maps written on your other devices still show there.</p></li>
+          <li><p><b>Is Apple Intelligence turned on?</b> If not, Catch Me Up says “Turn on Apple Intelligence in Settings → Apple Intelligence &amp; Siri to use Catch Me Up.” Turn it on in the Settings app.</p></li>
+          <li><p><b>Has it finished downloading?</b> Just after you turn it on, iOS downloads Apple Intelligence in the background, and Libretto says it’s “still getting ready”. Leave the device on Wi-Fi for a while, then try again.</p></li>
+          <li><p><b>Is Catch Me Up on?</b> Check <span class="path">Settings → Story</span>. Remind Me has its own switch there too.</p></li>
+          <li><p><b>Is it the right kind of book?</b> Catch Me Up works in ebooks with text and in PDFs, not comics. Chapter Recaps are for ebooks.</p></li>
+        </ol>
+
+        <figure class="diagram" aria-labelledby="dg-spark-cap">
+          <svg viewBox="0 0 680 392" role="img" aria-label="Why there's no sparkles button. One: does the device support Apple Intelligence? If not, there's no Catch Me Up on it, though recaps from your other devices still show. Two: is Apple Intelligence turned on in the Settings app? If not, the button asks you to turn it on. Three: has it finished downloading? If not, it's still getting ready; try later. Four: is Catch Me Up on in Settings, Story? If not, turn it on. Five: is it an ebook with text, or a PDF? Comics don't get it. Yes to all: the sparkles are in the book's top bar.">
+            <defs>
+              <marker id="dg-sk-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4" fill="none" style="stroke: var(--ink-2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+            </defs>
+            <g font-size="13.5" class="d-ink">
+              <!-- The questions, top to bottom. -->
+              <g class="d-card" stroke-width="1.5">
+                <rect x="20" y="12" width="330" height="44" rx="12"/>
+                <rect x="20" y="76" width="330" height="44" rx="12"/>
+                <rect x="20" y="140" width="330" height="44" rx="12"/>
+                <rect x="20" y="204" width="330" height="44" rx="12"/>
+                <rect x="20" y="268" width="330" height="44" rx="12"/>
+              </g>
+              <text x="40" y="39">Does this device support Apple Intelligence?</text>
+              <text x="40" y="103">Is Apple Intelligence on in the Settings app?</text>
+              <text x="40" y="167">Has it finished downloading?</text>
+              <text x="40" y="231">Is Catch Me Up on in Settings → Story?</text>
+              <text x="40" y="295">Is it an ebook with text, or a PDF?</text>
+              <g fill="none" stroke-width="1.8" style="stroke: var(--ink-2)">
+                <path d="M185 56v18" marker-end="url(#dg-sk-a)"/><path d="M185 120v18" marker-end="url(#dg-sk-a)"/><path d="M185 184v18" marker-end="url(#dg-sk-a)"/><path d="M185 248v18" marker-end="url(#dg-sk-a)"/><path d="M185 312v20" marker-end="url(#dg-sk-a)"/>
+                <path d="M352 34h44" marker-end="url(#dg-sk-a)"/><path d="M352 98h44" marker-end="url(#dg-sk-a)"/><path d="M352 162h44" marker-end="url(#dg-sk-a)"/><path d="M352 226h44" marker-end="url(#dg-sk-a)"/><path d="M352 290h44" marker-end="url(#dg-sk-a)"/>
+              </g>
+              <g font-size="11.5" class="d-ink2"><text x="192" y="70">yes</text><text x="192" y="134">yes</text><text x="192" y="198">yes</text><text x="192" y="262">yes</text><text x="192" y="327">yes</text>
+                <text x="360" y="28">no</text><text x="360" y="92">no</text><text x="360" y="156">no</text><text x="360" y="220">no</text><text x="360" y="284">no</text></g>
+              <!-- The no exits. -->
+              <text x="404" y="31" font-weight="600">No Catch Me Up on this device</text>
+              <text x="404" y="48" font-size="12" class="d-ink2">recaps from your other devices still show</text>
+              <text x="404" y="102" font-weight="600">The button asks you to turn it on</text>
+              <text x="404" y="166" font-weight="600">Still getting ready: try again later</text>
+              <text x="404" y="230" font-weight="600">Turn it on</text>
+              <text x="404" y="294" font-weight="600">Comics don’t get it</text>
+              <!-- Yes to all. -->
+              <rect x="40" y="338" width="290" height="44" rx="22" class="d-navy"/>
+              <path d="M70 348c.8 4.6 2.6 6.4 7.2 7.2-4.6.8-6.4 2.6-7.2 7.2-.8-4.6-2.6-6.4-7.2-7.2 4.6-.8 6.4-2.6 7.2-7.2z" class="d-story"/>
+              <text x="196" y="365" font-weight="600" class="d-cream" text-anchor="middle">The sparkles are in the top bar</text>
+            </g>
+          </svg>
+          <figcaption id="dg-spark-cap">Work down from the top: the first “no” is the reason.</figcaption>
+        </figure>
+
+        <h3>Catch Me Up gives an error</h3>
+        <ul>
+          <li><b>“Apple Intelligence can’t read this book’s language yet.”</b> Apple Intelligence supports a set list of languages, and this book isn’t in one of them yet.</li>
+          <li><b>“Apple Intelligence wouldn’t recap this part of the book.”</b> Its content filter can stop it at violent or adult scenes. Try another choice: touch and hold ✨, or use the sheet’s <b>Recap…</b> menu.</li>
+          <li><b>“Apple Intelligence is busy. Try again in a moment.”</b> Something else is using it, often a chapter recap being written. Wait a few seconds.</li>
+          <li><b>“There’s nothing before this page to recap yet.”</b> You’re at the start of the book.</li>
+        </ul>
+
+        <h3>The first recap takes a long time</h3>
+        <p>That’s expected. The first <b>Story So Far</b> in a book reads every chapter before your place, a piece at a time, which can take a minute or two a third of the way into a novel. Libretto keeps notes on what it read, so later recaps of the same book take seconds.</p>
+
+        <h3>A chapter has no recap</h3>
+        <p>Chapter Recaps only cover chapters you’ve read, so nothing ahead is spoiled. Check which of these it is on the book’s Recaps page (<b>⋯ → Recaps &amp; Story Map</b>):</p>
+        <ul>
+          <li><b>You haven’t finished it.</b> A chapter is recapped once you’ve read most of it and moved on. The one you’re in says “You’re reading this one. It’s recapped once you finish it.”</li>
+          <li><b>You jumped past it.</b> Chapters you skip with the contents, search, a link or the scrubber don’t count as read, so they aren’t recapped. If you want one anyway, tap the faint ✨ beside it in Contents: it asks first, then writes it.</li>
+          <li><b>It’s waiting.</b> Recaps are written one chapter at a time, only while Libretto is open. “Waiting to be written.” has <b>Write Now</b>.</li>
+          <li><b>Apple Intelligence wouldn’t write it.</b> Its content filter can stop it at violent or adult scenes. Tap <b>Try Again</b>.</li>
+          <li><b>It’s not a chapter.</b> The cover, contents, acknowledgments and short title pages don’t get recaps.</li>
+          <li><b>You were browsing.</b> With Just Browse, nothing you read is kept, so nothing is recapped.</li>
+          <li><b>It’s a PDF.</b> Chapter Recaps and the Story Map are for ebooks. Catch Me Up works in PDFs.</li>
+        </ul>
+
+        <h3>Recaps don’t show on my other device</h3>
+        <p>With <b>Sync with iCloud</b> on, recaps and Story Maps go to your other devices by themselves, even ones without Apple Intelligence, for the same book file. If they haven’t arrived, see <a href="#sync">Sync with iCloud</a> below. With sync off, open <b>Recaps &amp; Story Map</b> on the device that has them, then <span class="path">⋯ → Send to Another Device…</span>, and AirDrop the file to the other device. Open it in Libretto there and choose <b>Add Recaps</b>.</p>
+
+        <h3>A recap got something wrong</h3>
+        <p>The model that runs on your device is small, so recaps are mostly right but can mix people up or add a detail that isn’t in the book. Remind Me can do the same. If a book’s recaps have gone astray, the Recaps page’s <span class="path">⋯ → Write Them Again</span> throws them all away and writes them again, a chapter at a time.</p>
+      </section>
+
+      <section class="doc__sec" id="sync">
+        <h2>Sync with iCloud</h2>
+
+        <h3>Something hasn’t synced yet</h3>
+        <p>Changes arrive in the background, but iCloud doesn’t always tell a device about them straight away. Libretto catches up whenever it opens or comes back to the front.</p>
+
+        <figure class="shot shot--side">
+          <img src="../assets/shots/settings-icloud.jpg" alt="Libretto’s iCloud &amp; Storage settings with Sync with iCloud switched off: the switch, the list of what it keeps in step, and a Storage row." width="720" height="1565" loading="lazy">
+          <figcaption>Start here. With Sync with iCloud on, a line under the switch says whether everything is up to date, or what’s wrong.</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li><p>Open Libretto on the device you read on last, so it sends its changes, then on the device that’s behind.</p></li>
+          <li><p>On each, open <span class="path">Settings → iCloud &amp; Storage</span> and check <b>Sync with iCloud</b> is on, and read the line under it.</p></li>
+          <li><p>Make sure both devices are signed in to the same Apple Account, with iCloud on for Libretto in the Settings app.</p></li>
+        </ol>
+        <p>What the status line means:</p>
+        <ul>
+          <li><b>“Up to date”</b>: this device has everything iCloud has. If something is still missing, the other device hasn’t sent it yet.</li>
+          <li><b>“Waiting for a connection”</b>: it’ll sync as soon as you’re online.</li>
+          <li><b>“Sign in to iCloud in the Settings app, and turn on iCloud for Libretto.”</b>: do just that, in the Settings app.</li>
+          <li><b>“iCloud storage is full. Libretto will try again.”</b>: free up iCloud space (see below).</li>
+          <li><b>“iCloud is restricted on this device.”</b>: Screen Time or a device manager is blocking iCloud. Whoever set that up can lift it.</li>
+        </ul>
+        <aside class="note note--heads-up"><p><b>Good to know</b> Settings like themes, fonts and Home’s layout stay with each device. Your goals and Hardcover sign-in are the exceptions: they do sync.</p></aside>
+
+        <h3>A book opens at the wrong place on another device</h3>
+        <p>Libretto opens a book at the newest page you reached on any device. When that isn’t where this device was, a pill at the bottom says “Continued from iPad” (or wherever you read last): tap it to go back to where this device was.</p>
+        <ul>
+          <li><b>It opened at an older page.</b> The other device hasn’t sent its place yet. Open Libretto on it, wait for it to sync, then come back. Your place moves when you open the book, when you come back to it, or after you’ve left it alone for a couple of minutes, never in the middle of reading.</li>
+          <li><b>It jumped ahead when you didn’t expect it.</b> You (or someone else on your Apple Account) read further on another device. Tap the pill to go back.</li>
+          <li><b>Nothing carries over at all.</b> The two devices may have different files of the book. Libretto knows a book by its file, so two different downloads of the same title are two different books, each with its own place and highlights. Use one copy: with <b>Store Books in iCloud</b> on, remove this device’s copy, then tap the one showing a cloud to download the other device’s.</li>
+        </ul>
+
+        <figure class="diagram" aria-labelledby="dg-place-cap">
+          <svg viewBox="0 0 680 266" role="img" aria-label="At 8:05 in the morning you read Chapter 9 on your iPhone. At 9:30 at night you read on to Chapter 12 on your iPad. Next morning the iPhone opens the book at Chapter 12, the newest place, with a Continued from iPad pill. Tap it to go back to Chapter 9, or close it and keep reading.">
+            <defs>
+              <marker id="dg-p-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4" fill="none" style="stroke: var(--ink-2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+            </defs>
+            <!-- The day: two readings. -->
+            <path d="M24 54h372" stroke-width="2" style="stroke: var(--line)"/>
+            <circle cx="70" cy="54" r="7" style="fill: #7C86C8"/>
+            <text x="70" y="30" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">8:05 am</text>
+            <text x="70" y="82" font-size="13" class="d-ink" text-anchor="middle">iPhone</text>
+            <text x="70" y="99" font-size="12.5" class="d-ink2" text-anchor="middle">Chapter 9</text>
+            <circle cx="300" cy="54" r="9" class="d-gold"/>
+            <text x="300" y="30" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">9:30 pm</text>
+            <text x="300" y="82" font-size="13" class="d-ink" text-anchor="middle">iPad</text>
+            <text x="300" y="99" font-size="12.5" class="d-ink2" text-anchor="middle">Chapter 12, newer</text>
+
+            <!-- Next morning, on the iPhone. -->
+            <path d="M330 120 C 380 140, 410 150, 452 150" fill="none" stroke-width="2" style="stroke: var(--ink-2)" marker-end="url(#dg-p-a)"/>
+            <text x="352" y="178" font-size="12.5" class="d-ink2">next morning</text>
+            <rect x="466" y="18" width="150" height="232" rx="26" class="d-card" stroke-width="1.8"/>
+            <text x="541" y="50" font-size="12" class="d-ink2" text-anchor="middle">iPhone</text>
+            <text x="541" y="80" font-size="14" font-weight="600" class="d-ink" text-anchor="middle">Chapter 12</text>
+            <g style="stroke: var(--ink-2)" stroke-width="3" stroke-linecap="round" opacity=".5">
+              <path d="M486 100h110M486 113h110M486 126h110M486 139h110M486 152h80"/>
+            </g>
+            <rect x="478" y="184" width="126" height="44" rx="22" class="d-navy"/>
+            <text x="531" y="202" font-size="11" class="d-cream" text-anchor="middle">Continued from iPad</text>
+            <text x="531" y="218" font-size="10" text-anchor="middle" style="fill: #BEBBD3">Tap to go back</text>
+            <circle cx="590" cy="206" r="9" style="fill: #39428A"/>
+            <path d="M586.5 202.5l7 7M593.5 202.5l-7 7" stroke-width="1.6" stroke-linecap="round" style="stroke: #F5EFE2"/>
+
+            <!-- What the pill does. -->
+            <path d="M478 214 C 420 236, 160 236, 82 110" fill="none" stroke-width="1.8" stroke-dasharray="5 5" style="stroke: var(--ink-2)" marker-end="url(#dg-p-a)"/>
+            <text x="250" y="254" font-size="13" class="d-ink" text-anchor="middle">tap the pill: back to Chapter 9</text>
+            <text x="640" y="206" font-size="12.5" class="d-ink2">or ✕:</text>
+            <text x="640" y="222" font-size="12.5" class="d-ink2">stay</text>
+          </svg>
+          <figcaption id="dg-place-cap">The newest place wins, whichever device it was on, and the page never moves while you’re reading.</figcaption>
+        </figure>
+
+        <h3>A book shows a cloud or another device’s symbol</h3>
+        <p>It’s in your library, but its file isn’t on this device yet. A cloud means it’s in iCloud: tap it to download. Books under 100 MB download by themselves; larger ones, like most audiobooks, wait for a tap unless <b>Download Larger Books Automatically</b> is on. A device symbol means it’s only on that device: turn on <b>Store Books in iCloud</b> there so it goes up to iCloud, or add the same file here. Books in iCloud also need iCloud Drive turned on for Libretto in the Settings app.</p>
+
+        <h3>iCloud storage is full</h3>
+        <ul>
+          <li>The footer under <b>Store Books in iCloud</b> says how much of your iCloud your books take. Audiobooks are the big ones.</li>
+          <li>Audiobooks sent to an Apple TV are kept in iCloud while they’re there, about 29 MB an hour. Remove the ones you’ve finished in <span class="path">Settings → Apple TV</span>.</li>
+          <li>To take a book out of iCloud, long-press it where it shows with a cloud (a book that isn’t on this device) and choose <b>Delete from iCloud…</b>. Devices that have it keep it, and your place, highlights and notes stay.</li>
+          <li>To stop new books going to iCloud, turn off <b>Store Books in iCloud</b>. Books already there stay.</li>
+          <li>Apple’s own iCloud storage settings show everything else using your space.</li>
+        </ul>
+
+        <h3>Someone else’s reading is in my stats</h3>
+        <p>Every device signed in to your Apple Account adds its reading to your stats and streak. Open <span class="path">Settings → iCloud &amp; Storage</span>, find the device under <b>Other Devices</b>, and tap <b>Remove</b>. Its reading days, sessions, finished books and places are deleted from iCloud and all your devices. Your books, highlights and notes stay. More in <a href="sync.html">Sync with iCloud</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="hardcover">
+        <h2>Hardcover</h2>
+
+        <h3>A book won’t match, or matched the wrong book</h3>
+        <p>A book with an ISBN in its file links to Hardcover by itself. Others are matched by title and author, so a file with them wrong won’t match.</p>
+        <ol class="steps">
+          <li><p>Fix the title and author first: <span class="path">Book Details → ⋯ → Edit Details…</span>. A book waiting to be matched is looked up again with the new ones.</p></li>
+          <li><p>Open <span class="path">Settings → Hardcover → Linked Books</span>. Books under <b>Needs Confirming</b> are waiting for you: tap one and choose the right book.</p></li>
+          <li><p>For a wrong match, open the book’s Book Details and choose <span class="path">⋯ → Hardcover → Change Match…</span>.</p></li>
+        </ol>
+        <p>If Hardcover doesn’t have the book, it shows under <b>Not on Hardcover</b>. For your own documents and anything else with nothing to match, choose <span class="path">⋯ → Hardcover → Ignore</span> in Book Details: it’s never matched or sent.</p>
+
+        <h3>My progress isn’t showing on Hardcover</h3>
+        <ul>
+          <li><b>Check when it sends.</b> <span class="path">Settings → Hardcover → Send Progress</span> may be <b>Once a Day</b> or <b>Manually</b>. Tap <b>Send Now</b> to send it straight away. <b>Last Sent</b> says when it last went, and shows any error in red.</li>
+          <li><b>Check the book is linked.</b> Only linked books are sent. See above.</li>
+          <li><b>It only sends forward.</b> Automatic sends never lower your page on Hardcover, and only send reading you did after the book was linked.</li>
+          <li><b>You were browsing.</b> Reading with Just Browse isn’t sent.</li>
+        </ul>
+
+        <h3>The page numbers on Hardcover look wrong</h3>
+        <p>Progress goes to Hardcover in pages of the edition the book is linked to. If that edition is much longer or shorter than yours, choose a closer one: <span class="path">Book Details → ⋯ → Hardcover → Edition</span>.</p>
+
+        <h3>It says “Signed out”</h3>
+        <p>Hardcover ended the sign-in. Open <span class="path">Settings → Hardcover</span> and tap <b>Reconnect</b>. Your links and settings are kept.</p>
+
+        <h3>There’s no Shelf tab</h3>
+        <p>The Shelf tab shows once Hardcover is connected. If it’s connected and still missing, it may be switched off, or the tab bar may be full: check <span class="path">Settings → Home &amp; Tabs</span>. More in <a href="hardcover.html">Hardcover</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="watch-tv">
+        <h2>Apple Watch and Apple TV</h2>
+
+        <h3>Libretto isn’t on my watch</h3>
+        <p>On your iPhone, open the Watch app, find Libretto under <b>Available Apps</b>, and install it. Your watch needs watchOS 11 or later.</p>
+
+        <h3>My books haven’t reached the watch</h3>
+        <ul>
+          <li>Books copy while your watch is near your iPhone, one file at a time, so hours of audio take a while. <span class="path">Settings → Apple Watch → On Your Watch</span> shows how each is coming along (“Text on its way”).</li>
+          <li><b>Send Books I’m Reading</b> sends the five books you’ve read most recently in Continue on Home. Send any other book from its Book Details with <b>Send to Apple Watch</b>.</li>
+          <li>PDFs stay on your iPhone.</li>
+          <li>No audio? Check <span class="path">Settings → Listening → Audio to Take with You</span> isn’t <b>Off</b>. Audio goes for up to three of the books you’re reading.</li>
+        </ul>
+
+        <h3>The watch says “Can’t reach your iPhone”</h3>
+        <p>Turning iPhone pages from the watch and <b>Read Here</b> need your iPhone nearby, with Bluetooth or Wi-Fi on. Bring them closer together and try again. To turn pages, a book has to be open on the iPhone; otherwise the watch says “Nothing’s open on your iPhone.” Reading you do on the watch while they’re apart isn’t lost: your place goes to the iPhone once they’re back in reach.</p>
+
+        <h3>Open on iPhone doesn’t open the book</h3>
+        <p>Open on iPhone uses a notification to take you to the book. Open <span class="path">Settings → Apple Watch</span> on your iPhone and tap <b>Allow Notifications</b> under Open on iPhone (or, if they’re off, <b>Turn On Notifications in Settings</b>). Without notifications, opening Libretto on your iPhone within a few minutes still opens the book at the watch’s place.</p>
+
+        <h3>Looking away doesn’t play on the watch</h3>
+        <p>With <b>Play on Apple Watch</b> on, the narration plays only on the watch, and Libretto has to be open there. The page footer on your iPhone says what it’s waiting for, like “Open Libretto on your watch to listen” or “Copying audio to your watch: 45%”. Open Libretto on the watch, or wait for the copy to finish.</p>
+
+        <h3>Apple TV shows no books</h3>
+        <p>Apple TV gets your library through iCloud, from your iPhone. Sign in to iCloud on the Apple TV with the same Apple Account as your iPhone, check <b>Sync with iCloud</b> is on in Libretto on your iPhone, and open Libretto on the iPhone so it can send your books’ text. PDFs don’t go to the TV.</p>
+
+        <h3>Apple TV has no audiobook</h3>
+        <p>Audiobooks go to the TV only when you ask for them, since they’re big.</p>
+        <ol class="steps">
+          <li><p>On the TV, open the book and choose <b>Get Audiobook from iPhone</b>.</p></li>
+          <li><p>On your iPhone, tap the notification that arrives. With Libretto open on the iPhone, it starts straight away.</p></li>
+        </ol>
+        <p>No notification? On your iPhone, open <span class="path">Settings → Apple TV</span> and allow notifications, or tap <b>Send</b> beside the request there. If it says “Not on this iPhone”, the audiobook’s file is on another device: send it from that one. If sending stopped partway, tap <b>Carry On Sending</b> there (on the TV, <b>Ask Again</b>). The <b>Apple TV</b> row only appears in Settings once a TV has synced with Libretto. More in <a href="devices.html">iPad, Duo, Watch and TV</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="widgets-siri">
+        <h2>Widgets and Siri</h2>
+
+        <h3>A widget isn’t up to date</h3>
+        <p>Libretto updates its widgets as you read and when you leave the app. iOS limits how often an app’s widgets can refresh in the background, so while an audiobook plays with Libretto in the background, only changes you’d notice go through. Opening Libretto and going back to the Home Screen brings them up to date. Reading on another device reaches this device’s widgets once this device has synced, which happens for sure when you next open Libretto here. The streak, Weekly Pages, Yearly Goal and Finish By widgets move on at midnight by themselves.</p>
+
+        <h3>A widget shows the wrong book</h3>
+        <p>Touch and hold the widget, choose <b>Edit Widget</b>, and pick a book, or <b>Most Recent</b> for Currently Reading (<b>Most Pressing</b> for Finish By, the book due soonest).</p>
+
+        <h3>Siri doesn’t understand, or says it can’t</h3>
+        <ul>
+          <li>Say Libretto’s name in the request: “Continue reading in Libretto”, “Resume listening in Libretto”, “Open Dune in Libretto”. The Shortcuts app lists every ready-made phrase on Libretto’s page.</li>
+          <li>Siri learns your books’ titles as your library changes. If it doesn’t know a new one yet, open Libretto once and try again.</li>
+          <li>“No audiobook is playing in Libretto.” or “There’s nothing to continue.” mean there’s nothing to act on yet: play or open something in Libretto first.</li>
+          <li>Catch Me Up through Siri needs Apple Intelligence, as it does in the app (<a href="#story">above</a>).</li>
+        </ul>
+        <p>More in <a href="shortcuts.html">Widgets, Siri and Shortcuts</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="still-stuck">
+        <h2>Still stuck?</h2>
+        <p>Write in and you’ll hear back from the person who makes Libretto. The quickest way is <span class="path">Settings → About → Contact Support</span> in the app, which puts Libretto’s version in the subject for you. Or find the address on the <a href="../support.html">Support page</a>.</p>
+        <p>It helps to say what device you’re on, its iOS version, the book’s format, and what you see on screen. A screenshot of the message, or of the status line in Settings, is even better.</p>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="settings.html"><small>Previous</small>Every setting</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

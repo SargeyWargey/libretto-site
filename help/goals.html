@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Goals, stats and sharing – Libretto Help</title>
+<meta name="description" content="How Libretto counts your reading, and how to use daily and yearly goals, streaks, Finish By dates, Reading Stats, share cards and Journal.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html" aria-current="page">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Goals, stats and sharing</h1>
+        <p class="doc__lede">How Libretto counts your reading, the goals you can set (a few minutes a day, a number of books a year, a day to finish a book by), where you see how it’s going, and how to share it.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li>Libretto counts pages, reading time and listening time each day, on all your devices. Pages are printed pages, so your font size doesn’t change them.</li>
+          <li>Meet your <b>Daily Reading Goal</b> (5 minutes of reading or listening, to start) to keep your streak. Today not met yet never breaks it.</li>
+          <li>Set a <b>Yearly Book Goal</b> or use Hardcover’s, and give any book a <b>Finish By</b> date: Libretto works out tonight’s pages and tells you if you’re ahead or behind.</li>
+          <li>Home’s <b>Today</b> section, <b>Reading Stats</b> and the widgets show how it’s going. The week is always the last seven days, ending today.</li>
+          <li><b>Share Card…</b> makes an image of a book or a stretch of reading, and Shortcuts can add each day’s reading to the Journal app.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="reading-log">
+        <h2>What Libretto counts</h2>
+        <p>Libretto keeps a day-by-day log of three things: the pages you read, the time you spend reading, and the time you spend listening. Everything on this page is built from it.</p>
+
+        <h3>Time</h3>
+        <ul>
+          <li><b>Reading time</b> runs while a book is open and Libretto is on screen. A long pause between page turns counts as five minutes at most, so a book left open on the nightstand doesn’t count all night.</li>
+          <li><b>Listening time</b> runs while an audiobook plays.</li>
+          <li>While a book’s paired audiobook plays along with it, that time counts as listening, so it’s never counted twice.</li>
+        </ul>
+
+        <h3>Pages</h3>
+        <ul>
+          <li>Pages are <b>printed pages</b>, so they don’t change with your font or text size: Hardcover’s page count for a book linked there, otherwise an estimate at 275 words a page from the book’s own text. A PDF’s pages are its own, and each picture in a comic is a page.</li>
+          <li>Reading forward counts the pages you cover. Going back and reading them again doesn’t count twice, and a jump of more than eight pages (from the contents, a search or the scrubber) counts nothing.</li>
+          <li>Listening adds time, not pages.</li>
+        </ul>
+        <p>A book you’re only browsing (<a href="getting-started.html#start-or-browse">Just Browse</a>), or visiting from the Notebook, counts nothing unless you keep your progress.</p>
+
+        <h3>Every device</h3>
+        <p>With Sync with iCloud on, the log adds up across your iPhone and iPad, and reading or listening on Apple Watch and Apple TV counts too, so your goals and streak see all of it. See <a href="sync.html">Sync with iCloud</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="sessions">
+        <h2>Sessions and Reading History</h2>
+        <p>Each sitting with a book is kept as a session: when it started and ended, the pages you read, your reading and listening time, and where you began and finished.</p>
+        <ul>
+          <li>Closing the book ends a session, and so do 10 minutes without turning a page; the next page turn starts a new one. Time away from Libretto counts toward the 10 minutes. While a paired audiobook plays along, the narration keeps the session going.</li>
+          <li>Listening to an audiobook without its book open is a session of its own, ended by 10 minutes paused.</li>
+          <li>A sitting under a minute with less than a page read isn’t kept: opening a book to check something isn’t a session.</li>
+        </ul>
+        <p><span class="path">Book Details → Reading History</span> lists a book’s sessions (its paired audiobook’s too) by day, newest first, with the totals at the top. Swipe one to delete it. For an audiobook, it’s <b>Listening History</b> in its long-press menu.</p>
+        <p>Reset Progress keeps a book’s sessions; removing the book deletes them.</p>
+      </section>
+
+      <section class="doc__sec" id="daily-goal">
+        <h2>Daily Reading Goal and your streak</h2>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/settings-goals.jpg" alt="Settings, Goals: Daily Goal with Daily Reading Goal, Streak Reminder and Daily Page Goal; then Yearly Book Goal; then Finish By with Ask for a Finish Date." width="720" height="1565" loading="lazy">
+          <figcaption>Settings → Goals: every goal in one place.</figcaption>
+        </figure>
+        <p><span class="path">Settings → Goals → Daily Reading Goal</span> is how much reading or listening makes a day count: <b>1</b>, <b>5</b>, <b>10</b>, <b>15</b> or <b>30 minutes</b> (5 to start). It’s what your streak is made of everywhere: on Home, in Reading Stats and in the Reading Streak widget.</p>
+        <ul>
+          <li>Your <b>streak</b> is the days in a row you’ve met the goal.</li>
+          <li><b>Today not met yet doesn’t break it.</b> A streak only ends once a whole day goes by without your minutes, so you can read at bedtime without your streak looking broken all afternoon.</li>
+          <li>Reading and listening both count, on any device.</li>
+          <li>Met days are lit in orange, with a run of them joined into one band. Today, until you meet it, is a ring that fills as you read.</li>
+        </ul>
+        <p>The goal goes to your other devices with your other goals.</p>
+      </section>
+
+      <section class="doc__sec" id="streak-reminder">
+        <h2>Streak Reminder</h2>
+        <p>Turn on <span class="path">Settings → Goals → Streak Reminder</span> and pick a <b>Time</b> (8 PM to start). On any day you haven’t met your Daily Reading Goal by then, you get a notification saying what’s left:</p>
+        <ul>
+          <li>“Keep Your Streak Going: 3 more minutes today makes it 13 days in a row.”</li>
+          <li>“Time to Read: 5 minutes of reading today starts a streak.”</li>
+        </ul>
+        <p>Once you’ve met the goal, that day’s reminder doesn’t come. The next few days’ reminders are set up too, in more general words, in case you don’t open Libretto in between.</p>
+        <p>Turning it on asks to send notifications. If they’re off for Libretto, the switch stays off and offers <b>Open Settings</b>.</p>
+        <aside class="note note--heads-up"><p><b>Good to know</b> The reminder is set on each device on its own. Turn it on where you’d like to be reminded.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="daily-page-goal">
+        <h2>Daily Page Goal</h2>
+        <p><span class="path">Settings → Goals → Daily Page Goal</span> is a number of pages a day, from 10 to 300 (100 to start). It doesn’t affect your streak. It’s:</p>
+        <ul>
+          <li>the dotted line in the Weekly Pages widget, where a day’s bar turns green once it reaches the goal;</li>
+          <li>Home’s Today target when no book has a Finish By date (“82 more pages reaches today’s 100”);</li>
+          <li>what <b>Left Today</b> under the page counts toward in a book without a Finish By date (“86 pages to your daily goal”).</li>
+        </ul>
+        <p>Pages count as you read in Libretto; listening doesn’t add any.</p>
+      </section>
+
+      <section class="doc__sec" id="yearly-goal">
+        <h2>Yearly Book Goal</h2>
+        <p>Turn on <span class="path">Settings → Goals → Yearly Book Goal</span> and set a number of books for this year (“24 books in 2026”). Switching it on starts at your Hardcover goal for the year if you have one, or at 12.</p>
+
+        <h3>What counts</h3>
+        <ul>
+          <li>Books you finish in Libretto, on any device: read to the end, or marked with <b>Mark as Read</b>.</li>
+          <li>With Hardcover connected, the books on your Read shelf there.</li>
+          <li>Each book once, by its title, so one finished here and sent to Hardcover isn’t counted twice. A re-read counts again.</li>
+        </ul>
+        <p>With the switch off, your Hardcover goal for the year is used instead, if it’s a number of books.</p>
+
+        <h3>Your pace</h3>
+        <p>An even pace from January 1 to December 31 says where you should be by now. Within half a book of it, you’re <b>On pace</b>; otherwise it says “2 books behind” or “1 book ahead”. Libretto also tells you what it takes from here (“A book every 9 days”, “2 books a week”) and, once two weeks of the year have gone, where your own pace ends up (“On pace for 27”).</p>
+
+        <h3>Where you see it</h3>
+        <ul>
+          <li><b>Reading Stats</b>, at the top: the count, your standing, and the year as a chart, your books rising in steps against the even pace. Touch and drag along it for any day’s count.</li>
+          <li><b>Home’s Reading Goal tile</b>, which leads with what it takes (“A book every 8 days reaches 24”) or “On pace”. Home never says “behind”; Reading Stats has the plain numbers.</li>
+          <li>The <b>Yearly Goal</b> widget, and the Reading Goal in the Reading Stats widget.</li>
+        </ul>
+        <aside class="note note--tip"><p><b>Tip</b> A book counted that shouldn’t be? In Reading Stats, under In Libretto → <b>Finished</b>, touch and hold it and choose <b>Remove from Finished</b>. It leaves the stats on all your devices, and the book itself isn’t changed.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="finish-by">
+        <h2>Finish By dates</h2>
+        <p>A book club on Thursday, a library loan due back, or just wanting to finish before a trip: give a book a day to finish it by, and Libretto works out the pages for each day and keeps you posted. Any number of books can have one.</p>
+
+        <h3>Setting a date</h3>
+        <ul>
+          <li>In <span class="path">Book Details → Your Reading</span>, tap <b>Set a Finish Date…</b> (or <b>Change</b> → <b>Change Date…</b> for one that has a date).</li>
+          <li>In the book, choose <span class="path">⋯ → Finish By…</span>.</li>
+          <li>When you start a new book: after you choose <b>Start Reading</b>, Libretto asks <b>Set a Finish Date?</b> Tap <b>Not Now</b> to skip it, or turn the question off with <span class="path">Settings → Goals → Ask for a Finish Date</span>.</li>
+        </ul>
+        <p>The page shows the book’s pages and how far you are, then quick choices: <b>Your Pace</b> (the day your last two weeks’ pages a day would finish it), <b>1 Week</b>, <b>2 Weeks</b> and <b>1 Month</b>, or any day in the calendar. Under them it says what that comes to (“About 23 pages a day for 14 days, today included.”). Tap <b>Set</b>.</p>
+
+        <h3>The plan</h3>
+        <p>The plan starts from where the book was when today began, so anything you’ve already read today counts. The rest is shared evenly over the days up to the end of your chosen day, today included. Each day has its share, and by tonight you should be at the end of today’s.</p>
+        <p>Pages are printed pages (Hardcover’s edition, or 275 words a page, or a PDF’s own), and where you are is your place here, or another device’s if it’s newer.</p>
+        <!-- DIAGRAM: "A Finish By plan." A simple line chart for a 300-page book due in 6 days. X axis: six days, labelled Mon to Sat, today (Wed) highlighted. Y axis: pages, 0 to 300. A dashed straight "plan" line from page 0 on Monday morning to page 300 at the end of Saturday, with a mark at the end of each day (50, 100, 150…). A solid "you" line that runs a little under the plan on Mon–Tue and ends on Wednesday at page 80. On Wednesday, a bracket from "this morning should find you" (page 100) up to "tonight should find you" (page 150), and the gap from 80 to 100 labelled "20 pages behind", with a callout: "Read 70 pages today to catch up". -->
+
+        <h3>Ahead, behind and catching up</h3>
+        <dl class="opts">
+          <div><dt>On track</dt><dd>You’re between where this morning should have found you and where tonight should: “18 pages to go today”, then “Today’s pages done”.</dd></div>
+          <div><dt>Behind</dt><dd>You’re short of where this morning should have found you: “12 pages behind”, with “Read 37 pages today to catch up”, which is the missed pages and today’s share together.</dd></div>
+          <div><dt>Ahead</dt><dd>You’re past where tonight should find you: “8 pages ahead”.</dd></div>
+          <div><dt>Past your date</dt><dd>The day has gone and the book isn’t finished: it says how many pages are left (“120 pages to go”).</dd></div>
+          <div><dt>Finished</dt><dd>Done, and the plan stops there.</dd></div>
+        </dl>
+        <p>Fallen too far behind to catch up in a day? Pick a new date: changing it starts the plan again from today, spreading what’s left over the new days.</p>
+
+        <h3>Where you see it</h3>
+        <ul>
+          <li><b>Book Details</b>: the progress bar with tonight’s mark, “Finish by Nov 12”, your standing, and “18 pages to go today · 9 days left”, with <b>Change</b>.</li>
+          <li><b>The book’s ⋯ menu</b>: Finish By…, with the date and your standing.</li>
+          <li><b>Home</b>: the Today section’s target (“18 pages tonight keeps you on track with Emma”) and the Finish By tile, with the three most pressing books.</li>
+          <li><b>Reading Stats</b>: the Finish By card, every book with a date, the most pressing first. Tap one to read it.</li>
+          <li><b>While you read</b>: Today’s Target Bar along the bottom of the page, and <b>Left Today</b> in the line under it.</li>
+          <li>The <b>Finish By</b> widget.</li>
+        </ul>
+        <p>To take a date off, tap <b>Change</b> in Book Details and choose <b>Remove Finish By Date…</b>. It asks first; your reading isn’t changed. Dates go to your other devices with your other goals.</p>
+      </section>
+
+      <section class="doc__sec" id="today">
+        <h2>Today’s Target Bar and Home’s Today</h2>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/home-dark.jpg" alt="Home in the Midnight app theme: the Today section with a ring of today’s minutes, the streak number, and the next target in words, above the Continue row." width="720" height="1565" loading="lazy">
+          <figcaption>Home’s Today section, in the Midnight app theme.</figcaption>
+        </figure>
+
+        <h3>Home’s Today</h3>
+        <p>The first section on Home, once you have a book, is today at a glance:</p>
+        <ul>
+          <li><b>The ring</b> fills toward your Daily Reading Goal (“12 of 15 min today”), with what it means for your streak: “3 min more keeps your streak”, “15 min starts a streak”, or “Daily goal met”. Tap it for Reading Stats’ time by day.</li>
+          <li><b>The streak</b>: your days in a row, or “No streak yet”. Tap it for Reading Streak.</li>
+          <li><b>The next thing to read</b>, in plain words. With a Finish By date, the most pressing book: “18 pages today keeps you on track with Emma”, “45 pages tonight catches you up on Emma” (“tonight” after 5 PM). Without one, your Daily Page Goal: “82 more pages reaches today’s 100”. Tap it to open the book, or the last seven days.</li>
+        </ul>
+        <p>It always says what it takes rather than how far behind you are. Long-press it to edit or hide it, as with any section.</p>
+
+        <h3>Today’s Target Bar</h3>
+        <p>In a book with a Finish By date, a thin line runs along the very bottom of the page and fills as you read toward where tonight should find you, catching up included. It’s full once today’s pages are done. The same line runs across the bottom of the book’s card in Continue.</p>
+        <p>It hides while the menu is up, while you’re browsing, and with the iPhone Duo in tabletop posture.</p>
+        <dl class="opts">
+          <div><dt>Today’s Target Bar <span class="opts__default">On</span></dt><dd>In <b>Aa</b> in a book, or <span class="path">Settings → Appearance</span>. The switch turns off both the page’s line and the card’s.</dd></div>
+          <div><dt>Its color</dt><dd>The dot beside the switch opens 12 colors. Each App Theme keeps its own, so changing themes changes the bar with it. To start: Blue for System and Light, Orange for Sepia, Green for Dark, and Yellow for Midnight. The color is kept on each device.</dd></div>
+        </dl>
+      </section>
+
+      <section class="doc__sec" id="reading-stats">
+        <h2>Reading Stats</h2>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/stats.jpg" alt="Reading Stats: Goals, with Set a Yearly Goal…, then Last 7 Days: 18 pages today, 128 in seven days, 2 hours 25 minutes reading and an hour listening, and a column chart of pages by day with today last." width="720" height="1565" loading="lazy">
+          <figcaption>Reading Stats: goals first, then the last seven days.</figcaption>
+        </figure>
+        <p>Open Reading Stats from its tab (turn it on in <span class="path">Settings → Home &amp; Tabs</span>), from Home’s Reading Stats section (<b>See All</b>, or tap a tile), from Today’s ring and streak, from Shelf’s ⋯ menu, or from a widget. Its ⋯ menu has <b>Share Card…</b>.</p>
+        <dl class="opts">
+          <div><dt>Goals</dt><dd>This year’s book goal with its chart, and the Finish By card. Without either, a line on how to set them, and <b>Set a Yearly Goal…</b>.</dd></div>
+          <div><dt>Last 7 Days</dt><dd>“Read in Libretto” over the last seven days: <b>Pages today</b>, <b>Pages in 7 days</b>, <b>Reading</b> and <b>Listening</b>; then <b>Pages by Day</b>, <b>Time by Day</b> (reading and listening stacked), and <b>Reading Streak</b>, with the seven days, how many you read on, and your longest streak.</dd></div>
+          <div><dt>In Libretto</dt><dd>By year or <b>All Time</b>, on all your devices and without Hardcover: books finished, pages read, reading, listening, days read and longest streak, then the <b>Finished</b> list and your top authors.</dd></div>
+          <div><dt>From Hardcover</dt><dd>With Hardcover connected: the books you’ve finished by year or all time, with genres, moods, ratings, lengths and more. See <a href="hardcover.html">Hardcover</a>.</dd></div>
+        </dl>
+
+        <h3>The last seven days, today last</h3>
+        <p>Libretto’s week is always the last seven days ending today, labelled “Today” at the end, never Sunday to Saturday. So on a Monday you still see a whole week of reading, not one lonely day. Every week figure works this way: Reading Stats, Home’s tiles, the streak’s row of days, the share card’s 7 Days and every widget.</p>
+        <figure class="diagram" aria-labelledby="dg-week-cap">
+          <svg viewBox="0 0 680 252" role="img" aria-label="On a Monday, a calendar week from Sunday would have only Sunday and Monday filled and five days still to come. Libretto's week is the last seven days, Tuesday to today, every one with its pages, today last. It moves on at midnight.">
+            <!-- Not a calendar week. -->
+            <text x="20" y="28" font-size="13.5" font-weight="600" class="d-ink2">Not a calendar week</text>
+            <g opacity=".55">
+              <g style="fill: var(--line)">
+                <rect x="200" y="58" width="44" height="34" rx="6"/><rect x="254" y="44" width="44" height="48" rx="6"/>
+              </g>
+              <g fill="none" stroke-width="1.5" stroke-dasharray="3 4" style="stroke: var(--ink-2)">
+                <rect x="308" y="22" width="44" height="70" rx="6"/><rect x="362" y="22" width="44" height="70" rx="6"/><rect x="416" y="22" width="44" height="70" rx="6"/><rect x="470" y="22" width="44" height="70" rx="6"/><rect x="524" y="22" width="44" height="70" rx="6"/>
+              </g>
+              <g font-size="12" class="d-ink2" text-anchor="middle"><text x="222" y="110">Sun</text><text x="276" y="110">Mon</text><text x="330" y="110">Tue</text><text x="384" y="110">Wed</text><text x="438" y="110">Thu</text><text x="492" y="110">Fri</text><text x="546" y="110">Sat</text></g>
+            </g>
+            <path d="M196 30 L 572 100" stroke-width="2" style="stroke: var(--story-ink)" opacity=".7"/>
+            <text x="20" y="48" font-size="12.5" class="d-ink2">five days still to come</text>
+
+            <!-- Libretto's week. -->
+            <text x="20" y="160" font-size="14" font-weight="600" class="d-ink">Libretto’s week</text>
+            <text x="20" y="180" font-size="12.5" class="d-ink2">the last seven days,</text>
+            <text x="20" y="196" font-size="12.5" class="d-ink2">today last</text>
+            <g class="d-navy">
+              <rect x="200" y="176" width="44" height="34" rx="6"/><rect x="254" y="162" width="44" height="48" rx="6"/><rect x="308" y="186" width="44" height="24" rx="6"/>
+              <rect x="362" y="150" width="44" height="60" rx="6"/><rect x="416" y="170" width="44" height="40" rx="6"/><rect x="470" y="160" width="44" height="50" rx="6"/>
+            </g>
+            <rect x="524" y="182" width="44" height="28" rx="6" class="d-gold"/>
+            <rect x="521" y="140" width="50" height="73" rx="8" fill="none" stroke-width="2" style="stroke: #E4BC5A"/>
+            <g font-size="12" class="d-ink" text-anchor="middle"><text x="222" y="230">Tue</text><text x="276" y="230">Wed</text><text x="330" y="230">Thu</text><text x="384" y="230">Fri</text><text x="438" y="230">Sat</text><text x="492" y="230">Sun</text><text x="546" y="230" font-weight="700">Today</text></g>
+            <text x="586" y="186" font-size="12.5" class="d-ink2">moves on</text>
+            <text x="586" y="202" font-size="12.5" class="d-ink2">at midnight</text>
+          </svg>
+          <figcaption id="dg-week-cap">On a Monday, a calendar week has barely started. Libretto’s week is always full.</figcaption>
+        </figure>
+
+        <h3>Home’s tiles</h3>
+        <p>Home’s Reading Stats section shows the tiles you choose in its options (long-press its title → <b>Edit Section…</b>, or <span class="path">Customize Home → Reading Stats</span>), in the order you drag them. Each opens its part of Reading Stats:</p>
+        <dl class="opts">
+          <div><dt>Reading Goal</dt><dd>This year’s book goal and pace. Opens the goal’s card.</dd></div>
+          <div><dt>Finish By</dt><dd>The three most pressing books with a date, each with tonight’s mark. Opens the Finish By card.</dd></div>
+          <div><dt>Pages Today, Pages in 7 Days, Pages by Day</dt><dd>Open Last 7 Days.</dd></div>
+          <div><dt>Time in 7 Days, Listening in 7 Days</dt><dd>Open Time by Day.</dd></div>
+          <div><dt>Reading Streak</dt><dd>Opens Reading Streak.</dd></div>
+          <div><dt>Books This Year, Pages This Year, Books All Time, Average Rating, Top Genre, Top Mood</dt><dd>From Hardcover: open that year, all time, your ratings, or the top genre or mood with its books.</dd></div>
+          <div><dt>Want to Read</dt><dd>Opens your Want to Read shelf in Shelf.</dd></div>
+        </dl>
+        <p>The goal tiles show once there’s a goal to show, and the Hardcover tiles once Hardcover is connected. Reading Goal, Finish By and Pages by Day take a whole row.</p>
+      </section>
+
+      <section class="doc__sec" id="share-cards">
+        <h2>Share Cards</h2>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/share-card.jpg" alt="The Share Card sheet: a preview of a square card with a book cover, title and reading figures, then Square and Story, style choices, switches under Show, and Share, Copy and Save buttons." width="720" height="1565" loading="lazy">
+          <figcaption>Switch each piece on or off, pick a shape and a style, then share.</figcaption>
+        </figure>
+        <p>A share card is an image about a book, or about a stretch of your reading, to send in Messages, keep in Journal, post as a story, copy, or save to Photos.</p>
+        <p>Open it with <b>Share Card…</b> in a book’s or audiobook’s long-press menu, the book’s <b>⋯</b> menu, Book Details, or Reading Stats’ ⋯ menu. And when you close a book you’ve just read to the end, Libretto offers one: a sheet saying “You Finished” and the book’s title, with <b>Share Card…</b> and <b>Not Now</b>. For a book linked to Hardcover, you get Hardcover’s question about marking it Read instead, which has <b>Share Card…</b> too.</p>
+
+        <h3>A book card</h3>
+        <p>Headed “Currently Reading”, “Finished Reading” or “Listening To”. Under <b>Show</b>, a switch for each piece: <b>Cover</b>, <b>Title and Author</b>, <b>Progress</b>, <b>Rating</b> (your Hardcover rating), <b>Time Spent</b>, <b>Pages Read</b>, <b>Days Read</b>, <b>Started and Finished</b>, <b>Highlights Count</b>, <b>A Highlight</b> (choose which under <b>Highlight</b>) and <b>Libretto</b>. Time and pages include the paired audiobook’s.</p>
+
+        <h3>A reading card</h3>
+        <p>From Reading Stats: choose <b>Today</b>, <b>7 Days</b>, <b>Month</b> or <b>Year</b>, each up to today. Switches for <b>Time Read</b>, <b>Reading and Listening</b>, <b>Pages</b>, <b>Streak</b>, <b>Days Read</b>, <b>Daily Goal</b> (days you met it), <b>Books Finished</b>, <b>Highlights</b>, <b>Chart</b> (a bar a day, or a month for a year), <b>Covers</b> (the books you read, most time first) and <b>Libretto</b>.</p>
+
+        <h3>Shape, style and sending</h3>
+        <dl class="opts">
+          <div><dt>Shape <span class="opts__default">Square</span></dt><dd><b>Square</b> (1080 × 1080) for Messages and most feeds, or <b>Story</b> (1080 × 1920) for stories.</dd></div>
+          <div><dt>Style <span class="opts__default">Cover</span></dt><dd><b>Cover</b> is a deep shade of the book’s cover color (the first book’s, on a reading card); or <b>Night</b>, <b>Paper</b> or <b>Sunset</b>.</dd></div>
+        </dl>
+        <p>Only the switches that apply are shown (no Rating without one, no chart for a single day), and your choices are remembered for next time. With a lot switched on, the card makes room by drawing its pieces smaller, then leaving out the covers. When it looks right, tap <b>Share</b>, <b>Copy</b> or <b>Save</b>; saving asks once for permission to add to Photos.</p>
+      </section>
+
+      <section class="doc__sec" id="journal">
+        <h2>Your reading in Journal</h2>
+        <p>Apps can’t add suggestions to Apple’s Journal app, but Shortcuts can write an entry for you each night with Libretto’s <b>Get Today’s Reading</b> action. <span class="path">Settings → Journal</span> explains how, and shows today’s entry as it would go in.</p>
+
+        <h3>What the entry says</h3>
+        <p>First the day: your reading and listening time, pages, “Daily goal met” and your streak. Then each book you read, listened to or highlighted, from every device: the time, the pages, where you got to (“Chapter 4” to “Chapter 6”), “Finished it!” if you did, and that day’s highlights as quotes with your notes. Books you marked as read that day follow.</p>
+
+        <h3>Setting it up</h3>
+        <p>On iOS 27, <b>Describe It to Shortcuts</b> has a prompt to copy: paste it into Shortcuts where it asks what you want your shortcut to do, and Apple Intelligence builds the automation for you. Check its steps before you save it. Or build it yourself:</p>
+        <ol class="steps">
+          <li><p>In Shortcuts, open <b>Automation</b> and tap <b>+</b>, then <b>Time of Day</b>. Pick a time, like 9 PM, <b>Daily</b>, and <b>Run Immediately</b>.</p></li>
+          <li><p>Add <b>Get Today’s Reading</b> from Libretto. Turn on <b>Include What Happened</b> if you’d like a few sentences on each book.</p></li>
+          <li><p>Add <b>Create Entry</b> from Journal, and put <b>Today’s Reading</b> in its text.</p></li>
+        </ol>
+        <dl class="opts">
+          <div><dt>Day</dt><dd>Leave it empty for today, or pick another day.</dd></div>
+          <div><dt>Include What Happened <span class="opts__default">Off</span></dt><dd>A few spoiler-free sentences on what you read in each book, written on your device by Apple Intelligence. It takes a little longer.</dd></div>
+          <div><dt>Format <span class="opts__default">Markdown</span></dt><dd><b>Markdown</b> (bold and italics) or <b>Plain Text</b>.</dd></div>
+        </dl>
+        <p>On a day without reading, the shortcut stops at Get Today’s Reading and no entry is made. The action works with any app that takes text, too: Day One, Notes or a message.</p>
+        <aside class="note note--privacy"><p><b>Privacy</b> Include What Happened is written on your device, from the pages you read that day. Your book’s text isn’t sent anywhere.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="widgets">
+        <h2>Widgets</h2>
+        <p>Your goals live on the Home Screen and Lock Screen too: <b>Reading Streak</b>, <b>Yearly Goal</b>, <b>Finish By</b>, <b>Weekly Pages</b> (your Daily Page Goal as a dotted line) and <b>Reading Stats</b>, alongside <b>Currently Reading</b>. The streak, goal and pages widgets move on at midnight by themselves, so a new day shows without opening Libretto. See <a href="shortcuts.html">Widgets, Siri and Shortcuts</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>Does listening to an audiobook count toward my streak?</summary>
+          <div><p>Yes. Your Daily Reading Goal is minutes of reading or listening, so an audiobook on a walk keeps your streak going. Listening adds time, not pages.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I read for ages but my pages barely moved. Why?</summary>
+          <div><p>A few things don’t add pages: going back over pages you’ve already counted, jumping more than eight pages at once, browsing a book you haven’t started, and listening. And pages are printed pages, which usually hold more than a screen does at a large text size.</p></div>
+        </details>
+        <details class="qa">
+          <summary>My streak says 0 but I read yesterday.</summary>
+          <div><p>The day needs your Daily Reading Goal’s minutes, not just a page or two: check <span class="path">Settings → Goals → Daily Reading Goal</span>. If you read on another device, make sure Sync with iCloud is on for both; opening Libretto fetches anything that hasn’t arrived yet. See <a href="sync.html">Sync with iCloud</a>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I missed a day of my Finish By plan. Now what?</summary>
+          <div><p>Today’s share grows to include what you missed (“Read 37 pages today to catch up”), and Today’s Target Bar fills toward it. If that’s too much for one day, pick a new date in Book Details: the plan starts again from today.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do my goals go to my other devices?</summary>
+          <div><p>Yes, with Sync with iCloud on: the Daily Reading Goal, Daily Page Goal, Yearly Book Goal and Finish By dates. The Streak Reminder and Today’s Target Bar color stay with each device.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why doesn’t my week start on Sunday or Monday?</summary>
+          <div><p>Libretto’s week is always the last seven days, with today at the end, so it’s never half empty at the start of a week.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I delete a session that shouldn’t be there?</summary>
+          <div><p>Yes: <span class="path">Book Details → Reading History</span>, then swipe the session to delete it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why is my book’s percent different from its Finish By page?</summary>
+          <div><p>Finish By works in printed pages by the book’s words, while some places show a percent by chapters. They can differ a little in books with very long or very short chapters.</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="sync.html"><small>Previous</small>Sync with iCloud</a>
+      <a class="pager__next" href="hardcover.html"><small>Next</small>Hardcover</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

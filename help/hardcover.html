@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hardcover – Libretto Help</title>
+<meta name="description" content="Connecting Hardcover to Libretto: matching books and editions, sending progress, ratings and shelves, the Shelf tab, stats, and exactly what’s sent.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html" aria-current="page">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Hardcover</h1>
+        <p class="doc__lede">Connect your Hardcover account and Libretto keeps your shelves, progress and ratings up to date as you read, helps you pick your next book from your own shelves, and turns them into reading stats. Here’s how it all works, and exactly what Libretto sends.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li>Hardcover is a free Goodreads alternative. Coming from Goodreads? Hardcover imports your library, and Libretto picks it up from there.</li>
+          <li>Connect in <span class="path">Settings → Hardcover</span>. You sign in on Hardcover’s own page, so Libretto never sees your password.</li>
+          <li>Each book is linked to the right Hardcover book and edition, by its ISBN where it has one. Otherwise you confirm the match once.</li>
+          <li>Libretto sends your progress in the edition’s pages, your shelf and your rating, and never lowers your progress there by itself. It never moves your place in a book because of Hardcover.</li>
+          <li>The Shelf tab helps you choose what’s next from your Want to Read, and Reading Stats shows years of your reading from your shelves.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="what-is-hardcover">
+        <h2>What Hardcover is</h2>
+        <p><a href="https://hardcover.app">Hardcover</a> is a free place to keep track of what you read, like Goodreads, with an official way for apps like Libretto to connect. It has your shelves (Want to Read, Currently Reading, Read, Paused and Did Not Finish), your ratings and reading goals, and what other readers think of each book.</p>
+        <p>You don’t need it to use Libretto. Libretto keeps its own reading log, goals, stats, ratings and shelves without it. Hardcover adds a home for your reading outside Libretto, and a lot of book information to explore.</p>
+
+        <h3>Coming from Goodreads</h3>
+        <p>Goodreads doesn’t let other apps connect any more, but Hardcover imports a Goodreads export: your shelves, ratings and dates come across.</p>
+        <ol class="steps">
+          <li><p>On the Goodreads website, open <span class="path">My Books → Import and Export</span> and choose <b>Export Library</b>.</p></li>
+          <li><p>On Hardcover, import the file you downloaded.</p></li>
+          <li><p>Connect Hardcover in Libretto (below). Your history is there.</p></li>
+        </ol>
+        <p><span class="path">Settings → Hardcover</span> has a <b>Coming from Goodreads?</b> section with links to both.</p>
+      </section>
+
+      <section class="doc__sec" id="connecting">
+        <h2>Connecting your account</h2>
+        <ol class="steps">
+          <li><p>Open Settings (the last item in any tab’s <b>⋯</b> menu) and tap <b>Hardcover</b>.</p></li>
+          <li><p>Tap <b>Connect Hardcover</b>. Hardcover’s own sign-in page opens in a browser sheet.</p></li>
+          <li><p>Sign in there (or create an account). You’re back in Libretto, connected.</p></li>
+        </ol>
+        <p>Libretto also offers to connect where it helps, and each of these does the same thing:</p>
+        <ul>
+          <li><b>Bring Your Shelves</b>, the last card of the welcome tour. Skipped it? Replay the tour from <span class="path">Settings → About → Welcome Tour</span>.</li>
+          <li><b>Bring Your Hardcover Shelves</b>, a card on Home, until you connect or tap <b>Not Now</b>.</li>
+          <li><b>Add It to Your Hardcover Shelves…</b>, on the sheet that appears when you finish a book.</li>
+        </ul>
+        <p>Once you’re connected, Libretto brings in your shelves, matches the books in your library (Settings shows “Matching Books” and how far it’s got), and adds the <b>Shelf</b> tab, unless you’ve changed your tabs in <span class="path">Settings → Home &amp; Tabs</span>.</p>
+        <aside class="note note--privacy"><p><b>Privacy</b> You sign in on Hardcover’s page, not Libretto’s, so Libretto never sees your password. What Libretto keeps is a sign-in token, in the Keychain. With <a href="sync.html">Sync with iCloud</a> on, it’s kept in iCloud Keychain, so your other devices are connected too.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="matching">
+        <h2>Matching your books and editions</h2>
+        <p>Before anything is sent, each book in your library is linked to a book on Hardcover, and to an edition, because your progress is counted in that edition’s pages.</p>
+        <ul>
+          <li><b>Linked for you:</b> a book with an ISBN inside it (most store-bought EPUBs), or an Amazon or Goodreads ID, links by itself.</li>
+          <li><b>You confirm:</b> otherwise Libretto searches Hardcover by the book’s title and author, puts the likeliest match first (books already on your shelves come first among close matches), and waits for you to confirm. Search results never link by themselves.</li>
+        </ul>
+
+        <!-- DIAGRAM: "How a book gets linked". A flow left to right. A book in your library → "ISBN, Amazon or Goodreads ID inside?" → yes: "Linked" (green). → no: "Search Hardcover by title and author" → "You confirm the match and edition" → "Linked". Side exits from the search: "Not on Hardcover" and "Ignore" (gray), labelled "never sent". A small note under "Linked": "progress is sent in this edition’s pages". -->
+
+        <h3>Where to check the matches</h3>
+        <ul>
+          <li>A banner at the top of the Books tab says when books need matching (“2 books need matching before they can be sent to Hardcover”). Tap it to see them.</li>
+          <li><span class="path">Books tab → ⋯ → Hardcover Matches</span>, or <span class="path">Settings → Hardcover → Linked Books</span>: every book, under <b>Needs Confirming</b>, <b>Linked</b>, <b>Not on Hardcover</b>, <b>Ignored</b> and <b>Not Matched Yet</b>. Tap one to change it.</li>
+          <li>For one book: Book Details → <span class="path">⋯ → Hardcover → Match on Hardcover…</span> (or <b>Change Match…</b> once it’s linked).</li>
+        </ul>
+
+        <h3>The match sheet</h3>
+        <p>The match sheet lists what Hardcover has, marking any already in your library or on your shelves. If none is right, <b>Search Hardcover</b> with your own words. Once you pick a book, <b>Edition</b> → <b>Choose…</b> picks which edition: progress is sent in that edition’s pages, so an ebook edition matches Libretto best. <b>Not on Hardcover</b> tells Libretto to stop asking, and nothing about that book is sent.</p>
+        <aside class="note note--tip"><p><b>Tip</b> Matching goes by the title and author in your library, so if a file has them wrong (“Moby Dick (z-lib.org)”), fix them first with <b>Edit Details…</b> (in Book Details’ <b>⋯</b> menu, or right in the match sheet). A book waiting to be matched is looked up again with the new ones.</p></aside>
+
+        <h3>Books that aren’t books</h3>
+        <p>For your own documents and anything else Hardcover shouldn’t hear about, choose Book Details → <span class="path">⋯ → Hardcover → Ignore</span>. It’s never matched or sent, and drops out of the count of books to check. <b>Stop Ignoring</b> matches it afresh.</p>
+        <p>With Sync with iCloud on, your matches sync too: a match you confirm on your iPhone isn’t asked about on your iPad.</p>
+      </section>
+
+      <section class="doc__sec" id="progress">
+        <h2>Sending your progress</h2>
+        <p>Libretto sends your place in each linked book as a page number in its Hardcover edition, so “p. 212 of 496” on Hardcover matches how far you are in Libretto. When to send is up to you, in <span class="path">Settings → Hardcover → Send to Hardcover</span>:</p>
+        <dl class="opts">
+          <div><dt>Send Progress <span class="opts__default">When I Leave the App</span></dt><dd><b>When I Leave the App</b> sends your place in linked books each time you leave Libretto. <b>Once a Day</b> sends it when you come back to Libretto after a day, and in the background when iOS allows. <b>Manually</b> waits for you to send.</dd></div>
+          <div><dt>Also When I Close a Book <span class="opts__default">On</span></dt><dd>With When I Leave the App, also sends a book’s progress as soon as you close it.</dd></div>
+          <div><dt>Last Sent</dt><dd>When Libretto last sent, and any problem it had.</dd></div>
+          <div><dt>Send Now</dt><dd>Sends now, in any mode, and brings your shelves up to date.</dd></div>
+        </dl>
+        <p>For one book, Book Details → <span class="path">⋯ → Hardcover → Send Progress Now</span> works in every mode and says what happened: “Sent · p. 96 of 448”, “Already up to date”, or “Nothing to send yet” for a book you haven’t started.</p>
+
+        <h3>The rules it follows</h3>
+        <ul>
+          <li><b>Starting a book</b> that isn’t on your shelves adds it as Currently Reading, in the linked edition. One on Want to Read or Paused moves to Currently Reading once you’ve read some.</li>
+          <li><b>It never lowers your progress by itself.</b> If Hardcover has you further along (you read a paper copy, say), automatic sends skip the book. Send it yourself and Libretto asks: <b>Hardcover Is Further Along</b>, with <b>Update to p. 150</b> or <b>Leave It</b>.</li>
+          <li><b>Only reading after the link counts,</b> so linking a book doesn’t send an old place by surprise.</li>
+          <li><b>Audiobooks on their own aren’t sent.</b> A book paired with its audiobook shares one place with it, so listening moves the book on, and that’s what goes.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="finishing">
+        <h2>Finishing, and reading again</h2>
+        <p>Reach the end of a linked book and Libretto asks once: “Finished Emma? Mark it as Read on Hardcover.” Pick some stars if you like, then <b>Mark as Read</b>, or <b>Not Yet</b> if you’re not quite done. <b>Share Card…</b> makes a card to share the moment (see <a href="goals.html">Goals, stats and sharing</a>).</p>
+        <p><b>Mark as Read</b> and <b>Mark as Unread</b> in a book’s touch-and-hold menu, or the reader’s <b>⋯</b> menu, change it on Hardcover too, and say so.</p>
+        <p>Libretto never changes a book that’s Read or Did Not Finish on Hardcover by itself. If you read it again and send it yourself, Libretto asks <b>Reading It Again?</b>: <b>Start Re-read</b> puts it back on Currently Reading as a new read-through, and your earlier ones stay.</p>
+      </section>
+
+      <section class="doc__sec" id="ratings-and-shelves">
+        <h2>Ratings and shelves</h2>
+
+        <figure class="shot shot--side">
+          <img src="../assets/shots/book-details.jpg" alt="Book Details for Pride and Prejudice: a large cover on a wash of its color, the title and author, Hardcover readers’ rating, and chips for your rating and shelf under the main button." width="720" height="1565" loading="lazy">
+          <figcaption>Book Details. The chips under the big button are your rating and your shelf.</figcaption>
+        </figure>
+
+        <p>Book Details is where a book’s Hardcover side lives: its readers’ rating, pages and year, genres and moods, the description, and your own read-throughs. Open it by touching and holding a book (it’s first in the menu).</p>
+
+        <h3>Your rating</h3>
+        <p>Tap <b>★ Rate</b> under the big button. Ratings are in half stars: tap a star for that many, and tap it again for half a star less. Or drag across the stars; they fill as you go, with a tick at each half star. <b>Clear Rating</b> takes it off. For a linked book, the rating is your Hardcover rating.</p>
+
+        <h3>Your shelf</h3>
+        <p>The shelf chip beside it puts a linked book on <b>Want to Read</b>, <b>Currently Reading</b>, <b>Read</b>, <b>Paused</b> or <b>Did Not Finish</b> on Hardcover. <b>Remove from Shelves…</b> takes it off them, and asks first.</p>
+
+        <h3>Books that aren’t on Hardcover</h3>
+        <p>A book that isn’t linked (or with Hardcover not connected) gets Libretto’s own rating and shelf in the same places: <b>Want to Read</b>, <b>Reading</b>, <b>Finished</b>, <b>Paused</b> and <b>Did Not Finish</b>. Paused and Did Not Finish take the book out of Continue until you open it again. They sync to your other devices with Sync with iCloud.</p>
+
+        <h3>Covers</h3>
+        <p>For a linked book, Book Details → <span class="path">⋯ → Change Cover…</span> uses Hardcover’s cover, or one of its editions’, instead of the one in the file. <b>Restore Original Cover</b> puts the file’s back. The book’s own file is never changed.</p>
+      </section>
+
+      <section class="doc__sec" id="shelf-tab">
+        <h2>The Shelf tab: finding your next book</h2>
+
+        <figure class="shot shot--side">
+          <img src="../assets/shots/shelf.jpg" alt="The Shelf tab: a row of chips for the shelf, filters, moods and genres, then a pick card with a cover, title, rating and Read and Hardcover buttons, then rows of books to browse." width="720" height="1565" loading="lazy">
+          <figcaption>Shelf opens on Want to Read, with a pick for you at the top.</figcaption>
+        </figure>
+
+        <p>Shelf is your Hardcover shelves, set up for choosing what to read next. It works on the shelves Libretto has already brought in, so it’s instant, and it works offline. Pull down to refresh, or choose <b>Refresh Shelves</b> in its <b>⋯</b> menu.</p>
+
+        <h3>The chips</h3>
+        <ul>
+          <li><b>The shelf:</b> <b>Want to Read</b> (where it opens), <b>Currently Reading</b>, <b>Read</b>, <b>Paused</b>, <b>Did Not Finish</b> or <b>All Shelves</b>, each with how many books.</li>
+          <li><b>Filters:</b> the sheet with every filter. <b>Length</b> (under 200 pages, 200–349, 350–499 or 500+; pick more than one to include each), <b>Average Rating</b> and <b>Number of Ratings</b> from Hardcover readers, <b>Mood</b> and <b>Genre</b>.</li>
+          <li><b>Moods and genres:</b> the shelf’s most common ones, in their Reading Stats colors, each with how many books it would leave. Tap to add one; tap a picked one to take it off. <b>Clear All</b> clears them. A book has to match every mood and genre you pick.</li>
+        </ul>
+
+        <h3>The pick</h3>
+        <p>At the top is one book on a card in its cover’s colors: <b>Top Pick for You</b> on Want to Read, or <b>Best Match</b> while you’re filtering (then “Match 2 of 12”, and so on). It has Hardcover’s rating, pages, readers and year, your shelf and progress, and buttons to <b>Read</b> it (or <b>Continue</b>) if it’s in your library, or see its <b>Book Details</b> if it isn’t, plus <b>Hardcover</b> for its page there. The shuffle button moves on to another pick.</p>
+
+        <h3>Rows to browse</h3>
+        <p>With nothing picked, Want to Read is rows, each with <b>See All</b>:</p>
+        <ul>
+          <li><b>Top Picks for You:</b> your Want to Read, weighed by the genres and moods of the books you’ve rated highly. (Hardcover has no recommendations of its own to ask for, so Libretto works this out from your shelves.)</li>
+          <li><b>Because You Loved…:</b> books that share genres and moods with your recent 4★ reads.</li>
+          <li><b>Ready in Your Library:</b> on your Want to Read, and already in Libretto.</li>
+          <li><b>Short Reads</b> (under 250 pages), <b>Highly Rated on Hardcover</b> and <b>Popular on Hardcover</b>.</li>
+          <li>A row for each of your genres, then <b>Other Genres</b>, and a row for each mood.</li>
+        </ul>
+        <p>With filters on, it’s a grid of matches, with how many and their average rating and length. <b>Sort By</b> has <b>Best Fit</b> (your tastes first, then Hardcover’s rating), <b>Highest Rated</b>, <b>Most Ratings</b>, <b>Shortest</b>, <b>Longest</b>, <b>Newest</b>, <b>Recently Added</b> and <b>Title</b>.</p>
+        <p>Tap a book to read it (if it’s in your library) or see its Book Details. Search your shelves with the field under the title.</p>
+
+        <h3>Save to Home</h3>
+        <p>Like a set of filters (“Dark, under 200 pages”)? <span class="path">⋯ → Save to Home → Add to Home</span> puts it on Home as a section of its own, with the books and a summary. Opened from that section, <b>Update “Name” on Home</b> saves your changes. You can also add one in Customize Home with <b>Add Shelf Section</b>.</p>
+      </section>
+
+      <section class="doc__sec" id="similar-books">
+        <h2>Similar Books</h2>
+        <p>At the bottom of Book Details, <b>Similar Books</b> is Hardcover’s own list of books like this one, up to 20, each with your shelf if it’s on one. Tap one for its Book Details. Touch and hold to <b>Add to Want to Read</b> or <b>Open on Hardcover</b>.</p>
+      </section>
+
+      <section class="doc__sec" id="reading-stats">
+        <h2>Reading Stats from Hardcover</h2>
+
+
+        <p>Reading Stats (its tab, Shelf’s <b>⋯</b> menu, or See All on Home’s Reading Stats) always starts with your last seven days and <b>In Libretto</b>, from Libretto’s own reading log. With Hardcover connected, <b>From Hardcover</b> follows: worked out on your device from your shelves, for <b>All Time</b>, this year, or any year before.</p>
+        <ul>
+          <li>Books and pages, by month or by year, and your reading goal.</li>
+          <li>Genres and moods, ratings, length, format, fiction and nonfiction, decades and authors.</li>
+          <li>Highlights: your fastest read, average days per book, longest and shortest.</li>
+        </ul>
+        <p>Tap a genre, mood or author for the covers of its books, or a column (a month, a rating, a length) for the books in it, and a cover for its Book Details.</p>
+        <p>Hardcover also feeds Home’s Reading Stats tiles (Books and Pages This Year, Books All Time, Average Rating, Top Genre, Top Mood, Want to Read), the <b>Reading Stats</b> widget (see <a href="shortcuts.html">Widgets, Siri and Shortcuts</a>), and your Yearly Book Goal, which uses Hardcover’s goal unless you set your own (see <a href="goals.html">Goals, stats and sharing</a>).</p>
+      </section>
+
+      <section class="doc__sec" id="what-is-sent">
+        <h2>What’s sent to Hardcover, and nothing else</h2>
+        <p>Libretto talks to Hardcover only when you’ve connected it, and only about the books it matches.</p>
+        <ul>
+          <li><b>To match a book:</b> its ISBN, or its title and author, to look it up.</li>
+          <li><b>For a linked book:</b> your shelf, your progress in pages, your rating, and the days you started and finished.</li>
+        </ul>
+        <p>Libretto brings back your shelves, ratings and goals, and what Hardcover knows about each book: its readers’ rating, pages, genres, moods, description, covers and similar books.</p>
+
+        <!-- DIAGRAM: "What goes each way". Libretto on the left, Hardcover on the right. Arrow to Hardcover, labelled: "your shelf · progress in pages · your rating · start and finish dates (linked books only)" and, dashed, "ISBN or title and author, to find a match". Arrow back to Libretto: "your shelves, ratings and goals · each book’s rating, pages, genres, moods, covers, similar books". Under Libretto, a padlock box that stays put: "book files and text · highlights and notes · reading time · your place". -->
+        <aside class="note note--privacy"><p><b>Privacy</b> Your book files and their text never go to Hardcover, and neither do your highlights, notes, reading time or anything about books you’ve ignored or that aren’t on Hardcover. What Hardcover keeps is covered by Hardcover’s own privacy policy.</p></aside>
+        <p>Hardcover never moves your place in a book. Libretto only ever sends your progress there, not the other way.</p>
+      </section>
+
+      <section class="doc__sec" id="disconnecting">
+        <h2>Disconnecting</h2>
+        <p>In <span class="path">Settings → Hardcover</span>, tap <b>Disconnect</b>. Libretto stops sending your progress. Your shelves on Hardcover aren’t changed, and reconnecting picks up where you left off, with your matches still there. With Sync with iCloud on, disconnecting signs you out on all your devices.</p>
+        <p>If Hardcover ever signs you out (the account row says <b>Signed out</b>), tap <b>Reconnect</b>. Nothing changes in Libretto meanwhile, and your progress goes again once you’ve reconnected.</p>
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>Do I need Hardcover to use Libretto?</summary>
+          <div><p>No. Libretto has its own reading log, goals, streak, stats, ratings and shelves. Hardcover adds your shelves from outside Libretto, the Shelf tab, Similar Books and stats across everything you’ve ever logged there.</p></div>
+        </details>
+        <details class="qa">
+          <summary>My progress hasn’t shown up on Hardcover. Why?</summary>
+          <div><p>Check that the book is linked (Book Details → <span class="path">⋯ → Hardcover</span> shows its edition), and look at <b>Send Progress</b> in <span class="path">Settings → Hardcover</span>: with Once a Day or Manually it waits. <b>Send Progress Now</b> says what happened. If Hardcover already has you further along, or the book is Read there, Libretto asks before changing it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>The page number on Hardcover isn’t the one I see in Libretto.</summary>
+          <div><p>Hardcover counts pages in the linked edition, so a hardback’s page 200 is a different place from a paperback’s. Choose the edition closest to your file in Book Details → <span class="path">⋯ → Hardcover → Edition</span>; an ebook edition matches best.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does listening to an audiobook count on Hardcover?</summary>
+          <div><p>Audiobooks on their own aren’t sent. Pair the audiobook with its ebook and listening moves the book on, which is sent as usual.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Will Libretto ever change my place in a book because of Hardcover?</summary>
+          <div><p>No. Libretto only sends your progress to Hardcover. It never moves your place from there.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do I have to connect on each device?</summary>
+          <div><p>Not with Sync with iCloud on: connecting on one device connects the others, through iCloud Keychain. Without it, connect on each.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does the Shelf tab work offline?</summary>
+          <div><p>Yes. It works from the shelves Libretto last brought in, and refreshes when you’re back online, when you pull down, or with <b>Refresh Shelves</b>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I don’t see the Shelf tab.</summary>
+          <div><p>It shows once Hardcover is connected, unless your tabs say otherwise: check <span class="path">Settings → Home &amp; Tabs</span>. Five tabs fit at most, so you may need to switch one off to make room.</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="goals.html"><small>Previous</small>Goals, stats and sharing</a>
+      <a class="pager__next" href="devices.html"><small>Next</small>iPad, Duo, Watch and TV</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

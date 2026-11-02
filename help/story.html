@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recaps, Story Map and the AI – Libretto Help</title>
+<meta name="description" content="How Libretto’s Catch Me Up, Remind Me, Chapter Recaps and Story Map work: what Apple Intelligence reads, where it runs, and how it avoids spoilers.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <form class="guide-search" role="search" action="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search the guides" aria-label="Search the guides" autocomplete="off">
+    </form>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html" aria-current="page">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>Recaps, Story Map and the AI</h1>
+        <p class="doc__lede">How Libretto keeps track of the story for you: what Apple Intelligence reads, where it runs, how it stays behind your place, and how to get the most from Catch Me Up, Remind Me, Chapter Recaps and the Story Map.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li><b>Catch Me Up</b> (the pink ✨ in a book) recaps what you’ve read, going further back the longer you’ve been away. <b>Remind Me</b> tells you who a name is: select it and choose Remind Me.</li>
+          <li><b>Chapter Recaps</b> are written in the background as you finish each chapter, and the <b>Story Map</b> shows who’s who and how they’re all connected.</li>
+          <li>It’s all written by Apple Intelligence on your iPhone or iPad. The book’s text never leaves it: there’s no Libretto server and no cloud AI.</li>
+          <li>Nothing ahead of you is used. Recaps and the map only count chapters you’ve actually read, and anything ahead asks first.</li>
+          <li>Writing needs Apple Intelligence (iPhone 15 Pro or later, or an iPad with an M-series or A17 Pro chip). Your other devices, Apple TV included, show what it wrote, through iCloud.</li>
+          <li>It’s a small model: usually right, sometimes it mixes people up. Treat it like a friend’s memory of the book, not the book.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="what-it-does">
+        <h2>What the AI does for you</h2>
+        <p>Long books are full of people, and life gets in the way of reading. Libretto’s story features are for the evening you open a book after a week away and can’t remember who anyone is. There are four of them, each with its own switch in <span class="path">Settings → Story</span>:</p>
+        <ul>
+          <li><b>Catch Me Up</b> writes a recap of what you’ve read, from the last few pages to the whole story so far. See <a href="#catch-me-up">Catch Me Up</a>.</li>
+          <li><b>Remind Me</b> says who or what a name is, from the places it came up before. See <a href="#remind-me">Remind Me</a>.</li>
+          <li><b>Chapter Recaps</b> sum up each chapter once you’ve finished it, and keep The Story So Far up to date. See <a href="#chapter-recaps">Chapter Recaps</a>.</li>
+          <li><b>The Story Map</b> lays out the people, places, chapters and your highlights as a mind map, with a profile for everyone and a note on every connection. See <a href="#story-map">The Story Map</a>.</li>
+        </ul>
+        <p>The same on-device model also answers Siri’s “Catch me up in Libretto”, and can add a few sentences on what happened to the journal entry that Get Today’s Reading makes (both in <a href="shortcuts.html">Widgets, Siri and Shortcuts</a>).</p>
+        <p>Read-Along isn’t one of these. Matching an audiobook to its ebook uses Apple’s speech recognition, which doesn’t need Apple Intelligence (see <a href="read-along.html">Read-Along and audiobooks</a>).</p>
+      </section>
+
+      <section class="doc__sec" id="where-it-runs">
+        <h2>Where the AI runs</h2>
+        <p>Every recap, answer and map is written by the language model that’s part of Apple Intelligence. It lives on your iPhone or iPad and runs on its chip. Libretto gives it the book’s text, a piece at a time, and it writes back. Nothing goes to a server: not to Libretto (there isn’t a Libretto server), not to a cloud AI, not even to Apple. Because the model is on the device, writing a recap doesn’t need an internet connection.</p>
+        <aside class="note note--privacy"><p><b>Privacy</b> The model is given the book’s title, author and text, and nothing else: not your highlights, your notes or anything about you. What it writes is kept with the book on your device. It leaves only through your own iCloud, with Sync with iCloud on, or when you send it yourself with Send to Another Device.</p></aside>
+
+        <figure class="diagram" aria-labelledby="dg-ai-cap">
+          <svg viewBox="0 0 680 318" role="img" aria-label="Inside an iPhone with Apple Intelligence, the book's text goes to the on-device model, which writes recaps, the Story Map and Remind Me's answers. The text never leaves the device. With Sync with iCloud on, the finished recaps and Story Map go to your own iCloud, and from there to an iPad without Apple Intelligence and to Apple TV, which show them but can't write them. With sync off, Send to Another Device can AirDrop them instead. There is no Libretto server and no cloud AI.">
+            <defs>
+              <marker id="dg-ai-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4" fill="none" stroke="#BEBBD3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+              <marker id="dg-ai-b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4" fill="none" style="stroke: var(--ink-2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+            </defs>
+
+            <!-- The device: everything happens inside it. -->
+            <rect x="12" y="14" width="392" height="206" rx="24" class="d-navy"/>
+            <text x="36" y="46" font-size="15" font-weight="600" class="d-cream">Your iPhone, with Apple Intelligence</text>
+            <rect x="370" y="28" width="16" height="13" rx="3" style="fill: #F2C46D"/>
+            <path d="M373 28v-4a5 5 0 0 1 10 0v4" fill="none" stroke-width="2" style="stroke: #F2C46D"/>
+
+            <rect x="36" y="66" width="96" height="104" rx="10" style="fill: #F4ECD8"/>
+            <g style="stroke: #8C7A66" stroke-width="3" stroke-linecap="round"><path d="M50 86h68M50 98h68M50 110h68M50 122h52"/></g>
+            <g style="stroke: #C9BBA6" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 6"><path d="M50 144h68M50 156h68"/></g>
+            <text x="84" y="192" font-size="12.5" class="d-cream" text-anchor="middle">The book’s text</text>
+
+            <path d="M138 118h26" stroke-width="2" style="stroke: #BEBBD3" marker-end="url(#dg-ai-a)"/>
+            <rect x="170" y="80" width="104" height="76" rx="14" style="fill: #252E6B; stroke: #FF639B" stroke-width="1.5"/>
+            <path d="M222 90c.7 4 2.3 5.6 6.3 6.3-4 .7-5.6 2.3-6.3 6.3-.7-4-2.3-5.6-6.3-6.3 4-.7 5.6-2.3 6.3-6.3z" class="d-story"/>
+            <text x="222" y="122" font-size="12.5" class="d-cream" text-anchor="middle">Apple Intelligence</text>
+            <text x="222" y="139" font-size="12.5" class="d-cream" text-anchor="middle">on-device model</text>
+
+            <path d="M280 118h26" stroke-width="2" style="stroke: #BEBBD3" marker-end="url(#dg-ai-a)"/>
+            <rect x="312" y="66" width="72" height="104" rx="10" style="fill: #F5EFE2"/>
+            <g style="stroke: #FF639B" stroke-width="2.5" stroke-linecap="round" fill="none"><path d="M348 84v52M348 96h16M348 110h-16M348 124h16"/></g>
+            <text x="348" y="156" font-size="10.5" text-anchor="middle" style="fill: #6A5847">Story Map</text>
+            <text x="348" y="192" font-size="12.5" class="d-cream" text-anchor="middle">Recaps, Story Map,</text>
+            <text x="348" y="207" font-size="12.5" class="d-cream" text-anchor="middle">Remind Me</text>
+
+            <!-- With sync on: your iCloud, and on. -->
+            <path d="M410 118h40" stroke-width="2" stroke-dasharray="5 5" style="stroke: var(--ink-2)" marker-end="url(#dg-ai-b)"/>
+            <path d="M478 140h88a26 26 0 0 0 3-51.8 36 36 0 0 0-70 9.2A21 21 0 0 0 478 140z" fill="none" stroke-width="2" style="stroke: var(--ink)"/>
+            <text x="524" y="126" font-size="13.5" font-weight="600" class="d-ink" text-anchor="middle">Your iCloud</text>
+            <text x="524" y="160" font-size="11.5" class="d-ink2" text-anchor="middle">finished recaps and map,</text>
+            <text x="524" y="174" font-size="11.5" class="d-ink2" text-anchor="middle">with Sync with iCloud on</text>
+            <path d="M500 182 C 484 206, 470 220, 462 236" fill="none" stroke-width="2" stroke-dasharray="5 5" style="stroke: var(--ink-2)" marker-end="url(#dg-ai-b)"/>
+            <path d="M548 182 C 566 206, 580 220, 590 236" fill="none" stroke-width="2" stroke-dasharray="5 5" style="stroke: var(--ink-2)" marker-end="url(#dg-ai-b)"/>
+            <text x="456" y="258" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">iPad without it</text>
+            <text x="598" y="258" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">Apple TV</text>
+            <text x="527" y="280" font-size="12" class="d-ink2" text-anchor="middle">show them, can’t write them</text>
+
+            <!-- With sync off: AirDrop. -->
+            <path d="M300 222 C 330 280, 380 290, 420 262" fill="none" stroke-width="1.8" stroke-dasharray="2 5" stroke-linecap="round" style="stroke: var(--ink-2)" marker-end="url(#dg-ai-b)"/>
+            <text x="196" y="250" font-size="12" class="d-ink2" text-anchor="middle">or Send to Another Device</text>
+            <text x="196" y="266" font-size="12" class="d-ink2" text-anchor="middle">(AirDrop), with sync off</text>
+
+            <text x="12" y="306" font-size="12.5" class="d-ink2">The book’s text never leaves the device. No Libretto server, no cloud AI.</text>
+          </svg>
+          <figcaption id="dg-ai-cap">The writing happens on the device. Only what it wrote travels, and only to your own iCloud or devices.</figcaption>
+        </figure>
+
+        <h3>Which devices can write recaps</h3>
+        <p>Writing needs Apple Intelligence: an iPhone 15 Pro or later, or an iPad with an M-series or A17 Pro chip, with Apple Intelligence turned on in the Settings app under <span class="path">Apple Intelligence &amp; Siri</span>. When it can’t run, <span class="path">Settings → Story</span> says why at the top, for example:</p>
+        <ul>
+          <li>“Turn on Apple Intelligence in Settings → Apple Intelligence &amp; Siri to use Catch Me Up.”</li>
+          <li>“Apple Intelligence is still getting ready on this iPhone. Try again in a little while.” (Just after it’s turned on, the model is still downloading.)</li>
+          <li>“This iPad doesn’t support Apple Intelligence, which Catch Me Up uses.”</li>
+        </ul>
+        <p>On a device that doesn’t support it at all, the ✨ button and Remind Me don’t appear. Apple Watch and Apple TV don’t run Apple Intelligence either.</p>
+
+        <h3>On a device without Apple Intelligence</h3>
+        <p>You can still have recaps and Story Maps there. They’re just written somewhere else:</p>
+        <ul>
+          <li><b>With Sync with iCloud on</b>, whatever your iPhone or iPad with Apple Intelligence writes arrives on your other devices by itself, for the same book (the same file, so its chapters line up). It shows everywhere it would on the device that wrote it: Recap buttons in Contents (for the chapters that have one), the Recaps page, the Story Map, profiles and Book Details. The Recaps page says this device can’t write its own, and has no Write Now or Write Them Again. What you read there still counts, and goes back to your other devices. See <a href="sync.html">Sync with iCloud</a>.</li>
+          <li><b>On Apple TV</b>, Chapter Recaps, the Story Map and People and Places show what your iPhone or iPad wrote, for the chapters you’ve read on any device.</li>
+          <li><b>With Sync with iCloud off</b>, send them yourself. On the device that wrote them, open the book’s Recaps page and choose <span class="path">⋯ → Send to Another Device…</span>, then AirDrop the file (or send it by Messages or Files) to the device with the same book. Open it in Libretto there and it asks <b>Add Recaps to “…”?</b>: <b>Add Recaps</b> counts the chapters read on the other device as read here too, so their recaps show; <b>Only Chapters Read Here</b> shows only what you’ve read on this device. Send them again later to bring it up to date. Recaps for another edition of the book won’t line up, and Libretto says so.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="how-it-writes">
+        <h2>How the writing works</h2>
+        <p>The model is small (about three billion parameters, small enough to fit on a phone) and it can only take in a couple of thousand words at a time. So Libretto works through a book the way you might with a notebook beside you:</p>
+        <ul>
+          <li><b>It reads in pieces.</b> A short stretch goes to the model whole. Anything longer is read a piece at a time, and the model writes a short note on each (up to about 100 words).</li>
+          <li><b>It writes from the notes</b>, a paragraph for each stretch of chapters. Asked to sum up everything at once, a small model mostly remembers the end; a paragraph at a time, every part gets its due.</li>
+          <li><b>Notes are kept with the book</b> on your device, so a chapter is only read once. Catch Me Up and Chapter Recaps share them. That’s why a book’s first recap takes longest and later ones are much quicker.</li>
+          <li><b>It’s asked for its own words.</b> Left to itself, a small model sometimes hands back a page of the book’s dialogue. An answer that copies the book is asked for again, and a note that still copies is left out.</li>
+          <li><b>Answers are tidied</b>: repeated sentences, lead-ins like “Here is a summary:”, and a sentence cut off at the end are removed.</li>
+        </ul>
+        <p>For a chapter recap, the model is asked four short questions about the chapter: what happens (in three to five short sentences of its own words), who’s who, what each of the main people does, and which places it’s set in. Once there are two chapters, it writes The Story So Far from the chapter recaps. Then it writes the notes on connections you see on the <a href="#story-map">Story Map</a>.</p>
+
+        <h3>When it runs</h3>
+        <p>Catch Me Up and Remind Me start the moment you ask. Chapter Recaps are written in the background, a chapter at a time, one book after another, but only while Libretto is open on the screen; leave the app and they wait for you to come back. When you ask for a Catch Me Up or Remind Me, the background writing steps aside so yours comes first.</p>
+
+        <h3>The content filter</h3>
+        <p>Apple Intelligence has a content filter. Libretto uses its most permissive setting, the one meant for working with existing text (novels have deaths and fights in them), but it can still decline a violent or adult passage. When it does, that part is left out and the recap says so: “Some passages were left out: Apple Intelligence wouldn’t summarize them.” A chapter it won’t recap at all says “Apple Intelligence wouldn’t recap this chapter”, with <b>Try Again</b>.</p>
+      </section>
+
+      <section class="doc__sec" id="spoilers">
+        <h2>Spoilers: what counts as read</h2>
+        <p>Unless you ask for a chapter ahead, Libretto never gives the model anything past where you’ve got to. There are two rules, one for each kind of feature:</p>
+        <ul>
+          <li><b>Catch Me Up and Remind Me read up to your place</b>: everything before the first word on your screen (in a PDF, the pages before the one you’re on), and nothing after it.</li>
+          <li><b>Chapter Recaps and the Story Map go by what you’ve actually read.</b> Libretto keeps track of the stretches of the book you’ve been through, and only those chapters are recapped and put on the map.</li>
+        </ul>
+
+        <figure class="diagram" aria-labelledby="dg-spoiler-cap">
+          <svg viewBox="0 0 680 262" role="img" aria-label="A book as twelve chapters. Chapters one to six are read. You are partway through chapter seven. Chapter ten was only peeked at by jumping, so it doesn't count. Catch Me Up and Remind Me read everything before the first word on your screen. Chapter Recaps and the Story Map use only chapters one to six, the ones you've finished; chapter seven is recapped once you finish it. Asking for chapter nine's recap asks first.">
+            <defs>
+              <marker id="dg-sp-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1l8 4-8 4" fill="none" style="stroke: var(--story-ink)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+            </defs>
+            <!-- Twelve chapters of 52, from x 20. -->
+            <g>
+              <rect x="20" y="78" width="49" height="32" rx="6" class="d-navy"/><rect x="72" y="78" width="49" height="32" rx="6" class="d-navy"/>
+              <rect x="124" y="78" width="49" height="32" rx="6" class="d-navy"/><rect x="176" y="78" width="49" height="32" rx="6" class="d-navy"/>
+              <rect x="228" y="78" width="49" height="32" rx="6" class="d-navy"/><rect x="280" y="78" width="49" height="32" rx="6" class="d-navy"/>
+              <rect x="332" y="78" width="49" height="32" rx="6" class="d-day" style="stroke: var(--line)"/>
+              <path d="M338 78h20v32h-20a6 6 0 0 1-6-6v-20a6 6 0 0 1 6-6z" class="d-navy"/>
+            </g>
+            <g class="d-day" style="stroke: var(--line)" stroke-width="1.2">
+              <rect x="384" y="78" width="49" height="32" rx="6"/><rect x="436" y="78" width="49" height="32" rx="6"/>
+              <rect x="540" y="78" width="49" height="32" rx="6"/><rect x="592" y="78" width="49" height="32" rx="6"/>
+            </g>
+            <rect x="488" y="78" width="49" height="32" rx="6" fill="none" stroke-width="2" stroke-dasharray="4 4" style="stroke: var(--story-ink)"/>
+            <g font-size="12.5" text-anchor="middle">
+              <g class="d-cream"><text x="44.5" y="99">1</text><text x="96.5" y="99">2</text><text x="148.5" y="99">3</text><text x="200.5" y="99">4</text><text x="252.5" y="99">5</text><text x="304.5" y="99">6</text><text x="345" y="99">7</text></g>
+              <g class="d-ink2"><text x="408.5" y="99">8</text><text x="460.5" y="99">9</text><text x="512.5" y="99">10</text><text x="564.5" y="99">11</text><text x="616.5" y="99">12</text></g>
+            </g>
+
+            <!-- You are here. -->
+            <path d="M358 64v54" stroke-width="2.5" style="stroke: #E4BC5A"/>
+            <circle cx="358" cy="64" r="6" class="d-gold"/>
+            <text x="358" y="48" font-size="13" font-weight="600" class="d-ink" text-anchor="middle">You’re here</text>
+
+            <!-- The peek. -->
+            <path d="M366 74 C 400 30, 470 30, 506 72" fill="none" stroke-width="1.8" stroke-dasharray="4 4" style="stroke: var(--story-ink)" marker-end="url(#dg-sp-a)"/>
+            <text x="560" y="34" font-size="12" class="d-ink2" text-anchor="middle" style="fill: var(--story-ink)">jumped to peek:</text>
+            <text x="560" y="50" font-size="12" class="d-ink2" text-anchor="middle" style="fill: var(--story-ink)">doesn’t count</text>
+            <path d="M460 58c.6 3.3 1.9 4.6 5.2 5.2-3.3.6-4.6 1.9-5.2 5.2-.6-3.3-1.9-4.6-5.2-5.2 3.3-.6 4.6-1.9 5.2-5.2z" class="d-story" opacity=".55"/>
+            <text x="440" y="130" font-size="11.5" class="d-ink2">✨ asks first</text>
+
+            <!-- What reads what. -->
+            <path d="M20 152v8h338v-8" fill="none" stroke-width="1.6" style="stroke: var(--ink)"/>
+            <text x="20" y="182" font-size="13.5" font-weight="600" class="d-ink">Catch Me Up and Remind Me</text>
+            <text x="20" y="200" font-size="12.5" class="d-ink2">read everything before the first word on screen</text>
+            <path d="M20 216v8h309v-8" fill="none" stroke-width="1.6" style="stroke: var(--story-ink)"/>
+            <text x="20" y="244" font-size="13.5" font-weight="600" class="d-ink">Chapter Recaps and the Story Map</text>
+            <text x="20" y="260" font-size="12.5" class="d-ink2">use the chapters you’ve finished; 7 once you finish it</text>
+            <text x="384" y="182" font-size="13.5" font-weight="600" class="d-ink">Ahead of you</text>
+            <text x="384" y="200" font-size="12.5" class="d-ink2">never read, recapped or mapped</text>
+          </svg>
+          <figcaption id="dg-spoiler-cap">The line moves only as you read: pages turned, scrolled, or listened along. Jumping ahead to look doesn’t move it.</figcaption>
+        </figure>
+
+        <h3>What counts as read</h3>
+        <ul>
+          <li>Turning pages, scrolling and listening along with <a href="read-along.html">Read-Along</a> all count.</li>
+          <li>A chapter counts once you’ve been through about three-quarters of it, so skimming past a few pages doesn’t stop it counting. It’s recapped once you’ve finished it and moved on.</li>
+          <li>Jumping doesn’t count. Going somewhere from Contents, a search result, a link or a bookmark reads nothing on the way, so peeking at the ending leaves the chapters you skipped unread.</li>
+          <li>The first time you open a book with Chapter Recaps on, everything before your place counts as read (all of it, for a book you’ve finished).</li>
+          <li>Listening to the book’s paired audiobook counts too, even with the book closed: the next time you open it, everything the audiobook moved past is read.</li>
+          <li>With Sync with iCloud on, chapters you read on your other devices count here as well.</li>
+          <li>Browsing (Just Browse, or a visit to a highlight from the Notebook) doesn’t count.</li>
+        </ul>
+
+        <h3>Asking about something ahead</h3>
+        <p>In Contents, a chapter you haven’t read has a faint ✨ where read ones have <b>Recap</b>. Tap it and Libretto asks first: <b>Recap a Chapter You Haven’t Read?</b> (“You haven’t read … yet, so its recap may give away what happens”), with <b>Recap It</b> and <b>Cancel</b>. A chapter you’re partway through asks <b>Recap the Chapter You’re Reading?</b>, since its recap covers the whole chapter.</p>
+        <p>A recap you asked for ahead of your place stays on its own. On the Recaps page it says “Ahead of you” and keeps the recap behind <b>Show Recap</b>, and its people and places stay off the Story Map and out of the profiles until you’ve read the chapter.</p>
+        <aside class="note note--heads-up"><p><b>Good to know</b> Catch Me Up and Remind Me go by where you are, not by what you’ve read. If you jump ahead and ask for The Story So Far, it covers the pages you jumped over too. Jump back first (the reader’s Back button takes you there) if you don’t want them.</p></aside>
+      </section>
+
+      <section class="doc__sec" id="catch-me-up">
+        <h2>Catch Me Up</h2>
+        <p>The pink ✨ in a book’s top bar is Catch Me Up: tap the middle of the page for the menu, and it’s the first of the buttons on the right. Tap it and a sheet opens. Libretto finds your place, reads what it needs, and the recap appears as it’s written.</p>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/reader-menu.jpg" alt="A book open in Libretto with its menu bars showing: the pink sparkles button at the top of the screen, and the scrubber along the bottom." width="720" height="1565" loading="lazy">
+          <figcaption>The pink sparkles in the top bar are Catch Me Up. Touch and hold them to choose how much.</figcaption>
+        </figure>
+        <p>You don’t have to remember it’s there. Open a book you last read a day or more ago and a pill over the page offers it: “Away 6 days · Catch Me Up”. Tap it, or ✕ to read on; it goes by itself after a few page turns.</p>
+
+        <h3>How far back it goes</h3>
+        <p>A tap recaps as much as your time away calls for, counted from the end of your last reading session with the book (or its paired audiobook) to now. The sheet says how long it had been: “It had been 3 days since you last read this.”</p>
+        <dl class="opts">
+          <div><dt>Under a day: The Last Few Pages</dt><dd>About four printed pages before your place (a PDF’s last four pages). For picking up a thread after a busy afternoon.</dd></div>
+          <div><dt>A day to under five days: The Last Chapter and This One</dt><dd>The chapter before this one, and this one up to your place.</dd></div>
+          <div><dt>Five days or more: The Story So Far</dt><dd>Everything up to your place, a paragraph for each stretch of the book, followed by a Who’s who of the main characters.</dd></div>
+        </dl>
+
+        <h3>Choose for yourself</h3>
+        <p>Touch and hold the ✨ to pick: <b>Last Few Pages</b>, <b>This Chapter So Far</b>, <b>Last Chapter and This One</b> or <b>The Story So Far</b>. Once the sheet is open, its <b>Recap…</b> menu (top left) switches to another.</p>
+
+        <h3>Listen to it</h3>
+        <p>Once the recap is written, <b>Listen</b> beside its heading reads it aloud, a paragraph at a time, marking each word as it goes. It turns into <b>Pause</b> and <b>Resume</b>. An audiobook or Read Aloud that was playing pauses for it, and closing the sheet stops it. It uses Read Aloud’s voice and speed, set in <span class="path">Settings → Listening → Read Aloud</span> (see <a href="read-along.html#read-aloud">Read Aloud</a>).</p>
+        <aside class="note note--tip"><p><b>Tip</b> Apps can’t use Siri’s own voice, but you can get close: download a Premium voice in the Settings app under <span class="path">Accessibility → Spoken Content → Voices</span>, and leave Voice on Automatic in Libretto, which picks the most natural voice you have.</p></aside>
+
+        <h3>What counts as a chapter</h3>
+        <p>Chapters are the entries in the book’s contents. A PDF uses its outline, or ten pages at a time if it hasn’t one. The cover, copyright page, contents, acknowledgments and the like are left out of The Story So Far, and a very short last chapter (a part’s title page, say) brings the one before it along.</p>
+
+        <h3>How long it takes</h3>
+        <p>The first recap in a book takes longest, because Libretto is reading those chapters for the first time: a first Story So Far a third of the way into a novel can take a minute or two. The sheet shows how far it’s got (“Reading “Chapter 3” · 2 of 5”). The notes it makes are kept, so the next recap is much quicker.</p>
+
+        <h3>Where you’ll find it</h3>
+        <ul>
+          <li>In EPUBs and other text books, and in PDFs (not comics).</li>
+          <li>In Now Playing, for an audiobook paired with its ebook: it recaps the book up to the words being read, without opening it. The audiobook pauses while the sheet is up, and carries on after if it was playing.</li>
+          <li>From Siri: “Catch me up in Libretto”.</li>
+          <li>On iPhone Duo, in the tabletop deck too.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="remind-me">
+        <h2>Remind Me</h2>
+        <p>Meet a name you half remember? Select it, then choose <b>Remind Me</b> (✨) in the menu that appears, after Highlight and Add Note. On an iPhone held upright the menu shows icons only, so look for the sparkles. The first time you select text, a tip points it out.</p>
+        <p>The Remind Me sheet has the name at the top and how often it’s come up: “Mentioned 14 times before here, first in “Chapter 2”.” (or “This is the first time it comes up.”). Then, as it’s written:</p>
+        <ul>
+          <li><b>Who or what it is</b>, in a short paragraph. It’s kept shorter for something that’s barely come up, so the model isn’t tempted to fill the gaps.</li>
+          <li><b>So Far</b>: up to six things that have happened with them, in order, the latest last.</li>
+          <li><b>Go to First Mention</b> turns to the first time it came up. The reader’s Back button brings you back to where you were.</li>
+          <li><b>In the Story Map</b>, when Chapter Recaps are on and the name is on the map: who they are, who they’re connected to, and a tap for their profile.</li>
+        </ul>
+        <p>If the name is already on the book’s Story Map, Remind Me skips the wait and opens their profile straight away.</p>
+
+        <h3>How it finds the answer</h3>
+        <p>Libretto finds every earlier mention: the whole name, in any case, and for a full name the surname on its own (“Rochester” for “Edward Rochester”). It reads the passages around up to 60 of them (the first few, the latest dozen, and some in between), takes notes on them a run at a time (“Reading where it comes up · 2 of 3”), then writes the answer from the notes and the latest passages. It only ever looks before the words you selected. It usually takes a few seconds; a name that’s everywhere takes longer.</p>
+        <aside class="note note--tip"><p><b>Tip</b> Select just the name, not the sentence around it. If the answer comes back as “Apple Intelligence kept quoting the book instead of answering”, that’s usually why.</p></aside>
+        <p>Remind Me works in EPUBs and other text books and in PDFs, and has its own switch in <span class="path">Settings → Story</span>.</p>
+      </section>
+
+      <section class="doc__sec" id="chapter-recaps">
+        <h2>Chapter Recaps</h2>
+        <p>Finish a chapter and move on, and Libretto recaps it in the background, then adds its people and places to the book’s Story Map. The chapter you just finished goes first, then any earlier ones that don’t have a recap yet, so a book you were already partway through fills in a few chapters at a time. Remember they’re only written while Libretto is open (see <a href="#how-it-writes">When it runs</a>). Chapter Recaps work in EPUBs and other text books, not PDFs or comics.</p>
+
+        <h3>Where to find them</h3>
+        <ul>
+          <li><b>Contents</b> (the list button in the menu) has <b>Recap</b> beside every chapter you’ve read; it opens that chapter’s recap. Chapters you haven’t read have a faint ✨ that <a href="#spoilers">asks first</a>.</li>
+          <li><b>Story</b>, at the top of Contents, is the whole Recaps page inside the sheet, with what’s being written right now (“Recapping “Chapter 7”…”) and <b>Full Screen</b>.</li>
+          <li><span class="path">⋯ → Recaps &amp; Story Map</span> in a book opens the Story view over the whole screen.</li>
+          <li><b>Book Details</b>, once the book has recaps, has a <b>Story</b> card with the start of The Story So Far, the five people named most, and <b>Recaps</b> and <b>Story Map</b> buttons, without opening the book.</li>
+        </ul>
+        <p>Once a book’s first recap is written, a tip in Contents points to Story.</p>
+        <div class="shots">
+          <figure class="shot"><img src="../assets/shots/contents.jpg" alt="The Contents sheet of a book, with a pink Recap button beside each chapter that has been read." width="720" height="1565" loading="lazy"><figcaption>Contents: Recap beside every chapter you’ve read.</figcaption></figure>
+          <figure class="shot"><img src="../assets/shots/recaps.jpg" alt="The Recaps page: The Story So Far at the top, then the start of the chapter-by-chapter recaps." width="720" height="1565" loading="lazy"><figcaption>The Recaps page: The Story So Far, then every chapter.</figcaption></figure>
+        </div>
+
+        <h3>The Recaps page</h3>
+        <ul>
+          <li><b>The Story So Far</b>, written from the chapter recaps, a paragraph for each stretch of the book. A long one starts cut short, with <b>More</b>. While it’s being brought up to date it says how far it goes (“As far as “Chapter 12””).</li>
+          <li><b>Story Map</b>: a small picture of the map. Tap it to open the map.</li>
+          <li><b>People</b> and <b>Places</b>: everyone and everywhere so far, most named first. Tap one for their profile.</li>
+          <li><b>Chapter by Chapter</b>: each chapter’s recap with its people and places, <b>Map This Chapter</b>, and <b>Go to Chapter</b>, which takes you back into the book there. Tapping anywhere else on a chapter maps it too.</li>
+        </ul>
+        <p>A chapter without a recap says why:</p>
+        <ul>
+          <li>“Waiting to be written.”, with <b>Write Now</b> to put it first.</li>
+          <li>“You’re reading this one. It’s recapped once you finish it.”</li>
+          <li>“Ahead of you”, with its recap behind <b>Show Recap</b>.</li>
+          <li>“Apple Intelligence wouldn’t recap this chapter. Its content filter can stop it at violent or adult scenes.”, with <b>Try Again</b>.</li>
+        </ul>
+
+        <h3>Starting over, and sending them</h3>
+        <p>The ⋯ menu at the top of the Recaps page has <b>Write Them Again</b>, which asks first, then throws away every recap and the Story Map for the book and writes them again, a chapter at a time, on your other devices too. With Sync with iCloud off, it also has <b>Send to Another Device…</b> (see <a href="#where-it-runs">On a device without Apple Intelligence</a>).</p>
+      </section>
+
+      <section class="doc__sec" id="story-map">
+        <h2>The Story Map</h2>
+        <p>The Story Map is the book’s cast and world, drawn from the chapters you’ve read. Open it from the Story Map card on the Recaps page, the <b>Story Map</b> button in Book Details, or <b>Open in Map</b> on a profile. Across the top, <b>Map</b>, <b>Outline</b> and <b>Web</b> show it three ways, and Libretto remembers the one you like. Until a chapter is recapped, it says “The map fills in as you finish chapters and they’re recapped.”</p>
+        <div class="shots">
+          <figure class="shot"><img src="../assets/shots/story-map.jpg" alt="The Story Map as a mind map: the book’s cover in the middle, with colored branches for chapters and highlights on one side and people and places on the other." width="720" height="1565" loading="lazy"><figcaption>Map: the book in the middle, four branches around it.</figcaption></figure>
+          <figure class="shot"><img src="../assets/shots/story-profile.jpg" alt="A character’s profile in the Story Map: who they are, how often they appear, their connections and a chapter-by-chapter account." width="720" height="1565" loading="lazy"><figcaption>A profile: who they are, their connections, chapter by chapter.</figcaption></figure>
+        </div>
+
+        <h3>Map: a mind map of the book</h3>
+        <p>The book sits in the middle, as a card with its cover, a ring for how far you’ve read, and a count (“21 of 62 chapters read”). Four branches grow from it:</p>
+        <ul>
+          <li><b>People</b> (red), on the right, gathered into families: “The Bennets” when two or more share a surname.</li>
+          <li><b>Places</b> (blue), on the right.</li>
+          <li><b>Chapters</b> (orange), on the left.</li>
+          <li><b>Highlights</b> (purple), on the left: every highlight you’ve made, sorted into its chapter, in its own ink with your note under it. A highlight’s card has <b>Go to Highlight</b>, and chips for the people and places it mentions.</li>
+        </ul>
+
+        <h3>Drilling in</h3>
+        <p>Tap a branch and it moves into the middle with everything on it around it. Tap a person, place or chapter, on any level, for a map of its own:</p>
+        <ul>
+          <li>A person’s map has their <b>Connections</b>, <b>Places</b>, <b>Chapters</b> (what they did in each) and the <b>Highlights</b> that name them.</li>
+          <li>A chapter’s map (also <b>Map This Chapter</b> on the Recaps page) has <b>What Happens</b> and your highlights on one side, and its <b>People</b> (each with what they did) and <b>Places</b> on the other.</li>
+        </ul>
+        <p>The way you came is shown across the top (“Lonesome Dove › People › Gus McCrae”); tap a step to go back to it. On these maps, branches start folded (› at the end of a line) and long lists show their first few (“14 more”): tap to open one, and again to fold it. The card at the bottom is for whatever you picked, with its <b>Profile</b> or <b>Recap</b>.</p>
+        <p>Pinch to zoom, drag to move around, and double-tap the background to see it all. On a phone the map is wider than the screen: it opens on the book, and you can pan either way. The ⋯ menu at the top has <b>Show All</b>, <b>Open Every Branch</b> and <b>Fold Branches</b> (on a person’s, place’s or chapter’s map), and <b>The Whole Story</b> or <b>One Chapter</b>.</p>
+
+        <h3>Rings and tags</h3>
+        <p>Rings mean something. A chapter’s is ticked once it’s recapped (partly filled for the one you’re reading). A person’s or place’s shows how much of what you’ve read they’re in. The four most named people each get a tag in their own color, shown beside them and on every chapter, place and highlight they’re in, so you can see at a glance whose story each chapter is.</p>
+
+        <h3>A note on every connection</h3>
+        <p>At the end of every branch is a short note. Under a connection, it’s what has passed between the two so far (“Mr. Collins has proposed to Elizabeth, and she has refused.”), with what they are to each other in a pill where the chapters agree (“Mother”, “Sibling”). Under a person at a place, it’s what they do there. Notes are written after the chapters, the main characters’ first, then any you open. Until one is written, the map shows what the recaps say of the two together, so every device has something to show. A note is written again as the two share more chapters.</p>
+
+        <h3>Profiles</h3>
+        <p>Tap a name anywhere for their profile: who they are (what most of their latest chapters agree on), how many chapters they’re in and how often they’re named, other names they go by (“Also called …”), a small map of them and their connections (<b>Open in Map</b>), <b>Connections</b> (most time together first, each with the relationship and its note), and <b>Chapter by Chapter</b>: what they did in each.</p>
+
+        <h3>Outline</h3>
+        <p>The same tree as a list with disclosure triangles, for when you’d rather read than pan. Each person and place says who or what they are, each connection has its pill and note, and each highlight shows its whole passage in its ink. Tap a person, place or chapter for its profile or recap, or a highlight to go to it in the book.</p>
+
+        <h3>Web</h3>
+        <p>People (a figure) and places (a pin) as a web, each sized by how often they’re named, with lines where a chapter connects them: solid with an arrow and a label for a relationship (“mother of”, shown when you zoom in or pick one end), gray for two people who meet (darker the more chapters they share), and dashed for a person at a place. Drag a name and everything tied to it follows. The menu turns People, Places and Chapters on and off, and <b>Everyone</b> shows the whole cast rather than the most named. It settles into the same layout every time.</p>
+
+        <h3>Everyone has their own color</h3>
+        <p>Each person and place keeps one color everywhere: their chip and profile, their ring, line and branch on the map, their tag, and their spot on the web. Colors are handed out as people first appear in the book, never by rank, so nobody is repainted as you read on.</p>
+
+        <h3>Full screen, and side by side on iPad</h3>
+        <p>The Story view fills the screen in the book’s page theme, with ✕ to go back to the page. On an iPad (or iPhone Duo opened up, or a big iPhone on its side) it’s two panes: the Recaps page on the left and the map filling the rest. They follow each other: open a chapter or a profile on the left and the map shows it; tap <b>Profile</b> or <b>Recap</b> on the map and it opens on the left. The sidebar button at the map’s top left (or ⌃⌘S on a keyboard) folds the Recaps column away to give the map the whole screen.</p>
+      </section>
+
+      <section class="doc__sec" id="accuracy">
+        <h2>How good is it?</h2>
+        <p>Usually right on the plot and the main people. But the model is small, and now and then it mixes two characters up, gives something one person did to another, adds a detail that isn’t in the book, or blurs who said what. Every recap and answer says so at the bottom: “It can get things wrong.”</p>
+
+        <h3>What Libretto does to keep it honest</h3>
+        <ul>
+          <li><b>Only names the chapter has.</b> The model knows famous books, and would happily bring in people from chapters to come. A name the chapter’s own text doesn’t contain is dropped.</li>
+          <li><b>Only real places.</b> A place has to be a proper name in the book; “the vestibule” or “Mr. Bennet’s room” doesn’t make the map.</li>
+          <li><b>Careful with names.</b> People are joined across chapters by name: “Darcy” is “Mr. Darcy”, but “Mrs. Bennet” is never “Mr. Bennet”, and a short name that could be two people gets its own entry.</li>
+          <li><b>Agreement over the latest word.</b> Who someone is comes from what most of their latest chapters agree on, not from the last thing said about them.</li>
+          <li><b>Relationships aren’t guessed.</b> The model is never asked outright how people are related (when it was, it invented). A relationship comes from what the recaps already said, shows only where the chapters agree, and one said only once about two people who are together in four or more chapters is treated as a slip.</li>
+          <li><b>Notes stay in their lane.</b> A connection note that names anyone or anywhere not in the chapters it was written from is thrown out, and the recaps’ own lines show instead.</li>
+        </ul>
+
+        <h3>Reading it with a critical eye</h3>
+        <ul>
+          <li>Things that show up across several chapters are more likely right than one surprising detail.</li>
+          <li>Counts help: “Together in 6 chapters” is a real bond; “Together in 1 chapter” may be a passing meeting.</li>
+          <li>If two people seem merged, the profile’s “Also called” line shows which names were joined.</li>
+          <li>Check against the book: <b>Go to First Mention</b>, <b>Go to Chapter</b> and <b>Go to Highlight</b> take you to the page.</li>
+          <li>For a famous book, remember the model may know more than you’ve read. Libretto drops what the chapters don’t say, but if something feels like it’s from further on, trust the page.</li>
+          <li>If a book’s recaps went badly wrong, <b>Write Them Again</b> on the Recaps page starts over.</li>
+        </ul>
+      </section>
+
+      <section class="doc__sec" id="settings">
+        <h2>Settings → Story</h2>
+        <figure class="shot shot--side">
+          <img src="../assets/shots/settings-story.jpg" alt="Settings, Story: switches for Catch Me Up, Remind Me, and Chapter Recaps &amp; Story Map, all on, each with an ⓘ, and a note that everything is written by Apple Intelligence on this device from the pages before your place." width="720" height="1565" loading="lazy">
+          <figcaption>Three switches, all on to start. Each ⓘ explains its feature.</figcaption>
+        </figure>
+        <p>All three switches are in <span class="path">Settings → Story</span>, with an ⓘ beside each that explains it. Where Apple Intelligence can’t run, a notice at the top says why (see <a href="#where-it-runs">Where the AI runs</a>).</p>
+        <dl class="opts">
+          <div><dt>Catch Me Up <span class="opts__default">On</span></dt><dd>The ✨ button in books, the “Away · Catch Me Up” pill, and ✨ in Now Playing for a paired audiobook.</dd></div>
+          <div><dt>Remind Me <span class="opts__default">On</span></dt><dd>Remind Me in the menu for selected text.</dd></div>
+          <div><dt>Chapter Recaps &amp; Story Map <span class="opts__default">On</span></dt><dd>Writes a recap of each chapter you finish, in the background, and builds the Story Map. Off, no new recaps are written, and Story, the Recap buttons and the Story card are hidden (recaps already written are kept).</dd></div>
+        </dl>
+        <p>Listen in Catch Me Up uses the voice and speed in <span class="path">Settings → Listening → Read Aloud</span>. For every setting in one place, see <a href="settings.html">Every setting</a>.</p>
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>Does Libretto send my books to Apple or an AI company?</summary>
+          <div><p>No. The model that writes recaps runs on your iPhone or iPad, and the book’s text never leaves it. Libretto has no server. The only copies of the recaps themselves are the ones Sync with iCloud keeps in your own iCloud, or files you send yourself.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why don’t I see the pink sparkles?</summary>
+          <div><p>Check <span class="path">Settings → Story</span>: Catch Me Up may be off, or a notice at the top may say Apple Intelligence can’t run (it’s off, still downloading, or the device doesn’t support it). Also, the ✨ is in the top bar, which shows when you tap the middle of the page, and it doesn’t appear in comics.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I finished a chapter. Why isn’t it recapped yet?</summary>
+          <div><p>A chapter is recapped once you’ve read most of it and moved on to the next, and only while Libretto is open on screen. The chapter you just finished goes first, but a book you were partway through has earlier chapters to catch up on too. On the Recaps page, <b>Write Now</b> puts a waiting chapter first.</p></div>
+        </details>
+        <details class="qa">
+          <summary>I jumped to the last chapter to check something. Did I spoil my Story Map?</summary>
+          <div><p>No. Jumping reads nothing on the way, so the chapters you skipped stay unread, and their recaps aren’t written or shown. Just don’t turn pages through the ending, and don’t ask Catch Me Up for The Story So Far while you’re there: it reads everything before your place.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I have recaps on my older iPad?</summary>
+          <div><p>Yes, written by a device that has Apple Intelligence. With Sync with iCloud on, they arrive by themselves for the same book. With it off, use <b>Send to Another Device…</b> on the Recaps page. The older iPad can’t write recaps itself, so it shows what the other device wrote.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it work with PDFs?</summary>
+          <div><p>Catch Me Up and Remind Me do. Chapter Recaps and the Story Map are for EPUBs and other text books.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why does the first recap take so long?</summary>
+          <div><p>The first time, Libretto reads each chapter it needs and takes notes on it, a piece at a time. Those notes are kept with the book, so later recaps reuse them and come back much faster.</p></div>
+        </details>
+        <details class="qa">
+          <summary>It said part of the book was left out. Why?</summary>
+          <div><p>Apple Intelligence’s content filter declined a passage, usually a violent or adult scene. The rest of the recap is still written. For a whole chapter it wouldn’t recap, <b>Try Again</b> sometimes gets through.</p></div>
+        </details>
+        <details class="qa">
+          <summary>A recap got someone wrong. Can I correct it?</summary>
+          <div><p>You can’t edit recaps. They’re a memory aid, so check anything important against the page with Go to Chapter or Go to First Mention. If a whole book went wrong, <b>Write Them Again</b> starts it over.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does the Story Map work on Apple Watch or Apple TV?</summary>
+          <div><p>Apple TV shows the Chapter Recaps, Story Map and People and Places your iPhone or iPad wrote, for the chapters you’ve read on any device. Apple Watch doesn’t show them. Neither can write recaps. See <a href="devices.html">iPad, Duo, Watch and TV</a>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I turn it all off?</summary>
+          <div><p>Yes. Each feature has its own switch in <span class="path">Settings → Story</span>. Turning off Chapter Recaps &amp; Story Map stops all background writing.</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="hands-free.html"><small>Previous</small>Hands-free reading</a>
+      <a class="pager__next" href="sync.html"><small>Next</small>Sync with iCloud</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

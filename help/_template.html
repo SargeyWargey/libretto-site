@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GUIDE TITLE – Libretto Help</title>
+<meta name="description" content="ONE SENTENCE: what this guide explains.">
+<meta name="theme-color" content="#1B2257">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body class="help-page">
+
+<a class="skip" href="#doc">Skip to content</a>
+
+<!-- SITE-NAV: shared by every page (kept in step by hand) -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Libretto home">
+      <img src="../assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Site">
+      <a href="../index.html#read-along">Read-Along</a>
+      <a href="../index.html#catch-up">Story</a>
+      <a href="../index.html#reading">Reading</a>
+      <a href="../index.html#sync">Sync</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="index.html" aria-current="page">Help</a>
+    </nav>
+    <a class="btn btn--small" href="../index.html#download">Get Libretto</a>
+  </div>
+</header>
+<!-- /SITE-NAV -->
+
+<div class="help-shell">
+
+  <!-- GUIDE-NAV: the same list on every guide; mark the current one with aria-current="page" -->
+  <nav class="guide-nav" aria-label="Guides">
+    <a class="guide-nav__home" href="index.html">All guides</a>
+    <div class="guide-nav__group">
+      <p>Start here</p>
+      <ul>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="reading.html">Reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Listening</p>
+      <ul>
+        <li><a href="read-along.html">Read-Along and audiobooks</a></li>
+        <li><a href="hands-free.html">Hands-free reading</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Story</p>
+      <ul>
+        <li><a href="story.html">Recaps, Story Map and the AI</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Your library</p>
+      <ul>
+        <li><a href="sync.html">Sync with iCloud</a></li>
+        <li><a href="goals.html">Goals, stats and sharing</a></li>
+        <li><a href="hardcover.html">Hardcover</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Devices</p>
+      <ul>
+        <li><a href="devices.html">iPad, Duo, Watch and TV</a></li>
+        <li><a href="shortcuts.html">Widgets, Siri and Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="guide-nav__group">
+      <p>Reference</p>
+      <ul>
+        <li><a href="settings.html">Every setting</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /GUIDE-NAV -->
+
+  <main id="doc" class="doc-wrap">
+    <article class="doc">
+
+      <!-- ===== CONTENT START: writers fill from here ===== -->
+
+      <header class="doc__head">
+        <p class="doc__crumb"><a href="index.html">Help</a></p>
+        <h1>GUIDE TITLE</h1>
+        <p class="doc__lede">One or two plain sentences: what this guide covers and who it's for.</p>
+      </header>
+
+      <aside class="gist" aria-labelledby="gist-title">
+        <h2 id="gist-title">The short version</h2>
+        <ul>
+          <li>Three to six bullets a reader can stop after.</li>
+        </ul>
+      </aside>
+
+      <section class="doc__sec" id="first-topic">
+        <h2>A section heading in sentence case</h2>
+        <p>Body text. Name controls the way the app does, in <b>bold</b>: tap <b>Pair</b>. A path through menus goes in a path span: <span class="path">Settings → iCloud &amp; Storage</span>.</p>
+
+        <figure class="shot shot--side">
+          <img src="../assets/shots/settings-icloud.jpg" alt="Describe what the screenshot shows, for someone who can't see it." width="720" height="1565" loading="lazy">
+          <figcaption>A short caption that adds something the text doesn't.</figcaption>
+        </figure>
+
+        <h3>A subsection</h3>
+        <p>…</p>
+
+        <!-- Only for real sequences a reader follows in order: -->
+        <ol class="steps">
+          <li><p>Open <span class="path">Settings → iCloud &amp; Storage</span>.</p></li>
+          <li><p>Turn on <b>Sync with iCloud</b>.</p></li>
+        </ol>
+
+        <!-- Settings or options, each with what it does; the default in .opts__default when there is one: -->
+        <dl class="opts">
+          <div><dt>Setting name <span class="opts__default">On</span></dt><dd>What it does, in a sentence or two.</dd></div>
+        </dl>
+
+        <!-- Side notes. Kinds: note--tip (a handy extra), note--privacy (what stays on the device / in iCloud), note--heads-up (a limit or gotcha). -->
+        <aside class="note note--tip"><p><b>Tip</b> A useful extra, one or two sentences.</p></aside>
+
+        <!-- Two screenshots side by side: -->
+        <div class="shots">
+          <figure class="shot"><img src="../assets/shots/recaps.jpg" alt="…" width="720" height="1565" loading="lazy"><figcaption>…</figcaption></figure>
+          <figure class="shot"><img src="../assets/shots/story-map.jpg" alt="…" width="720" height="1565" loading="lazy"><figcaption>…</figcaption></figure>
+        </div>
+
+        <!-- Where a diagram would explain better than words, leave a placeholder for the designer (at most two per guide): -->
+        <!-- DIAGRAM: what it should show, e.g. "iPhone and iPad each talk to your own iCloud; nothing goes to a Libretto server" -->
+      </section>
+
+      <section class="doc__sec" id="questions">
+        <h2>Questions</h2>
+        <details class="qa">
+          <summary>A question a reader would actually ask?</summary>
+          <div><p>A direct answer.</p></div>
+        </details>
+      </section>
+
+      <!-- ===== CONTENT END ===== -->
+
+    </article>
+
+    <!-- PAGER: previous and next guide in the GUIDE-NAV order -->
+    <nav class="pager" aria-label="More guides">
+      <a class="pager__prev" href="PREV.html"><small>Previous</small>PREV TITLE</a>
+      <a class="pager__next" href="NEXT.html"><small>Next</small>NEXT TITLE</a>
+    </nav>
+  </main>
+
+  <aside class="toc" aria-label="On this page"></aside>
+
+</div>
+
+<!-- SITE-FOOT -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="../assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Help</a>
+      <a href="../support.html">Support</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+<!-- /SITE-FOOT -->
+
+<script src="../assets/help.js"></script>
+</body>
+</html>

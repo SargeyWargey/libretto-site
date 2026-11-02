@@ -1,0 +1,315 @@
+/* Libretto Help: the guides.
+   The site's tokens (styles.css) on a reading desk: the list of guides on Mist down the left, the
+   guide itself on Paper, what's on this page down the right. Notes take the reader's own page
+   themes: lamp gold for tips, Sage for privacy, Rose for a heads-up. */
+
+.help-page { background: var(--page); color: var(--ink); --text-2: var(--ink-2); --line: var(--rule); }
+.help-page .foot { margin-top: 0; }
+
+/* The desk: guides | guide | on this page. */
+.help-shell {
+  display: grid; grid-template-columns: 264px minmax(0, 1fr) 216px;
+  max-width: 1360px; margin-inline: auto; min-height: 70vh;
+}
+
+/* The list of guides ------------------------------------------------------- */
+
+.guide-nav {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 65px); align-self: start;
+  max-height: calc(100vh - 65px); overflow-y: auto; overscroll-behavior: contain;
+  display: grid; gap: 22px; align-content: start;
+  padding: 32px 24px 48px var(--gutter);
+  background: var(--grain), var(--day); min-height: calc(100vh - 65px);
+  border-right: 1px solid var(--line);
+}
+.guide-nav__home { font: 500 1.2rem/1.2 var(--display); font-variation-settings: "SOFT" 100; text-decoration: none; }
+.guide-nav__home:hover { text-decoration: underline; text-underline-offset: 4px; }
+.guide-nav__group { display: grid; gap: 6px; }
+.guide-nav__group > p { font-size: .8125rem; font-weight: 600; color: var(--ink-2); letter-spacing: .01em; }
+.guide-nav__group ul { display: grid; gap: 1px; }
+.guide-nav__group a {
+  display: block; padding: 6px 10px; margin-left: -10px; border-radius: 8px;
+  font-size: .9375rem; line-height: 1.35; text-decoration: none; color: var(--ink);
+}
+.guide-nav__group a:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.guide-nav__group a[aria-current="page"] { background: var(--surface); font-weight: 600; box-shadow: inset 3px 0 0 var(--signal), 0 1px 2px rgba(27, 34, 87, .08); }
+
+.guide-search { position: relative; }
+.guide-search input, .help-search input {
+  width: 100%; min-height: 42px; padding: 0 14px 0 38px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  font: 500 .9375rem/1 var(--sans);
+}
+.guide-search input::placeholder, .help-search input::placeholder { color: var(--ink-2); opacity: 1; }
+.guide-search svg, .help-search svg { position: absolute; left: 12px; top: 50%; width: 17px; height: 17px; transform: translateY(-50%); color: var(--ink-2); pointer-events: none; }
+
+/* The narrow screen's toggle for the list (help.js). */
+.guide-toggle { display: none; }
+
+/* The guide ---------------------------------------------------------------- */
+
+.doc-wrap { padding: clamp(36px, 5vw, 64px) clamp(20px, 4.5vw, 64px) 72px; min-width: 0; }
+.help-page .doc { padding: 0; max-width: 46rem; margin-inline: auto; font-size: 1.0625rem; line-height: 1.72; }
+
+.doc__head { display: grid; gap: 16px; padding-bottom: 8px; }
+.doc__crumb { font-size: .9375rem; }
+.doc__crumb a { color: var(--ink-2); text-decoration: none; }
+.doc__crumb a:hover { color: var(--ink); text-decoration: underline; }
+.doc__crumb a::after { content: "›"; margin-left: 8px; }
+.doc__head h1 { font-size: clamp(2.3rem, 4.6vw, 3.4rem); line-height: 1.04; max-width: 18ch; }
+.doc__lede { font-size: clamp(1.12rem, 1.5vw, 1.25rem); line-height: 1.6; color: var(--ink-2); max-width: 38em; text-wrap: pretty; }
+.doc__time { font-size: .875rem; color: var(--ink-2); }
+
+/* The short version, with a bookmark ribbon in the app's bookmark red. */
+.gist {
+  position: relative; margin-top: 32px; padding: 26px 30px 26px 28px; border-radius: 18px;
+  background: var(--grain), var(--day); box-shadow: inset 0 0 0 1px var(--line);
+}
+.gist::before {
+  content: ""; position: absolute; top: -1px; right: 28px; width: 18px; height: 34px;
+  background: #D9443B; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 74%, 0 100%);
+}
+.gist h2 { font: 600 1.0625rem/1.3 var(--sans); letter-spacing: 0; max-width: none; font-variation-settings: normal; }
+.help-page .doc .gist ul { display: grid; gap: 8px; margin-top: 12px; padding-left: 0; list-style: none; }
+.gist li { position: relative; padding-left: 22px; }
+.gist li::before { content: ""; position: absolute; left: 3px; top: .68em; width: 7px; height: 7px; border-radius: 50%; background: var(--signal); }
+
+.doc__sec { margin-top: clamp(48px, 6vw, 72px); }
+.doc__sec > * + * { margin-top: 18px; }
+.doc__sec h2 {
+  position: relative; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.12; max-width: none;
+  padding-top: 26px; border-top: 1px solid var(--line);
+}
+.doc__sec h3 { margin-top: 34px; font-size: 1.22rem; line-height: 1.3; }
+.doc__sec h2 + *, .doc__sec h3 + * { margin-top: 12px; }
+/* A link to each heading, for sending someone straight to it (help.js). */
+.anchor { margin-left: 10px; color: var(--ink-2); text-decoration: none; font: 500 .7em/1 var(--sans); opacity: 0; transition: opacity .15s ease; vertical-align: .15em; }
+h2:hover .anchor, h3:hover .anchor, .anchor:focus-visible { opacity: 1; }
+
+.help-page .doc p, .help-page .doc li, .help-page .doc dd { text-wrap: pretty; }
+.help-page .doc a { color: var(--signal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.help-page .doc a:hover { text-decoration-thickness: 2px; }
+.help-page .doc b, .help-page .doc strong { font-weight: 650; }
+.help-page .doc__sec ul:not([class]) { display: grid; gap: 8px; padding-left: 1.25em; list-style: disc; }
+.help-page .doc__sec ul:not([class]) li::marker { color: var(--ink-2); }
+.help-page .doc__sec ol:not([class]) { display: grid; gap: 8px; padding-left: 1.4em; list-style: decimal; }
+
+/* A path through the app's menus: Settings → iCloud & Storage. */
+.path {
+  display: inline; padding: 1px 7px; border-radius: 6px; white-space: normal;
+  background: color-mix(in srgb, var(--day) 80%, var(--ink) 4%); box-shadow: inset 0 0 0 1px var(--line);
+  font-weight: 600; font-size: .95em; -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* Steps: only for real sequences. A numbered dot each, on a thread. */
+.help-page .doc .steps { display: grid; gap: 0; grid-template-columns: none; counter-reset: step; margin-top: 22px; }
+.help-page .doc .steps li {
+  counter-increment: step; position: relative; display: block; padding: 0 0 20px 50px; border: 0;
+}
+.help-page .doc .steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 0;
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--signal); color: var(--on-signal); font: 600 .9375rem/1 var(--sans);
+}
+.help-page .doc .steps li:not(:last-child)::after { content: ""; position: absolute; left: 15.5px; top: 38px; bottom: 6px; width: 1px; background: var(--line); }
+.help-page .doc .steps li > * + * { margin-top: 8px; }
+.help-page .doc .steps p { color: var(--ink); }
+
+/* Options and settings, each with its default. */
+.opts { display: grid; border-top: 1px solid var(--line); margin-top: 22px; }
+.opts > div { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.opts dt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; font-weight: 650; }
+.opts dd { color: var(--ink-2); }
+.opts__default {
+  font-size: .78rem; font-weight: 600; color: var(--ink-2); padding: 2px 9px; border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--line); background: var(--surface); white-space: nowrap;
+}
+
+/* Notes, in the reader's page themes. */
+.note { padding: 16px 20px; border-radius: 14px; border-left: 4px solid; }
+.note p + p { margin-top: 8px; }
+.note b:first-child { margin-right: 4px; }
+.note--tip { background: #FBF0D4; border-color: #D9A441; }
+.note--privacy { background: #E3ECDD; border-color: #3E7A43; color: #2D3A2A; }
+.note--privacy a { color: #2B5E30; }
+.note--heads-up { background: #F6E9E6; border-color: #A2485A; color: #4A3334; }
+.note--heads-up a { color: #8A3346; }
+
+/* Screenshots, in a phone's frame. */
+.shot { display: grid; gap: 10px; justify-items: center; width: min(100%, 264px); margin-inline: auto; }
+.shot img {
+  display: block; width: 100%; height: auto; border-radius: 30px;
+  border: 7px solid #0B0C12; box-shadow: 0 0 0 1px #3A3F57, 0 28px 50px -28px rgba(27, 34, 87, .5);
+  background: #0B0C12;
+}
+.shot figcaption { color: var(--ink-2); font-size: .875rem; line-height: 1.45; text-align: center; max-width: 30ch; }
+.shots { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px 32px; }
+.shots .shot { margin-inline: 0; width: min(100%, 240px); }
+@media (min-width: 900px) {
+  .shot--side { float: right; width: 236px; margin: 6px 0 24px 36px; }
+  .doc__sec { display: flow-root; }
+  .doc__sec > h2, .doc__sec > h3 { clear: both; }
+}
+
+/* Diagrams (inline SVG), drawn to sit on the light or dark pages. */
+.diagram { margin-block: 28px; padding: 24px; border-radius: 18px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+.diagram svg { display: block; width: 100%; height: auto; }
+.diagram figcaption { margin-top: 14px; color: var(--ink-2); font-size: .9375rem; text-align: center; }
+.diagram .d-ink { fill: var(--ink); }
+.diagram .d-ink2 { fill: var(--ink-2); }
+.diagram .d-line { stroke: var(--ink-2); }
+.diagram .d-rule { stroke: var(--line); }
+.diagram .d-card { fill: var(--page); stroke: var(--line); }
+.diagram .d-day { fill: var(--day); }
+.diagram .d-navy { fill: #1B2257; }
+.diagram .d-cream { fill: #F5EFE2; }
+.diagram .d-gold { fill: #E4BC5A; }
+.diagram .d-story { fill: #FF639B; }
+.diagram .d-lumen { fill: #7DE3F4; }
+.diagram text { font-family: var(--sans); }
+.diagram .d-serif { font-family: var(--display); font-variation-settings: "SOFT" 100; }
+
+/* Questions. */
+.qa { border-bottom: 1px solid var(--line); }
+.doc__sec h2 + .qa { margin-top: 8px; }
+.qa + .qa { margin-top: 0; }
+.qa summary {
+  display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; cursor: pointer; list-style: none;
+  font-weight: 600; line-height: 1.4;
+}
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary::after { content: "+"; flex: none; font: 400 1.5rem/1 var(--sans); color: var(--ink-2); transition: transform .2s ease; }
+.qa[open] summary::after { transform: rotate(45deg); }
+.qa > div { padding-bottom: 20px; color: var(--ink-2); }
+.qa > div > * + * { margin-top: 10px; }
+
+/* Previous and next. */
+.pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 46rem; margin: 72px auto 0; }
+.pager a {
+  display: grid; gap: 2px; padding: 18px 20px; border-radius: 16px; text-decoration: none;
+  background: var(--surface); box-shadow: inset 0 0 0 1px var(--line);
+  font: 500 1.2rem/1.25 var(--display); font-variation-settings: "SOFT" 100;
+}
+.pager a:hover { box-shadow: inset 0 0 0 1px var(--ink-2); }
+.pager small { font: 500 .8125rem/1.4 var(--sans); color: var(--ink-2); }
+.pager__next { grid-column: 2; text-align: right; }
+
+/* On this page ------------------------------------------------------------- */
+
+.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 65px); align-self: start; padding: 64px 24px 32px 8px; font-size: .875rem; }
+.toc p { font-weight: 600; color: var(--ink-2); margin-bottom: 10px; }
+.toc ol { display: grid; gap: 2px; border-left: 1px solid var(--line); }
+.toc a { display: block; padding: 5px 0 5px 14px; margin-left: -1px; border-left: 2px solid transparent; color: var(--ink-2); text-decoration: none; line-height: 1.35; }
+.toc a:hover { color: var(--ink); }
+.toc a.is-here { color: var(--ink); font-weight: 600; border-left-color: var(--signal); }
+.toc-inline { display: none; }
+
+/* The Help home --------------------------------------------------------------- */
+
+.help-hero { padding-block: clamp(64px, 8vw, 112px) clamp(56px, 7vw, 96px); background:
+  radial-gradient(40% 70% at 82% 40%, var(--lamp-glow), transparent 70%),
+  linear-gradient(180deg, var(--house-deep), var(--house)); }
+.help-hero__inner { display: grid; gap: 22px; }
+.help-hero__inner > * { max-width: 760px; }
+.help-hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.4rem); max-width: 14ch; }
+.help-search { position: relative; margin-top: 10px; max-width: 560px; }
+.help-search input { min-height: 56px; padding-left: 48px; font-size: 1.0625rem; border-radius: 16px; border-color: transparent; box-shadow: 0 18px 40px -20px rgba(0, 0, 0, .6); background: #FFFFFF; color: #181C3F; }
+.help-search input::placeholder { color: #545B80; }
+.help-search svg { left: 17px; width: 20px; height: 20px; color: #545B80; }
+.help-results { display: grid; gap: 4px; margin-top: 14px; max-width: 760px; }
+.help-results:empty { display: none; }
+.help-results a {
+  display: grid; gap: 4px; padding: 14px 18px; border-radius: 14px; text-decoration: none;
+  background: rgba(248, 249, 254, .06); box-shadow: inset 0 0 0 1px var(--house-line);
+}
+.help-results a:hover, .help-results a:focus-visible { background: rgba(248, 249, 254, .12); }
+.help-results .r-where { font-size: .8125rem; color: var(--on-house-2); }
+.help-results .r-title { font-weight: 600; color: var(--on-house); }
+.help-results .r-snip { font-size: .9375rem; color: var(--on-house-2); }
+.help-results mark { background: rgba(242, 196, 109, .3); color: inherit; border-radius: 3px; padding: 0 1px; }
+.help-results .r-none { color: var(--on-house-2); padding: 6px 2px; }
+
+.featured { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.featured a {
+  display: grid; gap: 12px; align-content: start; padding: 28px; border-radius: 22px; text-decoration: none;
+  background: var(--surface); box-shadow: inset 0 0 0 1px var(--line), var(--shadow);
+  transition: transform .15s ease;
+}
+.featured a:hover { transform: translateY(-2px); }
+.featured svg { width: 40px; height: 40px; }
+.featured h3 { font: 500 1.55rem/1.15 var(--display); font-variation-settings: "SOFT" 100; letter-spacing: -.01em; }
+.featured p { color: var(--ink-2); }
+.featured .f-sync svg { color: #3B45C4; }
+.featured .f-story svg { color: #D23C78; }
+.featured .f-listen svg { color: #3E7A43; }
+
+.parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px clamp(40px, 6vw, 88px); margin-top: clamp(56px, 7vw, 88px); }
+.part h2 { font-size: clamp(1.5rem, 2.4vw, 1.9rem); max-width: none; margin-bottom: 14px; }
+.part h2 small { display: block; font: 600 .8125rem/1.4 var(--sans); color: var(--ink-2); letter-spacing: .01em; margin-bottom: 4px; font-variation-settings: normal; }
+
+.asks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(32px, 5vw, 72px); margin-top: 28px; }
+.asks a { display: block; padding: 16px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-weight: 600; }
+.asks a:hover { color: var(--signal); }
+
+.help-band { padding-block: clamp(64px, 8vw, 104px); }
+.help-band h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); }
+
+/* Narrower screens ------------------------------------------------------------- */
+
+@media (max-width: 1240px) {
+  .help-shell { grid-template-columns: 248px minmax(0, 1fr); }
+  .toc { display: none; }
+  .toc-inline { display: block; margin-top: 24px; border-radius: 14px; box-shadow: inset 0 0 0 1px var(--line); }
+  .toc-inline summary { padding: 12px 18px; font-weight: 600; cursor: pointer; }
+  .toc-inline ol { display: grid; gap: 2px; padding: 0 18px 14px; }
+  .toc-inline a { color: var(--ink-2); text-decoration: none; display: block; padding: 4px 0; }
+  .toc-inline a:hover { color: var(--ink); }
+}
+
+@media (max-width: 900px) {
+  .help-shell { grid-template-columns: minmax(0, 1fr); }
+  .guide-nav { position: static; max-height: none; min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); padding: 20px var(--gutter); }
+  .js .guide-nav:not(.is-open) > :not(.guide-toggle) { display: none; }
+  .guide-toggle {
+    display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 44px;
+    padding: 0 14px; border: 0; border-radius: 12px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line);
+    font-weight: 600; cursor: pointer; color: var(--ink);
+  }
+  .guide-toggle svg { width: 18px; height: 18px; transition: transform .2s ease; }
+  .guide-nav.is-open .guide-toggle svg { transform: rotate(180deg); }
+  .featured, .parts, .asks { grid-template-columns: minmax(0, 1fr); }
+  .pager { grid-template-columns: minmax(0, 1fr); }
+  .pager__next { grid-column: 1; }
+}
+
+@media (max-width: 640px) {
+  /* Diagrams keep a legible size and scroll sideways in their card. */
+  .diagram { padding: 16px; overflow-x: auto; }
+  .diagram svg { min-width: 560px; }
+  .gist { padding: 22px 20px; }
+  .gist::before { right: 18px; }
+  .doc .steps li { padding-left: 44px; }
+}
+
+/* Dark: the notes keep their page themes' dark counterparts. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .note--tip { background: #3A2E17; border-color: #D9A441; }
+  :root:not([data-theme="light"]) .note--privacy { background: #232E21; border-color: #7FB27F; color: #DDE8D6; }
+  :root:not([data-theme="light"]) .note--privacy a { color: #A7D3A2; }
+  :root:not([data-theme="light"]) .note--heads-up { background: #3A2326; border-color: #D97C8C; color: #F0DEDB; }
+  :root:not([data-theme="light"]) .note--heads-up a { color: #F2A7B4; }
+  :root:not([data-theme="light"]) .featured .f-sync svg { color: #A9B8FF; }
+  :root:not([data-theme="light"]) .featured .f-listen svg { color: #A7D3A2; }
+}
+:root[data-theme="dark"] .note--tip { background: #3A2E17; border-color: #D9A441; }
+:root[data-theme="dark"] .note--privacy { background: #232E21; border-color: #7FB27F; color: #DDE8D6; }
+:root[data-theme="dark"] .note--privacy a { color: #A7D3A2; }
+:root[data-theme="dark"] .note--heads-up { background: #3A2326; border-color: #D97C8C; color: #F0DEDB; }
+:root[data-theme="dark"] .note--heads-up a { color: #F2A7B4; }
+:root[data-theme="dark"] .featured .f-sync svg { color: #A9B8FF; }
+:root[data-theme="dark"] .featured .f-listen svg { color: #A7D3A2; }
+
+@media print {
+  .nav, .guide-nav, .toc, .pager, .foot { display: none; }
+  .help-shell { display: block; }
+}

@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Libretto</title>
+<meta name="description" content="Libretto is an ebook and audiobook reader for iPhone and iPad. It syncs your ebook with its audiobook word for word, recaps what you've read and maps who's who without spoilers, turns pages hands-free, and keeps your place on every device through iCloud.">
+<meta name="theme-color" content="#1B2257">
+<meta property="og:title" content="Libretto: read a chapter, listen to the next">
+<meta property="og:description" content="An ebook and audiobook reader for iPhone and iPad that keeps your book and its audiobook in step, word for word.">
+<meta property="og:image" content="assets/img/icon-512.png">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="Libretto home">
+      <img src="assets/img/favicon.png" alt="" width="32" height="32">
+      <span>Libretto</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#read-along">Read-Along</a>
+      <a href="#catch-up">Story</a>
+      <a href="#reading">Reading</a>
+      <a href="#sync">Sync</a>
+      <a href="#pricing">Pricing</a>
+      <a href="help/">Help</a>
+    </nav>
+    <a class="btn btn--small" href="#download">Get Libretto</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Hero ------------------------------------------------------------ -->
+<section class="band band--house hero" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1 class="hero__title" id="hero-title">Read a chapter, listen to the next, and never lose your place.</h1>
+      <p class="lead">Libretto lines up your ebook with its audiobook, word for word, right on your iPhone. Read when you can look, listen when you can’t, and pick up exactly where the other left off.</p>
+      <div class="cta-row">
+        <a class="store" href="#download" data-store-link>
+          <svg class="store__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="store__text"><small>Download on the</small>App Store</span>
+        </a>
+        <p class="cta-note">Free to download.<br>Libretto Pro is a one-time $7.99.</p>
+      </div>
+      <p class="devices">For iPhone, iPad, iPhone Duo, Apple Watch and Apple TV.</p>
+    </div>
+
+    <div class="hero__stage">
+      <div class="phone" style="--w: 340px">
+        <div class="phone__body">
+          <div class="phone__screen reader" data-theme-page="sepia" id="hero-reader">
+            <span class="phone__island" aria-hidden="true"></span>
+            <div class="reader__viewport">
+              <div class="reader__page" data-page="0">
+                <p class="reader__chap">Chapter 1</p>
+                <p>It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.</p>
+                <p>However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.</p>
+                <p>“My dear Mr. Bennet,” said his lady to him one day, “have you heard that Netherfield Park is let at last?”</p>
+                <p>Mr. Bennet replied that he had not.</p>
+              </div>
+              <div class="reader__page" data-page="1" hidden>
+                <p>“But it is,” returned she; “for Mrs. Long has just been here, and she told me all about it.”</p>
+                <p>Mr. Bennet made no answer.</p>
+                <p>“Do you not want to know who has taken it?” cried his wife impatiently.</p>
+                <p>“<em>You</em> want to tell me, and I have no objection to hearing it.”</p>
+                <p>This was invitation enough.</p>
+                <p>“Why, my dear, you must know, Mrs. Long says that Netherfield is taken by a young man of large fortune from the north of England.”</p>
+              </div>
+              <span class="ra-marker" aria-hidden="true"></span>
+            </div>
+            <p class="reader__status" id="hero-status">2 pages left in chapter · 3 min</p>
+            <div class="reader__controls">
+              <span class="rc rc--menu" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 7.5h13M5.5 12h13M5.5 16.5h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+              <button class="rc rc--play" type="button" data-hero="play" aria-label="Play narration" aria-pressed="false">
+                <svg class="i-play" viewBox="0 0 24 24"><path d="M7.5 6.2v11.6c0 .8.9 1.3 1.6.9l9.4-5.8c.6-.4.6-1.3 0-1.7l-9.4-5.8c-.7-.5-1.6 0-1.6.8z" fill="currentColor"/></svg>
+                <svg class="i-pause" viewBox="0 0 24 24"><rect x="6.5" y="5.5" width="3.8" height="13" rx="1.1" fill="currentColor"/><rect x="13.7" y="5.5" width="3.8" height="13" rx="1.1" fill="currentColor"/></svg>
+              </button>
+              <div class="rc-turns">
+                <button class="rc-turn" type="button" data-hero="prev" aria-label="Previous page"><svg viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <span class="rc-turns__rule" aria-hidden="true"></span>
+                <button class="rc-turn" type="button" data-hero="next" aria-label="Next page"><svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="stage-caption">Press play. The narrated line is marked, and the page turns by itself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- A look around: the real app ------------------------------------- -->
+<section class="band band--day tour" id="tour" aria-labelledby="tour-title">
+  <div class="wrap tour__head">
+    <h2 id="tour-title">Have a look around.</h2>
+    <p class="lead">Screens straight from Libretto on iPhone, with classics from Project Gutenberg on the shelf.</p>
+    <div class="tour__btns">
+      <button type="button" class="tour__btn" data-tour="-1" aria-label="Scroll back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="tour__btn" data-tour="1" aria-label="Scroll on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+  <div class="tour__rail" tabindex="0" aria-label="Screenshots of Libretto">
+    <ul class="tour__list">
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/home.jpg" alt="Home in the Sepia app theme: 25 minutes read today with the daily goal met, a five-day streak, then Continue with Pride and Prejudice, and a row of books" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Home</h3><p>Today’s goal, your streak, and every book you’re partway through.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/library.jpg" alt="The Books tab: classics in a grid of covers, with sort and filter chips along the top" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Books</h3><p>Your library, sorted and filtered your way, ebooks and audiobooks apart.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/reader-menu.jpg" alt="Pride and Prejudice with the menu up: Close, the pink Catch Me Up sparkles, Bookmark, Contents, Aa and more, and a scrubber across the book" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>In a book</h3><p>Tap the middle of the page for the menu and a scrubber across the book.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/this-book.jpg" alt="The book’s ⋯ menu: Search Book, Highlights &amp; Notes, Recaps &amp; Story Map, Pair with Audiobook, Read Aloud, Auto-Scroll and more" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Everything for this book</h3><p>Search, highlights, recaps, listening and hands-free, all in ⋯.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/appearance.jpg" alt="The Aa sheet over a page: ten page themes as swatches, then text size and font" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Make it yours</h3><p>Ten page themes, Apple’s reading fonts, sizes and spacing.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/recaps.jpg" alt="Recaps for Pride and Prejudice: The Story So Far, a small Story Map, then people and places" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Recaps</h3><p>Each chapter summed up as you finish it, never a page ahead.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/story-map.jpg" alt="The Story Map of Pride and Prejudice, opened on its People branch: families like the Bennets and the Bingleys, each person on a coloured line" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Story Map</h3><p>Who’s who and how they’re connected, from the pages you’ve read.</p>
+      </li>
+      <li class="tour__item">
+        <div class="phone phone--shot"><div class="phone__body"><div class="phone__screen">
+          <img src="assets/shots/book-details.jpg" alt="Book Details for Pride and Prejudice: the cover, Reading at page 152 of 477, Continue Reading, Rate, shelf and Mark as Read, then Your Reading" loading="lazy" width="720" height="1565">
+        </div></div></div>
+        <h3>Book Details</h3><p>One page for everything about a book, from progress to pairing.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Read-Along ------------------------------------------------------- -->
+<section class="band band--house" id="read-along" aria-labelledby="ra-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="ra-title">Your ebook and its audiobook, in step.</h2>
+      <p class="lead">Read-Along pairs a book you own with its audiobook. Libretto listens to the narration on your iPhone and matches it to the text, word by word, so switching between reading and listening never costs you a sentence.</p>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <h3>Pair them</h3>
+        <p>Libretto notices when your library has an ebook and an audiobook of the same title and offers to pair them. You can also pair any two yourself.</p>
+      </li>
+      <li>
+        <h3>Libretto lines them up</h3>
+        <p>Transcription runs on your iPhone, starting from where you’ll listen. It’s ready to play once the next 20 minutes are lined up, usually in about a minute, and keeps going while you read.</p>
+      </li>
+      <li>
+        <h3>Read, listen, or both</h3>
+        <p>Follow the marked line, put the phone in your pocket and keep listening, then open the book at the sentence the narrator reached.</p>
+      </li>
+    </ol>
+
+    <figure class="sync" aria-labelledby="sync-cap">
+      <div class="sync__track" role="img" aria-label="An 11 hour 35 minute audiobook. You are at 2 hours 10 minutes. The 20 minutes after that are prepared first, and preparing carries on forward from there.">
+        <span class="sync__done" style="left: 18.7%; width: 9.5%"></span>
+        <span class="sync__ready" style="left: 18.7%; width: 2.9%"></span>
+        <span class="sync__here" style="left: 18.7%"><span>You’re here, 2:10:04</span></span>
+      </div>
+      <div class="sync__scale" aria-hidden="true"><span>0:00</span><span>11:35:10</span></div>
+      <figcaption id="sync-cap"><span class="key key--ready"></span> Ready to play once the next 20 minutes are lined up. <span class="key key--done"></span> Preparing carries on ahead of you, and survives closing the app.</figcaption>
+    </figure>
+
+    <div class="ra-details">
+      <div class="markers">
+        <h3>Pick your marker</h3>
+        <p>The line being read gets a dot in the margin, a highlight, or an underline. Or nothing at all.</p>
+        <div class="markers__grid">
+          <figure class="mk mk--dot"><div class="mk__page"><span class="mk__line"></span><span class="mk__line is-now"></span><span class="mk__line"></span></div><figcaption>Dot</figcaption></figure>
+          <figure class="mk mk--hl"><div class="mk__page"><span class="mk__line"></span><span class="mk__line is-now"></span><span class="mk__line"></span></div><figcaption>Highlight</figcaption></figure>
+          <figure class="mk mk--ul"><div class="mk__page"><span class="mk__line"></span><span class="mk__line is-now"></span><span class="mk__line"></span></div><figcaption>Underline</figcaption></figure>
+        </div>
+      </div>
+      <dl class="facts">
+        <div><dt>Look around while it plays</dt><dd>Flip ahead, check the contents or follow a link. The narration carries on, and Back to Narration brings you home.</dd></div>
+        <div><dt>Start from any word</dt><dd>Long-press a word and choose Play from Here.</dd></div>
+        <div><dt>One place for both</dt><dd>Bookmarks and highlights work in the book and the player. A bookmark made while listening opens the book at those words.</dd></div>
+        <div><dt>Skips what isn’t in the book</dt><dd>Opening credits and bonus excerpts show what’s playing, with a countdown to the text and Skip to Text.</dd></div>
+      </dl>
+    </div>
+
+    <div class="listen">
+      <div>
+        <h3>A full audiobook player</h3>
+        <p>M4B chapters, 0.5× to 3× without the chipmunk voice, a sleep timer that can wait for the end of the chapter, AirPlay, and controls on the Lock Screen.</p>
+      </div>
+      <div>
+        <h3>Read Aloud for every other book</h3>
+        <p>No audiobook? Your iPhone’s own voices read any EPUB aloud, marking the words as they go and turning the pages for you.</p>
+      </div>
+    </div>
+    <p class="section-more"><a class="more" href="help/read-along.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>The Read-Along guide: pairing, markers and the player</a></p>
+  </div>
+</section>
+
+<!-- Catch Me Up ------------------------------------------------------ -->
+<section class="band band--day" id="catch-up" aria-labelledby="cu-title">
+  <div class="wrap split">
+    <div class="split__copy">
+      <h2 id="cu-title">Been away a while? Catch up without spoilers.</h2>
+      <p class="lead">Tap the sparkles in any book and Apple Intelligence writes a recap of what you’ve read, right on your iPhone. It reads only up to the first word on your screen, so nothing ahead is given away.</p>
+
+      <div class="away" role="group" aria-label="Time away from the book">
+        <p class="away__label" id="away-label">How long since you last read?</p>
+        <div class="seg" role="radiogroup" aria-labelledby="away-label">
+          <button type="button" role="radio" aria-checked="false" data-away="pages" id="away-pages">A few hours</button>
+          <button type="button" role="radio" aria-checked="false" data-away="chapter" id="away-chapter">Three days</button>
+          <button type="button" role="radio" aria-checked="true" data-away="story" id="away-story">Two weeks</button>
+        </div>
+      </div>
+      <p class="body-note">The longer you’ve been away, the further back it goes: the last few pages, then the last chapter, then the whole story so far with a Who’s Who of the main characters. Touch and hold the button to choose for yourself.</p>
+      <a class="more" href="help/story.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>How the AI works, and how it avoids spoilers</a>
+    </div>
+
+    <div class="split__visual">
+      <div class="phone" style="--w: 330px">
+        <div class="phone__body">
+          <div class="phone__screen reader reader--dim" data-theme-page="paper">
+            <span class="phone__island" aria-hidden="true"></span>
+            <div class="reader__viewport" aria-hidden="true">
+              <div class="reader__page">
+                <p>“Mr. Wickham is blessed with such happy manners as may insure his <em>making</em> friends; whether he may be equally capable of <em>retaining</em> them, is less certain.”</p>
+                <p>“He has been so unlucky as to lose your friendship,” replied Elizabeth with emphasis, “and in a manner which he is likely to suffer from all his life.”</p>
+              </div>
+            </div>
+            <div class="sheet" aria-live="polite">
+              <div class="sheet__bar"><span class="sheet__done">Done</span><span class="sheet__title">Catch Me Up</span><span class="sheet__menu">Recap…</span></div>
+              <div class="recap" data-recap="pages" hidden>
+                <p class="recap__when">You last read 3 hours ago.</p>
+                <h4>The Last Few Pages</h4>
+                <p>At the Netherfield ball, Elizabeth learns that Wickham has stayed away, and suspects Darcy is the reason. After two mortifying dances with Mr. Collins, she is surprised into accepting Darcy as a partner.</p>
+                <p>They dance in near silence until she mentions meeting Wickham in Meryton. Darcy stiffens, and answers that Wickham makes friends easily, though whether he keeps them is less certain.</p>
+              </div>
+              <div class="recap" data-recap="chapter" hidden>
+                <p class="recap__when">You last read 3 days ago.</p>
+                <h4>The Last Chapter and This One</h4>
+                <p>Elizabeth tells Jane what Wickham said about Mr. Darcy, and Jane tries to believe that nobody has acted wrongly. The Bingleys invite the family to a ball at Netherfield, and Mr. Collins claims Elizabeth for the first two dances.</p>
+                <p>At the ball, Wickham is missing, and Elizabeth blames Darcy. She dances with him at last, and when she raises Wickham, Darcy answers coldly that Wickham makes friends more easily than he keeps them.</p>
+              </div>
+              <div class="recap" data-recap="story">
+                <p class="recap__when">You last read 2 weeks ago.</p>
+                <h4>The Story So Far</h4>
+                <p>The Bennets of Longbourn have five daughters and no son, so their estate will pass to a cousin. When wealthy Mr. Bingley takes nearby Netherfield Park, he is soon taken with Jane, the eldest. His friend Mr. Darcy is thought proud after he calls Elizabeth only “tolerable” at the Meryton assembly.</p>
+                <p>Jane falls ill at Netherfield, and Elizabeth walks there to nurse her, trading sharp words with Darcy, who begins to admire her. In Meryton, the charming officer Mr. Wickham tells Elizabeth that Darcy cheated him of a living his father had promised him.</p>
+                <h4>Who’s Who</h4>
+                <dl class="who">
+                  <dt>Elizabeth Bennet</dt><dd>The second daughter, quick and outspoken.</dd>
+                  <dt>Mr. Darcy</dt><dd>Bingley’s wealthy friend, thought proud by all of Meryton.</dd>
+                  <dt>Jane Bennet</dt><dd>The eldest, gentle, and admired by Mr. Bingley.</dd>
+                  <dt>Mr. Wickham</dt><dd>A militia officer with a grievance against Darcy.</dd>
+                </dl>
+              </div>
+              <p class="sheet__foot">Written on this iPhone by Apple Intelligence. Recaps can mix people up or add a detail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap remind">
+    <div class="remind__page" aria-hidden="true">
+      <p>“Mr. <mark class="sel">Wickham<span class="selmenu">
+        <span title="Highlight"><svg viewBox="0 0 24 24"><path d="m14 5 5 5-8 8H6v-5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 21h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span title="Add Note"><svg viewBox="0 0 24 24"><path d="M6 4h9l3 3v13H6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 11h6M9 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span class="is-on" title="Remind Me"><svg viewBox="0 0 24 24"><path d="M12 3c.6 3.8 2.2 5.4 6 6-3.8.6-5.4 2.2-6 6-.6-3.8-2.2-5.4-6-6 3.8-.6 5.4-2.2 6-6zM18.5 14.5c.3 1.7 1 2.4 2.5 2.7-1.5.3-2.2 1-2.5 2.8-.3-1.7-1-2.5-2.5-2.8 1.5-.3 2.2-1 2.5-2.7z" fill="currentColor"/></svg></span>
+        <span title="Play from Here"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+        <span>Copy</span>
+      </span></mark> is blessed with such happy manners as may insure his <em>making</em> friends; whether he may be equally capable of <em>retaining</em> them, is less certain.”</p>
+      <p>“He has been so unlucky as to lose <em>your</em> friendship,” replied Elizabeth with emphasis, “and in a manner which he is likely to suffer from all his life.”</p>
+    </div>
+    <div class="remind__card">
+      <h3>Remind Me</h3>
+      <p class="remind__intro">Select a name you’ve forgotten and Libretto tells you who it is, from the pages you’ve already read.</p>
+      <div class="recall">
+        <p class="recall__term">Wickham</p>
+        <p class="recall__meta">Mentioned 38 times before here, first in Chapter 15</p>
+        <p>An officer in the militia quartered at Meryton, handsome and easy to like. He tells Elizabeth that Mr. Darcy, his godfather’s son, refused him the church living he had been left, and she believes him.</p>
+        <p class="recall__so">So Far</p>
+        <ul>
+          <li>Meets the Bennet sisters in Meryton, and he and Darcy both change colour on seeing each other.</li>
+          <li>Tells Elizabeth his history with the Darcys at Mrs. Philips’s.</li>
+          <li>Stays away from the Netherfield ball.</li>
+        </ul>
+        <p class="recall__go">Go to First Mention</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Story Map -------------------------------------------------------- -->
+<section class="band band--house" id="story-map" aria-labelledby="sm-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="sm-title">A map of everyone you’ve met so far.</h2>
+      <p class="lead">Finish a chapter and Libretto recaps it while you read on, then adds its people and places to the book’s Story Map: who they are, what they did, and how they’re all connected. It only maps the chapters you’ve read, so it never gets ahead of you.</p>
+    </div>
+
+    <figure class="slate" aria-labelledby="sm-cap">
+      <div class="slate__body">
+        <div class="slate__screen" id="story-demo">
+          <aside class="sv-recaps" aria-label="Recaps">
+            <div class="sv-bar">
+              <span class="sv-round" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+              <span class="sv-bar__title">Recaps</span>
+              <span class="sv-round" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8.3" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="15.7" cy="12" r="1.2" fill="currentColor"/></svg></span>
+            </div>
+            <div class="sv-scroll">
+              <h4>The Story So Far</h4>
+              <p>The Bennets of Longbourn have five daughters and no son, so their estate will pass to a cousin. When wealthy Mr. Bingley takes nearby Netherfield Park, he is soon taken with Jane, the eldest. His friend Mr. Darcy is thought proud after he calls Elizabeth only “tolerable”.</p>
+              <p class="sv-note">As far as Chapter XVII</p>
+              <h5>People</h5>
+              <div class="sv-chips">
+                <button type="button" class="sv-chip" data-show="elizabeth"><i class="sv-dot sv-dot--people">EB</i>Elizabeth Bennet</button>
+                <button type="button" class="sv-chip" data-show="darcy"><i class="sv-dot sv-dot--people">D</i>Mr. Darcy</button>
+                <button type="button" class="sv-chip" data-show="jane"><i class="sv-dot sv-dot--people">JB</i>Jane Bennet</button>
+                <button type="button" class="sv-chip" data-show="wickham"><i class="sv-dot sv-dot--people">W</i>Mr. Wickham</button>
+              </div>
+              <h5>Places</h5>
+              <div class="sv-chips">
+                <button type="button" class="sv-chip" data-show="netherfield"><i class="sv-dot sv-dot--places"></i>Netherfield</button>
+                <button type="button" class="sv-chip" data-show="meryton"><i class="sv-dot sv-dot--places"></i>Meryton</button>
+              </div>
+              <h4>Chapter by Chapter</h4>
+              <article class="sv-ch" data-chapter="XV">
+                <div class="sv-ch__head"><h6>Chapter XV</h6><button type="button" class="sv-ch__map" data-map="XV" aria-label="Map Chapter XV"></button></div>
+                <p>Mr. Collins settles on marrying Elizabeth. In Meryton the sisters meet the charming Mr. Wickham, and he and Mr. Darcy change colour at the sight of each other.</p>
+              </article>
+              <article class="sv-ch" data-chapter="XVI">
+                <div class="sv-ch__head"><h6>Chapter XVI</h6><button type="button" class="sv-ch__map" data-map="XVI" aria-label="Map Chapter XVI"></button></div>
+                <p>At Mrs. Philips’s, Wickham tells Elizabeth that Darcy refused him the living Darcy’s father had left him. She believes every word.</p>
+              </article>
+              <article class="sv-ch" data-chapter="XVII">
+                <div class="sv-ch__head"><h6>Chapter XVII</h6><button type="button" class="sv-ch__map" data-map="XVII" aria-label="Map Chapter XVII"></button></div>
+                <p>Jane can’t believe ill of either man. Mr. Bingley invites the family to a ball at Netherfield, and Mr. Collins claims Elizabeth for the first two dances.</p>
+              </article>
+              <article class="sv-ch sv-ch--now">
+                <div class="sv-ch__head"><h6>Chapter XVIII</h6></div>
+                <p>You’re reading this one. It’s recapped once you finish it.</p>
+              </article>
+              <p class="sv-foot">Written on this iPad by Apple Intelligence as you finish each chapter, so nothing ahead is spoiled.</p>
+            </div>
+          </aside>
+
+          <div class="sv-map">
+            <div class="sv-bar sv-bar--map">
+              <div class="sv-seg" role="radiogroup" aria-label="Show the Story Map as">
+                <button type="button" role="radio" aria-checked="true" data-view="map">Map</button>
+                <button type="button" role="radio" aria-checked="false" data-view="outline">Outline</button>
+                <button type="button" role="radio" aria-checked="false" data-view="web">Web</button>
+              </div>
+            </div>
+            <div class="sv-pills">
+              <button type="button" class="sv-pill" data-pill="scope" hidden></button>
+              <button type="button" class="sv-pill" data-pill="focus" hidden></button>
+            </div>
+            <svg class="sv-canvas" role="group" aria-label="Story Map of Pride and Prejudice"></svg>
+            <div class="sv-outline" hidden></div>
+            <div class="sv-card" hidden aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+      <figcaption id="sm-cap">Tap a name to open it, and again to fold it. The coloured tags follow the main characters through every chapter they’re in, and Focus fades everything but one branch.</figcaption>
+    </figure>
+
+    <div class="trio trio--two">
+      <div>
+        <h3>Recapped as you read</h3>
+        <p>When you finish a chapter, Apple Intelligence recaps it on your iPhone in the background. A book’s contents gets Recap beside every chapter you’ve read, and Recaps &amp; Story Map has them all on one page.</p>
+      </div>
+      <div>
+        <h3>No spoilers, even by accident</h3>
+        <p>Only pages you turn count as read. Jump ahead to peek at the ending and those chapters stay off the map. Ask for a chapter you haven’t read, and Libretto checks with you first.</p>
+      </div>
+    </div>
+    <p class="section-more"><a class="more" href="help/story.html#story-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Find your way around the Story Map</a></p>
+  </div>
+</section>
+
+<!-- Reading ---------------------------------------------------------- -->
+<section class="band band--page" id="reading" aria-labelledby="rd-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="rd-title">A page you’ll want to stay on.</h2>
+      <p class="lead">Ten page themes, the fonts you like, and pages that slide, curl over like paper, or scroll. Turn the iPad or unfold an iPhone Duo and the book opens into a two-page spread.</p>
+    </div>
+
+    <div class="themes" role="radiogroup" aria-label="Page theme">
+      <div class="themes__row">
+        <button type="button" role="radio" class="sw" data-set-theme="paper" aria-checked="false" style="--bg:#FFFFFF;--fg:#1D1D1F">Paper</button>
+        <button type="button" role="radio" class="sw" data-set-theme="sepia" aria-checked="true" style="--bg:#F4ECD8;--fg:#5B4636">Sepia</button>
+        <button type="button" role="radio" class="sw" data-set-theme="stone" aria-checked="false" style="--bg:#E8E6E1;--fg:#2C2B29">Stone</button>
+        <button type="button" role="radio" class="sw" data-set-theme="rose" aria-checked="false" style="--bg:#F6E9E6;--fg:#4A3334">Rose</button>
+        <button type="button" role="radio" class="sw" data-set-theme="sage" aria-checked="false" style="--bg:#E3ECDD;--fg:#2D3A2A">Sage</button>
+      </div>
+      <div class="themes__row">
+        <button type="button" role="radio" class="sw" data-set-theme="night" aria-checked="false" style="--bg:#141414;--fg:#D6D6D6">Night</button>
+        <button type="button" role="radio" class="sw" data-set-theme="slate" aria-checked="false" style="--bg:#1E2530;--fg:#CFD7E1">Slate</button>
+        <button type="button" role="radio" class="sw" data-set-theme="cocoa" aria-checked="false" style="--bg:#2A1F18;--fg:#E4D3BD">Cocoa</button>
+        <button type="button" role="radio" class="sw" data-set-theme="forest" aria-checked="false" style="--bg:#2A3626;--fg:#E9E1C8">Forest</button>
+        <button type="button" role="radio" class="sw" data-set-theme="black" aria-checked="false" style="--bg:#000000;--fg:#B8B8B8">Black</button>
+      </div>
+    </div>
+
+    <figure class="fold" id="fold" data-theme-page="sepia" aria-label="Libretto on iPhone Duo, each way you can hold it, in the chosen page theme">
+      <div class="fold__side">
+        <div class="fold__steps">
+          <button type="button" class="fold__step" data-step="-1" aria-label="Previous way to hold it" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+          </button>
+          <button type="button" class="fold__step" data-step="1" aria-label="Next way to hold it">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </div>
+        <ul class="fold__list">
+          <li class="fold__item is-open" data-pose="fold">
+            <button type="button" class="fold__pill" aria-expanded="true" aria-controls="fold-c0">
+              <svg class="fold__icon fold__icon--slide" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14"/><path d="M11.5 10l-4 4 4 4M16.5 10l4 4-4 4"/></svg>Open and close
+            </button>
+            <div class="fold__card" id="fold-c0">
+              <p><strong>Open and close.</strong> The page follows the hinge. Shut, the outer screen keeps your place. Partway open, the book opens into two pages. Flat, one page fills the screen.</p>
+              <label class="fold__hint" for="fold-slider">Move the slider to open and close.</label>
+              <input class="fold__slider" id="fold-slider" type="range" min="0" max="1000" step="1" value="0" aria-valuetext="Closed">
+            </div>
+          </li>
+          <li class="fold__item" data-pose="book">
+            <button type="button" class="fold__pill" aria-expanded="false" aria-controls="fold-c1">
+              <svg class="fold__icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13"/><path d="M14 8.5v11M8.5 14h11"/></svg>Like a book
+            </button>
+            <div class="fold__card" id="fold-c1" hidden>
+              <p><strong>Like a book.</strong> Hold it half open and two pages sit either side of the fold, with the gutter in the crease. The page buttons run down the right edge, under your thumb.</p>
+            </div>
+          </li>
+          <li class="fold__item" data-pose="flat">
+            <button type="button" class="fold__pill" aria-expanded="false" aria-controls="fold-c2">
+              <svg class="fold__icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13"/><path d="M14 8.5v11M8.5 14h11"/></svg>Landscape
+            </button>
+            <div class="fold__card" id="fold-c2" hidden>
+              <p><strong>Landscape.</strong> Open flat, it’s a small tablet: one page across the whole screen, with roomier margins. Rather have two? Set Pages to Two Pages and the gutter sits over the hinge.</p>
+            </div>
+          </li>
+          <li class="fold__item" data-pose="tall">
+            <button type="button" class="fold__pill" aria-expanded="false" aria-controls="fold-c3">
+              <svg class="fold__icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13"/><path d="M14 8.5v11M8.5 14h11"/></svg>Portrait
+            </button>
+            <div class="fold__card" id="fold-c3" hidden>
+              <p><strong>Portrait.</strong> Turn it upright for one tall page, like a paperback’s. The page buttons move to a bar along the bottom.</p>
+            </div>
+          </li>
+          <li class="fold__item" data-pose="closed">
+            <button type="button" class="fold__pill" aria-expanded="false" aria-controls="fold-c4">
+              <svg class="fold__icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13"/><path d="M14 8.5v11M8.5 14h11"/></svg>Closed
+            </button>
+            <div class="fold__card" id="fold-c4" hidden>
+              <p><strong>Closed.</strong> Fold it shut mid-page and the outer screen picks up at the same sentence. The page buttons tuck into the strip under the camera.</p>
+            </div>
+          </li>
+          <li class="fold__item" data-pose="table">
+            <button type="button" class="fold__pill" aria-expanded="false" aria-controls="fold-c5">
+              <svg class="fold__icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13"/><path d="M14 8.5v11M8.5 14h11"/></svg>Tabletop
+            </button>
+            <div class="fold__card" id="fold-c5" hidden>
+              <p><strong>Tabletop.</strong> Stand it half open on a table and the page stays up top. The bottom half becomes a deck: big page buttons, where you are in the chapter, and how long is left.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- The Duo, built in 3D: two halves on a hinge. The left one folds over the right, and
+           carries the outer screen on its back. The inner screen is drawn whole in each half,
+           each showing its own side, from the template below. -->
+      <div class="fold__stage" aria-hidden="true">
+        <div class="fold__view">
+          <div class="fold__rig">
+            <div class="fold__half fold__half--a">
+              <i class="fold__layer" style="--k:1;--m:#5D6278"></i><i class="fold__layer" style="--k:2;--m:#7C8197"></i><i class="fold__layer" style="--k:3;--m:#8E93A8"></i><i class="fold__layer" style="--k:4;--m:#7C8197"></i><i class="fold__layer" style="--k:5;--m:#5D6278"></i>
+              <div class="fold__face fold__face--in"><div class="fold__screen"></div></div>
+              <div class="fold__face fold__face--out">
+                <div class="fco">
+                  <div class="fcv__text fco__text">
+                    <p>She often tried to provoke Darcy into disliking her guest, by talking of their supposed marriage, and planning his happiness in such an alliance.</p>
+                    <p>“I hope,” said she, as they were walking together in the shrubbery the next day, “you will give your mother-in-law a few hints, when this desirable event takes place, as to the advantage of holding her tongue; and if you can compass it, do cure the younger girls of running after the officers.”</p>
+                    <p>“Have you anything else to propose for my domestic felicity?”</p>
+                  </div>
+                  <span class="fcv__foot fco__foot" data-status="one"></span>
+                  <span class="fcv__rail fco__rail">
+                    <span class="fcv__btn"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span>
+                    <span class="fcv__turns"><span><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span><i></i><span><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></span></span>
+                  </span>
+                  <span class="fco__camera"></span>
+                </div>
+              </div>
+            </div>
+            <div class="fold__half fold__half--b">
+              <i class="fold__layer" style="--k:1;--m:#5D6278"></i><i class="fold__layer" style="--k:2;--m:#7C8197"></i><i class="fold__layer" style="--k:3;--m:#8E93A8"></i><i class="fold__layer" style="--k:4;--m:#7C8197"></i><i class="fold__layer" style="--k:5;--m:#5D6278"></i>
+              <div class="fold__face fold__face--in"><div class="fold__screen"></div></div>
+              <div class="fold__face fold__face--back"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <figcaption>Tap the line under the page to switch it between time left in the chapter, the book, the chapter’s title and the time of day.</figcaption>
+
+      <template id="fold-screen">
+        <div class="fcv">
+          <!-- Half open: two pages, the gutter in the fold, the page controls down the right. -->
+          <div class="fcv__mode fcv--spread" data-mode="spread">
+            <div class="fcv__text fcv__left">
+              <p>Elizabeth, having rather expected to affront him, was amazed at his gallantry; but there was a mixture of sweetness and archness in her manner which made it difficult for her to affront anybody, and Darcy had never been so bewitched by any woman as he was by her.</p>
+              <p>He really believed that, were it not for the inferiority of her connections, he should be in some danger.</p>
+              <p>Miss Bingley saw, or suspected, enough to be jealous; and her great anxiety for the recovery of her dear friend Jane received some assistance from her desire of getting rid of Elizabeth.</p>
+              <p>She often tried to provoke Darcy into disliking her guest, by talking of their supposed marriage, and planning his happiness in such an alliance.</p>
+            </div>
+            <div class="fcv__text fcv__right">
+              <p>“I hope,” said she, as they were walking together in the shrubbery the next day, “you will give your mother-in-law a few hints, when this desirable event takes place, as to the advantage of holding her tongue; and if you can compass it, do cure the younger girls of running after the officers.”</p>
+              <p>“Have you anything else to propose for my domestic felicity?”</p>
+              <p>“Oh! yes. Do let the portraits of your uncle and aunt Philips be placed in the gallery at Pemberley.”</p>
+            </div>
+            <span class="fcv__foot fcv__foot--l" data-status="left"></span>
+            <span class="fcv__foot fcv__foot--r" data-status="right"></span>
+            <span class="fcv__rail">
+              <span class="fcv__btn"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span>
+              <span class="fcv__turns"><span><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span><i></i><span><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></span></span>
+            </span>
+          </div>
+
+          <!-- Flat: one page across the screen. -->
+          <div class="fcv__mode fcv--wide" data-mode="wide">
+            <div class="fcv__text">
+              <p>Elizabeth, having rather expected to affront him, was amazed at his gallantry; but there was a mixture of sweetness and archness in her manner which made it difficult for her to affront anybody, and Darcy had never been so bewitched by any woman as he was by her. He really believed that, were it not for the inferiority of her connections, he should be in some danger.</p>
+              <p>Miss Bingley saw, or suspected, enough to be jealous; and her great anxiety for the recovery of her dear friend Jane received some assistance from her desire of getting rid of Elizabeth.</p>
+              <p>She often tried to provoke Darcy into disliking her guest, by talking of their supposed marriage, and planning his happiness in such an alliance.</p>
+              <p>“I hope,” said she, as they were walking together in the shrubbery the next day, “you will give your mother-in-law a few hints, when this desirable event takes place, as to the advantage of holding her tongue; and if you can compass it, do cure the younger girls of running after the officers. And, if I may mention so delicate a subject, endeavour to check that little something, bordering on conceit and impertinence, which your lady possesses.”</p>
+              <p>“Have you anything else to propose for my domestic felicity?”</p>
+              <p>“Oh! yes. Do let the portraits of your uncle and aunt Philips be placed in the gallery at Pemberley. Put them next to your great-uncle the judge. They are in the same profession, you know, only in different lines.”</p>
+            </div>
+            <span class="fcv__foot" data-status="one"></span>
+            <span class="fcv__rail">
+              <span class="fcv__btn"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span>
+              <span class="fcv__turns"><span><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span><i></i><span><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></span></span>
+            </span>
+          </div>
+
+          <!-- Upright, the screen is drawn a quarter turn back, so it stands up when the Duo turns. -->
+          <div class="fcv__mode fcv--tall" data-mode="tall">
+            <div class="fcv__box">
+              <div class="fcv__text">
+                <p>Elizabeth, having rather expected to affront him, was amazed at his gallantry; but there was a mixture of sweetness and archness in her manner which made it difficult for her to affront anybody, and Darcy had never been so bewitched by any woman as he was by her.</p>
+                <p>He really believed that, were it not for the inferiority of her connections, he should be in some danger.</p>
+                <p>Miss Bingley saw, or suspected, enough to be jealous; and her great anxiety for the recovery of her dear friend Jane received some assistance from her desire of getting rid of Elizabeth.</p>
+                <p>She often tried to provoke Darcy into disliking her guest, by talking of their supposed marriage, and planning his happiness in such an alliance.</p>
+                <p>“I hope,” said she, as they were walking together in the shrubbery the next day, “you will give your mother-in-law a few hints, when this desirable event takes place, as to the advantage of holding her tongue; and if you can compass it, do cure the younger girls of running after the officers.”</p>
+                <p>“Have you anything else to propose for my domestic felicity?”</p>
+                <p>“Oh! yes. Do let the portraits of your uncle and aunt Philips be placed in the gallery at Pemberley. Put them next to your great-uncle the judge. They are in the same profession, you know, only in different lines.”</p>
+                <p>“It would not be easy, indeed, to catch their expression, but their colour and shape, and the eyelashes, so remarkably fine, might be copied.”</p>
+              </div>
+              <span class="fcv__foot" data-status="one"></span>
+              <span class="fcv__bar">
+                <span class="fcv__btn"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span>
+                <span class="fcv__turns"><span><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></span><i></i><span><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span></span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Tabletop: the page in the top half, the deck in the bottom half. -->
+          <div class="fcv__mode fcv--table" data-mode="table">
+            <div class="fcv__box">
+              <div class="fcv__text">
+                <p>Elizabeth, having rather expected to affront him, was amazed at his gallantry; but there was a mixture of sweetness and archness in her manner which made it difficult for her to affront anybody, and Darcy had never been so bewitched by any woman as he was by her.</p>
+                <p>He really believed that, were it not for the inferiority of her connections, he should be in some danger.</p>
+                <p>Miss Bingley saw, or suspected, enough to be jealous; and her great anxiety for the recovery of her dear friend Jane received some assistance from her desire of getting rid of Elizabeth.</p>
+              </div>
+              <span class="fcv__foot" data-status="one"></span>
+              <div class="fcv__deck">
+                <div class="fcv__deckbar">
+                  <span class="fcv__ico"><svg viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span>
+                  <span class="fcv__where"><b>Chapter 10</b><span>Page 3 of 9 in chapter</span></span>
+                  <span class="fcv__ico"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg></span>
+                  <span class="fcv__ico"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg></span>
+                  <span class="fcv__ico"><svg viewBox="0 0 24 24"><path d="M9.5 7H20M9.5 12H20M9.5 17H20M4.5 7h.01M4.5 12h.01M4.5 17h.01"/></svg></span>
+                  <span class="fcv__ico fcv__ico--aa">Aa</span>
+                </div>
+                <div class="fcv__big">
+                  <span><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></span>
+                  <span><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>
+                </div>
+                <div class="fcv__progress"><i></i></div>
+                <div class="fcv__stats">
+                  <span><b>16%</b>of book</span>
+                  <span><b>6</b>pages left<br>in chapter</span>
+                  <span><b>~4 min</b>left in<br>chapter</span>
+                  <span><b>12 min</b>reading<br>this session</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </figure>
+
+    <div class="pages-row">
+      <figure>
+        <div class="phone phone--shot" style="--w: 260px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/reader-sepia.jpg" alt="A page of Pride and Prejudice in the Sepia theme, with 8 pages left in the chapter at the foot" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+        <figcaption>Pride and Prejudice in Sepia</figcaption>
+      </figure>
+      <figure>
+        <div class="phone phone--shot" style="--w: 260px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/reader-forest.jpg" alt="A page of Jane Eyre in the Forest theme: cream text on deep olive green" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+        <figcaption>Jane Eyre in Forest</figcaption>
+      </figure>
+      <figure>
+        <div class="phone phone--shot" style="--w: 260px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/reader-night.jpg" alt="The same page of Pride and Prejudice in the Night theme" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+        <figcaption>Pride and Prejudice in Night</figcaption>
+      </figure>
+    </div>
+
+    <div class="trio trio--two">
+      <div>
+        <h3>Footnotes where you are</h3>
+        <p>Tap a note marker and the footnote opens beside it, with Go to Note if you want the whole thing. Follow any link and Back to “Chapter 4” returns you to the page you left.</p>
+      </div>
+      <div>
+        <h3>Search the whole book</h3>
+        <p>Every place a word or phrase appears, listed by chapter as you type. Accents and curly apostrophes don’t matter, and after the first search it’s instant.</p>
+      </div>
+    </div>
+    <p class="section-more"><a class="more" href="help/reading.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Every reading option, explained</a></p>
+  </div>
+</section>
+
+<!-- Hands-free ------------------------------------------------------- -->
+<section class="band band--forest" id="hands-free" aria-labelledby="hf-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="hf-title">Turn the page without lifting a finger.</h2>
+      <p class="lead">For reading in bed, at the stove, or with a coffee in each hand. Your iPhone’s front camera watches for your eyes, and nothing it sees is recorded or sent anywhere.</p>
+    </div>
+
+    <div class="hf">
+      <article class="hf__item hf__item--blink">
+        <div class="hf__art" aria-hidden="true">
+          <div class="eyes"><span class="eye"></span><span class="eye"></span></div>
+        </div>
+        <h3>Blink to turn pages</h3>
+        <p>Two quick blinks for the next page. Close your eyes and hold to go back. A soft beep tells you it noticed, and the screen stays awake while you read.</p>
+      </article>
+
+      <article class="hf__item hf__item--scroll">
+        <div class="hf__art hf__art--alert" aria-hidden="true">
+          <div class="guide"><span></span><span></span><span class="guide__band"></span><span></span><span></span></div>
+          <p class="guide__pill">Paused: looked away</p>
+        </div>
+        <h3>Auto-Scroll that keeps an eye on you</h3>
+        <p>The book glides up through a one-line reading guide at the pace you set, from 100 to 600 words a minute. Set it to pause when you look away and it rewinds to where your eyes left; turn on Sleep Detection and if you doze off, it saves your place and lets the screen sleep.</p>
+      </article>
+
+      <article class="hf__item hf__item--listen">
+        <div class="hf__art" aria-hidden="true">
+          <div class="wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <h3>Listen when you look away</h3>
+        <p>With a paired audiobook, glance up from the page and the narrator carries on from the line you were reading. Look back and the page is waiting at the line it reached.</p>
+      </article>
+
+      <article class="hf__item hf__item--watch">
+        <div class="hf__art" aria-hidden="true">
+        <div class="watch">
+          <div class="watch__case"><div class="watch__screen">
+            <p class="watch__chap">Chapter 18</p>
+            <p class="watch__pg">Page 4 of 12</p>
+            <div class="watch__bar"><span style="width:31%"></span></div>
+            <div class="watch__btns"><span>‹</span><span>›</span></div>
+          </div></div>
+          <span class="watch__crown"></span>
+        </div>
+        </div>
+        <h3>Turn pages from your wrist</h3>
+        <p>Prop your iPhone up and turn pages from Apple Watch: tap the arrows, double-tap your finger and thumb, or turn the Digital Crown.</p>
+      </article>
+    </div>
+    <p class="section-more"><a class="more" href="help/hands-free.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Set up Auto-Scroll, Blink and the watch</a></p>
+  </div>
+</section>
+
+<!-- Notebook --------------------------------------------------------- -->
+<section class="band band--day" id="notebook" aria-labelledby="nb-title">
+  <div class="wrap split split--flip">
+    <div class="split__copy">
+      <h2 id="nb-title">Every highlight, in one notebook.</h2>
+      <p class="lead">Highlight in five inks and add a note to any passage. The Notebook gathers every highlight, note and bookmark from every book, and searches all of them, for the line you remember but can’t place.</p>
+      <p class="inks" aria-label="Highlights in five inks">
+        <mark class="ink ink--yellow">I could easily forgive his pride, if he had not mortified mine.</mark>
+        <mark class="ink ink--green">Reader, I married him.</mark>
+        <mark class="ink ink--blue">Call me Ishmael.</mark>
+        <mark class="ink ink--pink">It was the best of times, it was the worst of times.</mark>
+        <mark class="ink ink--purple">Whatever our souls are made of, his and mine are the same.</mark>
+      </p>
+      <ul class="ticks">
+        <li>Filter by ink, sort newest first or by book.</li>
+        <li>Share a book’s highlights as text, or send them to Notes, Bear or Obsidian with Shortcuts.</li>
+        <li>Spotlight finds a line you highlighted and opens the book at it.</li>
+      </ul>
+      <a class="more" href="help/reading.html#highlights"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Highlights, notes and bookmarks</a>
+    </div>
+    <div class="split__visual">
+      <div class="pair">
+        <div class="phone phone--shot" style="--w: 300px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/highlights.jpg" alt="A page of Pride and Prejudice with passages highlighted in five colors" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+        <div class="phone phone--shot" style="--w: 300px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/notebook.jpg" alt="The Notebook, with highlight and note counts on the covers of Dracula, Jane Eyre, Moby-Dick and Pride and Prejudice" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sync ------------------------------------------------------------- -->
+<section class="band band--house" id="sync" aria-labelledby="sy-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="sy-title">Start on your iPhone. Carry on with your iPad.</h2>
+      <p class="lead">Libretto keeps your library in step through your own iCloud: every book, your place and progress in each, highlights, notes and bookmarks, recaps and Story Maps, and your reading stats. Open a book on any of your devices and it’s at the page you reached last, wherever you were reading.</p>
+    </div>
+
+    <figure class="hand" id="handoff" aria-labelledby="hand-cap">
+      <div class="hand__stage">
+        <div class="hand__device hand__device--phone">
+          <p class="hand__label" aria-hidden="true">iPhone</p>
+          <div class="phone" style="--w: 270px">
+            <div class="phone__body">
+              <div class="phone__screen reader" data-theme-page="sepia" data-hand="phone">
+                <span class="phone__island" aria-hidden="true"></span>
+                <div class="reader__viewport hand__viewport">
+                  <div class="hand__flow" data-flow></div>
+                </div>
+                <p class="reader__status" data-hand-status></p>
+                <div class="reader__controls">
+                  <span class="rc rc--menu" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 7.5h13M5.5 12h13M5.5 16.5h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+                  <div class="rc-turns">
+                    <button class="rc-turn" type="button" data-turn="-1" aria-label="Previous page on iPhone"><svg viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <span class="rc-turns__rule" aria-hidden="true"></span>
+                    <button class="rc-turn" type="button" data-turn="1" aria-label="Next page on iPhone"><svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hand__device hand__device--pad">
+          <p class="hand__label" aria-hidden="true">iPad</p>
+          <div class="tablet">
+            <div class="tablet__body">
+              <div class="tablet__screen" data-hand="pad">
+                <!-- Home: the newest progress from either device, and pages read on both. -->
+                <div class="pad-home" data-view="home">
+                  <p class="pad-clock" aria-hidden="true">9:41</p>
+                  <p class="pad-title" aria-hidden="true">Home</p>
+                  <p class="pad-h" aria-hidden="true">Continue</p>
+                  <div class="pad-cards">
+                    <button type="button" class="pad-card pad-card--pp" data-open aria-label="Open Pride and Prejudice on iPad">
+                      <span class="pad-cover pad-cover--pp" aria-hidden="true"><i>Pride<br>and<br>Prejudice</i></span>
+                      <span class="pad-card__text">
+                        <b>Pride and Prejudice</b>
+                        <span>Jane Austen</span>
+                        <span class="pad-bar"><i data-hand-bar></i></span>
+                        <span class="pad-card__pct" data-hand-pct aria-live="polite"></span>
+                      </span>
+                    </button>
+                    <div class="pad-card pad-card--je" aria-hidden="true">
+                      <span class="pad-cover pad-cover--je"><i>Jane<br>Eyre</i></span>
+                      <span class="pad-card__text">
+                        <b>Jane Eyre</b>
+                        <span>Charlotte Brontë</span>
+                        <span class="pad-bar"><i style="width: 31%"></i></span>
+                        <span class="pad-card__pct">31% read</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="pad-h" aria-hidden="true">Stats</p>
+                  <div class="pad-tiles">
+                    <div class="pad-tile"><span class="pad-tile__name"><i class="pad-ico pad-ico--blue"></i>Pages Today</span><p><b data-hand-today>18</b> pages</p></div>
+                    <div class="pad-tile"><span class="pad-tile__name"><i class="pad-ico pad-ico--green"></i>Pages in 7 Days</span><p><b data-hand-week>103</b> pages</p></div>
+                    <div class="pad-tile"><span class="pad-tile__name"><i class="pad-ico pad-ico--flame"></i>Reading Streak</span><p><b>5</b> days</p></div>
+                  </div>
+                  <p class="pad-h" aria-hidden="true">Books <span>See All</span></p>
+                  <div class="pad-books" aria-hidden="true">
+                    <div class="pad-book"><span class="pad-cover pad-cover--pp"><i>Pride<br>and<br>Prejudice</i></span><b>Pride and Prejudice</b><span>Jane Austen</span><span data-hand-short></span></div>
+                    <div class="pad-book"><span class="pad-cover pad-cover--je"><i>Jane<br>Eyre</i></span><b>Jane Eyre</b><span>Charlotte Brontë</span><span>31%</span></div>
+                    <div class="pad-book"><span class="pad-cover pad-cover--dr"><i>Dracula</i></span><b>Dracula</b><span>Bram Stoker</span><span>26%</span></div>
+                    <div class="pad-book pad-book--away"><span class="pad-cover pad-cover--fr"><i>Franken&shy;stein</i><svg class="pad-away" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 5.2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><b>Frankenstein</b><span>Mary Shelley</span><span>On iPhone</span></div>
+                  </div>
+                  <p class="pad-h" aria-hidden="true">Want to Read <span>See All</span></p>
+                  <div class="pad-books" aria-hidden="true">
+                    <div class="pad-book"><span class="pad-cover pad-cover--em"><i>Emma</i></span></div>
+                    <div class="pad-book"><span class="pad-cover pad-cover--mm"><i>Middle&shy;march</i></span></div>
+                    <div class="pad-book"><span class="pad-cover pad-cover--ts"><i>The Turn of the Screw</i></span></div>
+                    <div class="pad-book"><span class="pad-cover pad-cover--cp"><i>Crime and Punish&shy;ment</i></span></div>
+                  </div>
+                  <div class="pad-tabs" aria-hidden="true"><span class="is-on">Home</span><span>Books</span><span>Audiobooks</span><span>Shelf</span></div>
+                </div>
+
+                <!-- The book, in Forest: gone to the iPhone's page, with the way back. -->
+                <div class="pad-reader reader" data-theme-page="forest" data-view="reader" aria-hidden="true">
+                  <button type="button" class="pad-close" data-close aria-label="Close the book on iPad" tabindex="-1"><svg viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+                  <div class="hand__viewport pad-reader__viewport">
+                    <div class="hand__flow" data-flow></div>
+                  </div>
+                  <div class="cpill" data-pill hidden>
+                    <button type="button" class="cpill__back" data-pill-back tabindex="-1">
+                      <svg class="cpill__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 5.2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                      <span class="cpill__text"><b>Continued from iPhone</b><span data-pill-caption></span></span>
+                    </button>
+                    <span class="cpill__rule" aria-hidden="true"></span>
+                    <button type="button" class="cpill__keep" data-pill-keep aria-label="Keep This Place" tabindex="-1"><svg viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+                  </div>
+                  <p class="reader__status pad-reader__status" data-hand-status></p>
+                  <div class="reader__controls pad-reader__controls">
+                    <span class="rc rc--menu" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 7.5h13M5.5 12h13M5.5 16.5h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+                    <div class="rc-turns">
+                      <button class="rc-turn" type="button" data-turn="-1" aria-label="Previous page on iPad" tabindex="-1"><svg viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                      <span class="rc-turns__rule" aria-hidden="true"></span>
+                      <button class="rc-turn" type="button" data-turn="1" aria-label="Next page on iPad" tabindex="-1"><svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption id="hand-cap">Turn the iPhone’s pages and the iPad’s Home keeps up. Then tap the book on the iPad: it opens at the iPhone’s page, and the pill takes you back to where the iPad was, if you’d rather.</figcaption>
+
+      <!-- The book both devices are reading: the end of Chapter II, and Chapter III up to the dance. -->
+      <template id="hand-text">
+        <p>The astonishment of the ladies was just what he wished—that of Mrs. Bennet perhaps surpassing the rest; though when the first tumult of joy was over, she began to declare that it was what she had expected all the while.</p>
+        <p>“How good it was in you, my dear Mr. Bennet! But I knew I should persuade you at last. I was sure you loved your girls too well to neglect such an acquaintance. Well, how pleased I am! And it is such a good joke, too, that you should have gone this morning, and never said a word about it till now.”</p>
+        <p>“Now, Kitty, you may cough as much as you choose,” said Mr. Bennet; and, as he spoke, he left the room, fatigued with the raptures of his wife.</p>
+        <p>“What an excellent father you have, girls,” said she, when the door was shut. “I do not know how you will ever make him amends for his kindness; or me either, for that matter. At our time of life, it is not so pleasant, I can tell you, to be making new acquaintances every day; but for your sakes we would do anything. Lydia, my love, though you are the youngest, I dare say Mr. Bingley will dance with you at the next ball.”</p>
+        <p>“Oh,” said Lydia, stoutly, “I am not afraid; for though I am the youngest, I’m the tallest.”</p>
+        <p>The rest of the evening was spent in conjecturing how soon he would return Mr. Bennet’s visit, and determining when they should ask him to dinner.</p>
+        <p class="hand__chap" data-chapter>Chapter III</p>
+        <p>Not all that Mrs. Bennet, however, with the assistance of her five daughters, could ask on the subject, was sufficient to draw from her husband any satisfactory description of Mr. Bingley. They attacked him in various ways, with barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all; and they were at last obliged to accept the second-hand intelligence of their neighbour, Lady Lucas. Her report was highly favourable. Sir William had been delighted with him. He was quite young, wonderfully handsome, extremely agreeable, and, to crown the whole, he meant to be at the next assembly with a large party. Nothing could be more delightful! To be fond of dancing was a certain step towards falling in love; and very lively hopes of Mr. Bingley’s heart were entertained.</p>
+        <p>“If I can but see one of my daughters happily settled at Netherfield,” said Mrs. Bennet to her husband, “and all the others equally well married, I shall have nothing to wish for.”</p>
+        <p>In a few days Mr. Bingley returned Mr. Bennet’s visit, and sat about ten minutes with him in his library. He had entertained hopes of being admitted to a sight of the young ladies, of whose beauty he had heard much; but he saw only the father. The ladies were somewhat more fortunate, for they had the advantage of ascertaining, from an upper window, that he wore a blue coat and rode a black horse.</p>
+        <p>An invitation to dinner was soon afterwards despatched; and already had Mrs. Bennet planned the courses that were to do credit to her housekeeping, when an answer arrived which deferred it all. Mr. Bingley was obliged to be in town the following day, and consequently unable to accept the honour of their invitation, etc. Mrs. Bennet was quite disconcerted. She could not imagine what business he could have in town so soon after his arrival in Hertfordshire; and she began to fear that he might always be flying about from one place to another, and never settled at Netherfield as he ought to be. Lady Lucas quieted her fears a little by starting the idea of his being gone to London only to get a large party for the ball; and a report soon followed that Mr. Bingley was to bring twelve ladies and seven gentlemen with him to the assembly. The girls grieved over such a number of ladies; but were comforted the day before the ball by hearing that, instead of twelve, he had brought only six with him from London, his five sisters and a cousin. And when the party entered the assembly-room, it consisted of only five altogether: Mr. Bingley, his two sisters, the husband of the eldest, and another young man.</p>
+        <p>Mr. Bingley was good-looking and gentlemanlike: he had a pleasant countenance, and easy, unaffected manners. His sisters were fine women, with an air of decided fashion. His brother-in-law, Mr. Hurst, merely looked the gentleman; but his friend Mr. Darcy soon drew the attention of the room by his fine, tall person, handsome features, noble mien, and the report, which was in general circulation within five minutes after his entrance, of his having ten thousand a year. The gentlemen pronounced him to be a fine figure of a man, the ladies declared he was much handsomer than Mr. Bingley, and he was looked at with great admiration for about half the evening, till his manners gave a disgust which turned the tide of his popularity; for he was discovered to be proud, to be above his company, and above being pleased; and not all his large estate in Derbyshire could save him from having a most forbidding, disagreeable countenance, and being unworthy to be compared with his friend.</p>
+        <p>Mr. Bingley had soon made himself acquainted with all the principal people in the room: he was lively and unreserved, danced every dance, was angry that the ball closed so early, and talked of giving one himself at Netherfield. Such amiable qualities must speak for themselves. What a contrast between him and his friend! Mr. Darcy danced only once with Mrs. Hurst and once with Miss Bingley, declined being introduced to any other lady, and spent the rest of the evening in walking about the room, speaking occasionally to one of his own party. His character was decided. He was the proudest, most disagreeable man in the world, and everybody hoped that he would never come there again. Amongst the most violent against him was Mrs. Bennet, whose dislike of his general behaviour was sharpened into particular resentment by his having slighted one of her daughters.</p>
+        <p>Elizabeth Bennet had been obliged, by the scarcity of gentlemen, to sit down for two dances; and during part of that time, Mr. Darcy had been standing near enough for her to overhear a conversation between him and Mr. Bingley, who came from the dance for a few minutes to press his friend to join it.</p>
+        <p>“Come, Darcy,” said he, “I must have you dance. I hate to see you standing about by yourself in this stupid manner. You had much better dance.”</p>
+        <p>“I certainly shall not. You know how I detest it, unless I am particularly acquainted with my partner. At such an assembly as this, it would be insupportable. Your sisters are engaged, and there is not another woman in the room whom it would not be a punishment to me to stand up with.”</p>
+        <p>“I would not be so fastidious as you are,” cried Bingley, “for a kingdom! Upon my honour, I never met with so many pleasant girls in my life as I have this evening; and there are several of them, you see, uncommonly pretty.”</p>
+        <p>“You are dancing with the only handsome girl in the room,” said Mr. Darcy, looking at the eldest Miss Bennet.</p>
+        <p>“Oh, she is the most beautiful creature I ever beheld! But there is one of her sisters sitting down just behind you, who is very pretty, and I dare say very agreeable. Do let me ask my partner to introduce you.”</p>
+        <p>“Which do you mean?” and turning round, he looked for a moment at Elizabeth, till, catching her eye, he withdrew his own, and coldly said, “She is tolerable: but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men. You had better return to your partner and enjoy her smiles, for you are wasting your time with me.”</p>
+        <p>Mr. Bingley followed his advice. Mr. Darcy walked off; and Elizabeth remained with no very cordial feelings towards him. She told the story, however, with great spirit among her friends; for she had a lively, playful disposition, which delighted in anything ridiculous.</p>
+      </template>
+    </figure>
+
+    <div class="trio trio--sync">
+      <div>
+        <h3>The page you reached, wherever you were</h3>
+        <p>A book opens at the newest page you reached on any of your devices. Rather be where you were on this one? Tap the pill at the bottom to go back. It never moves the page while you’re reading.</p>
+      </div>
+      <div>
+        <h3>Continue, everywhere</h3>
+        <p>Home and the Books tab show each book’s progress from whichever device you read on last, and books you’re reading on another device are in Continue too. Mark one as read or remove it, and it’s done on all of them.</p>
+      </div>
+      <div>
+        <h3>Highlights, notes and bookmarks</h3>
+        <p>Made on one device, they’re on all of them, in the book and in the Notebook. Remove a book and add it back later, and they come back with it.</p>
+      </div>
+      <div>
+        <h3>Recaps and Read-Along, done once</h3>
+        <p>Recaps and Story Maps written on one device show on all of them, even an iPad without Apple Intelligence. A Read-Along pair arrives already prepared, ready to play with nothing to transcribe.</p>
+      </div>
+      <div>
+        <h3>Stats, streak and Hardcover</h3>
+        <p>Pages and minutes add up across all your devices, so your goal and streak count every one. Sign in to Hardcover once and your other devices are signed in too.</p>
+      </div>
+      <div>
+        <h3>Your books in iCloud</h3>
+        <p>Books you add are kept in Libretto’s iCloud storage, so your other devices can download them: by themselves under 100 MB, and larger ones, like most audiobooks, when you tap them.</p>
+      </div>
+    </div>
+    <p class="hand__note">It all stays in your own iCloud. There’s no Libretto account and no Libretto server, so what you read is never sent to us. Sync with iCloud is on from the start, in Settings → iCloud &amp; Storage.</p>
+    <p class="section-more"><a class="more" href="help/sync.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>How sync works, in detail</a></p>
+  </div>
+</section>
+
+<!-- Reading life ----------------------------------------------------- -->
+<section class="band band--page" id="habits" aria-labelledby="hb-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="hb-title">Watch your reading add up.</h2>
+      <p class="lead">Libretto keeps a quiet log of every page and minute, reading and listening alike. Set a few minutes a day, a number of books for the year, or a date to finish a book by, and it works out tonight’s pages for you.</p>
+    </div>
+
+    <div class="life">
+      <div class="life__shots pair">
+        <div class="phone phone--shot" style="--w: 300px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/home-dark.jpg" alt="Home in the Midnight app theme: today’s reading ring, the streak, and the next target in words" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+        <div class="phone phone--shot" style="--w: 300px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/stats.jpg" alt="Reading Stats: pages and minutes over the last seven days" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+      </div>
+
+      <div class="widgets" aria-label="Libretto widgets">
+        <div class="wd wd--medium" role="img" aria-label="Weekly Pages widget: 587 pages in the last 7 days, 3 days at or above the 100-page goal.">
+          <div class="wd__head"><span class="wd__name">Weekly Pages</span><span class="wd__total"><b>587</b> pages</span></div>
+          <svg class="bars" viewBox="0 0 280 114" aria-hidden="true">
+            <!-- y = 100 - pages * 0.6, so the 100-page goal sits at y = 40 -->
+            <line x1="0" x2="280" y1="40" y2="40" class="goal"/>
+            <g>
+              <rect x="6"   y="61.6" width="28" height="38.4" rx="4" class="b"/>
+              <rect x="46"  y="32.8" width="28" height="67.2" rx="4" class="b b--met"/>
+              <rect x="86"  y="47.8" width="28" height="52.2" rx="4" class="b"/>
+              <rect x="126" y="16"   width="28" height="84"   rx="4" class="b b--met"/>
+              <rect x="166" y="39.4" width="28" height="60.6" rx="4" class="b b--met"/>
+              <rect x="206" y="73"   width="28" height="27"   rx="4" class="b"/>
+              <rect x="246" y="77.2" width="28" height="22.8" rx="4" class="b"/>
+            </g>
+            <g class="bars__vals">
+              <text x="20" y="73">64</text><text x="60" y="44">112</text><text x="100" y="59">87</text><text x="140" y="27">140</text><text x="180" y="51">101</text><text x="220" y="84">45</text><text x="260" y="88">38</text>
+            </g>
+            <g class="bars__days">
+              <text x="20" y="112">S</text><text x="60" y="112">S</text><text x="100" y="112">M</text><text x="140" y="112">T</text><text x="180" y="112">W</text><text x="220" y="112">T</text><text x="260" y="112">F</text>
+            </g>
+          </svg>
+          <p class="wd__foot">3 of 7 days met your goal</p>
+        </div>
+
+        <div class="wd wd--small wd--streak" role="img" aria-label="Reading Streak widget: 5 days in a row. 3 more minutes today makes it 6.">
+          <span class="wd__name">Reading Streak</span>
+          <p class="streak"><b>5</b> days</p>
+          <div class="week"><i class="miss"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="today"></i></div>
+          <p class="wd__foot">3 more min today makes it 6</p>
+        </div>
+
+        <div class="wd wd--small wd--current" role="img" aria-label="Currently Reading widget: Jane Eyre, chapter 12, 31 percent read.">
+          <div class="cover cover--je"><span>Jane<br>Eyre</span></div>
+          <div>
+            <p class="wd__title">Jane Eyre</p>
+            <p class="wd__sub">Chapter 12</p>
+          </div>
+          <div class="wd__prog"><span style="width:31%"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="goals">
+      <div>
+        <h3>A streak that’s kind</h3>
+        <p>Five minutes of reading or listening keeps it going, or whatever you set. Today only counts against you once it’s over.</p>
+      </div>
+      <div>
+        <h3>A goal for the year</h3>
+        <p>Pick a number of books, or bring your Hardcover goal, and Libretto tells you the pace: a book every eight days gets you there.</p>
+      </div>
+      <div>
+        <h3>Finish by Friday</h3>
+        <p>Give a book a date, for a book club or a library loan, and the page footer counts down tonight’s pages as you read.</p>
+      </div>
+      <div>
+        <h3>Cards worth sharing</h3>
+        <p>Finished a book, or a big week? Make a card with the cover, your rating and your numbers, square or story-sized.</p>
+      </div>
+    </div>
+
+    <div class="hardcover">
+      <div class="hardcover__copy">
+        <h3>Your shelves, with Hardcover</h3>
+        <p>Connect your <a href="https://hardcover.app" rel="noopener">Hardcover</a> account and Libretto keeps your shelves, progress and half-star ratings in step. Coming from Goodreads? Hardcover imports your history, and Libretto picks it up from there.</p>
+        <p>The <strong>Shelf</strong> tab helps you choose what’s next: filter your Want to Read shelf by length, mood, genre and rating, offline and instantly, or let it pick one for you. <strong>Reading Stats</strong> charts your books by month, genre, mood and author.</p>
+        <a class="more" href="help/goals.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Goals, stats and sharing, in detail</a>
+      </div>
+      <div class="hardcover__shots pair">
+        <div class="phone phone--shot" style="--w: 270px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/shelf.jpg" alt="Shelf: a Hardcover shelf with a cover-tinted pick card and rows of books" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+        <div class="phone phone--shot" style="--w: 270px">
+          <div class="phone__body"><div class="phone__screen">
+            <img src="assets/shots/share-card.jpg" alt="A Share Card for a finished book, with its cover, rating and reading figures" loading="lazy" width="720" height="1565">
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Library ---------------------------------------------------------- -->
+<section class="band band--day" id="library" aria-labelledby="lb-title">
+  <div class="wrap split">
+    <div class="split__copy">
+      <h2 id="lb-title">Bring the books you already own.</h2>
+      <p class="lead">Open a file from the Files app, share it from another app, paste a download link, or drop in a whole zip. Ebooks and audiobooks sort themselves into the right place.</p>
+      <p class="body-note">Want something new to read? <strong>Free Classics</strong> searches thousands of public-domain books, a tap away. Libretto opens DRM-free files; books locked to another store’s app can’t be opened.</p>
+      <a class="more" href="help/getting-started.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Getting started: adding books and finding your way</a>
+    </div>
+    <div class="split__visual">
+      <div class="cast">
+        <p class="cast__head">Ebooks</p>
+        <ul>
+          <li><b>EPUB</b><span>The ebook standard</span></li>
+          <li><b>PDF</b><span>One page or two side by side</span></li>
+          <li><b>CBZ</b><span>Comics, a page per screen</span></li>
+          <li><b>FB2</b><span>FictionBook, with its pictures</span></li>
+          <li><b>TXT</b><span>Chapters found for you</span></li>
+          <li><b>Markdown</b><span>Headings become chapters</span></li>
+          <li><b>HTML, RTF</b><span>As one long document</span></li>
+        </ul>
+        <p class="cast__head">Audiobooks</p>
+        <ul>
+          <li><b>M4B</b><span>With its chapter markers</span></li>
+          <li><b>MP3, M4A, AAC</b><span>One file, or a folder of them</span></li>
+          <li><b>FLAC, WAV, AIFF, CAF</b><span>Lossless, as recorded</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Everywhere ------------------------------------------------------- -->
+<section class="band band--page" id="everywhere" aria-labelledby="ev-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="ev-title">Wherever you happen to be reading.</h2>
+      <p class="lead">Your books, your place and your streak follow you from the iPhone in your pocket to the watch on your wrist and the TV across the room.</p>
+    </div>
+
+    <ul class="places">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5" width="10" height="14" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 5 10 2.5h4l.5 2.5M9.5 19l.5 2.5h4l.5-2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M17 10.5h1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Apple Watch</h3>
+        <p>Read a chapter with the Digital Crown, or take the next few hours of an audiobook out on a walk and leave the iPhone at home.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Apple TV</h3>
+        <p>Two big pages for across the room, or press Play and read along with the audiobook, from where you left off on your iPhone.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 4v16" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 8h3.5M6.5 11h3.5M14 8h3.5M14 11h3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <h3>iPad and iPhone Duo</h3>
+        <p>A two-page spread when there’s room for one, Home in two columns, and the Story Map open beside your recaps.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="3.5" y="13" width="17" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Widgets</h3>
+        <p>The book you’re on, your streak, your yearly goal and your Finish By dates, on the Home Screen and the Lock Screen.</p>
+      </li>
+    </ul>
+
+    <div class="split split--flip ev-siri">
+      <div class="split__copy">
+        <h3 class="ev-siri__title">Ask Siri how your reading’s going.</h3>
+        <p class="body-note">Libretto works with Siri, Shortcuts, Spotlight and the Action button. Pick up your book, start your audiobook, or set a sleep timer without opening the app.</p>
+        <ul class="ticks">
+          <li>“Continue reading in Libretto”</li>
+          <li>“Resume listening in Libretto”</li>
+          <li>“Catch me up on Jane Eyre in Libretto”</li>
+          <li>“Show me a highlight from Libretto”</li>
+          <li>Set a Focus to switch to Night pages at bedtime, and back in the morning.</li>
+        </ul>
+        <a class="more" href="help/devices.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Apple Watch, Apple TV, iPad and Duo</a>
+        <a class="more" href="help/shortcuts.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>Every widget, Siri phrase and Shortcut</a>
+      </div>
+      <div class="split__visual">
+      <div class="siri">
+        <p class="siri__ask">How’s my reading in Libretto?</p>
+        <div class="siri__card">
+          <p>You’ve read 18 pages today, in 25 minutes. 82 more for your goal of 100. Your streak is 5 days.</p>
+          <div class="siri__meter" role="img" aria-label="18 of 100 pages today">
+            <span style="width:18%"></span>
+          </div>
+          <p class="siri__scale"><span>18 pages</span><span>Goal 100</span></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy ---------------------------------------------------------- -->
+<section class="band band--house" id="privacy" aria-labelledby="pv-title">
+  <div class="wrap privacy">
+    <h2 id="pv-title">What you read stays yours.</h2>
+    <dl class="privacy__list">
+      <div><dt>No account</dt><dd>Open the app and start reading. There’s nothing to sign up for, and sync uses the iCloud you already have.</dd></div>
+      <div><dt>Nothing collected</dt><dd>No analytics, no ads, no tracking. Libretto doesn’t have a server: your library syncs through your own iCloud, and never comes to us.</dd></div>
+      <div><dt>Intelligence on the device</dt><dd>Audiobook transcription, every recap and the Story Map are worked out on your iPhone, not in the cloud.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- Pricing ---------------------------------------------------------- -->
+<section class="band band--day" id="pricing" aria-labelledby="pr-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="pr-title">Free to read. Pay once for the rest.</h2>
+      <p class="lead">Everything you need to read and listen is free. Libretto Pro is a single purchase, shared with your family. No subscription.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Libretto</h3>
+        <p class="plan__price"><b>Free</b></p>
+        <ul>
+          <li>Every format, every page theme and page turn</li>
+          <li>Highlights, notes, bookmarks and the Notebook</li>
+          <li>The audiobook player and Read Aloud</li>
+          <li>Catch Me Up, Remind Me, Chapter Recaps and the Story Map</li>
+          <li>Reading log, daily goal and streak</li>
+          <li>Read-Along for one book, to try it properly</li>
+        </ul>
+      </div>
+      <div class="plan plan--pro">
+        <h3>Libretto Pro</h3>
+        <p class="plan__price"><b>$7.99</b> once</p>
+        <ul>
+          <li>Everything in Libretto</li>
+          <li>Read-Along for every book you own</li>
+          <li>Hardcover shelves, the Shelf tab and Reading Stats</li>
+          <li>Sync with iCloud across your iPhone and iPad</li>
+          <li>Home Screen and Lock Screen widgets</li>
+          <li>Shared with up to five family members</li>
+        </ul>
+        <a class="btn" href="#download" data-store-link>Get Libretto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -------------------------------------------------------------- -->
+<section class="band band--page" id="faq" aria-labelledby="fq-title">
+  <div class="wrap faq">
+    <h2 id="fq-title">Questions</h2>
+    <div class="faq__list">
+      <details>
+        <summary>Can I read books I bought from other stores?</summary>
+        <p>If the file is DRM-free, yes. Many publishers and stores sell DRM-free EPUBs and audiobooks, and Libretto opens them from Files, a link or another app. Books that only open in another store’s app are locked to it, and Libretto can’t open them.</p>
+      </details>
+      <details>
+        <summary>How long does a book take to get ready for Read-Along?</summary>
+        <p>It starts where you’ll listen and is ready to play once the next 20 minutes are lined up, usually within a minute. The rest is prepared while you read, and carries on in the background where iOS allows.</p>
+      </details>
+      <details>
+        <summary>Which devices does Libretto run on?</summary>
+        <p>iPhone and iPad with iOS 26 or later, including iPhone Duo; Apple Watch with watchOS 11 or later, to read, listen and turn your iPhone’s pages; and Apple TV with tvOS 26 or later. Catch Me Up, Remind Me and Chapter Recaps need Apple Intelligence: an iPhone 15 Pro or later, or an iPad with an M-series or A17 Pro chip. An iPhone, iPad or Apple TV without it shows the recaps and Story Maps your other devices write, through iCloud.</p>
+      </details>
+      <details>
+        <summary>Does Libretto send my books or reading anywhere?</summary>
+        <p>Never to us: Libretto doesn’t have a server. With Sync with iCloud on, your library, places, highlights and reading log are kept in your own iCloud so your other devices get them, and you can turn it off in Settings → iCloud &amp; Storage. If you connect Hardcover, your reading status, progress and ratings go to your own Hardcover account, and nothing else does.</p>
+      </details>
+      <details>
+        <summary>What syncs between my iPhone and iPad?</summary>
+        <p>Your whole library: every book’s details and cover, your place and progress in each, highlights, notes and bookmarks, recaps and Story Maps, Read-Along pairs, already prepared, your reading log, goal and streak, and your Hardcover sign-in. Books you add can be kept in iCloud too, so your other devices can download them. Both devices need to be signed in to the same Apple Account with iCloud on.</p>
+      </details>
+      <details>
+        <summary>I read on two devices. Which page does the book open at?</summary>
+        <p>The newest one: the page you reached last, on any of your devices. If that isn’t where this device was, a pill at the bottom says so, “Continued from iPhone”, and tapping it takes you back. The page only moves when you open the book, come back to it, or leave it alone for a couple of minutes, never while you’re reading.</p>
+      </details>
+      <details>
+        <summary>Is Libretto Pro a subscription?</summary>
+        <p>No. It’s one purchase of $7.99, yours for good, and Family Sharing lets the rest of your household use it too.</p>
+      </details>
+      <details>
+        <summary>Will the Story Map give away what happens?</summary>
+        <p>No. It’s built only from chapters you’ve finished, and only pages you turn count: jump ahead to the last chapter and the chapters you skipped stay off the map. If you ask for a recap of a chapter you haven’t read, Libretto asks first, and keeps it out of the map and the profiles until you get there.</p>
+      </details>
+      <details>
+        <summary>How good are the recaps?</summary>
+        <p>Usually right on the plot and the people. They’re written by the small model that runs on your iPhone, so now and then one mixes two characters up or adds a detail. Every recap says so at the bottom.</p>
+      </details>
+      <p class="faq__more"><a class="more" href="help/troubleshooting.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.7"/></svg>More answers in Troubleshooting</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Help ------------------------------------------------------------- -->
+<section class="band band--day" id="help" aria-labelledby="hp-title">
+  <div class="wrap shelf-guides">
+    <div class="shelf-guides__copy">
+      <h2 id="hp-title">Get to know every corner.</h2>
+      <p class="lead">Libretto does a lot quietly. The guides go as deep as you like: how sync decides which page to open, what the on-device AI reads and what it never sees, and what every setting does.</p>
+      <a class="btn" href="help/">Browse the guides</a>
+    </div>
+    <ol class="contents" aria-label="Guides">
+      <li><a href="help/getting-started.html"><span class="contents__t">Getting started</span><span class="contents__n" data-minutes="help/getting-started.html">16 min</span><span class="contents__d">Adding books, the tabs, Book Details</span></a></li>
+      <li><a href="help/read-along.html"><span class="contents__t">Read-Along and audiobooks</span><span class="contents__n" data-minutes="help/read-along.html">14 min</span><span class="contents__d">Pairing, markers, the player</span></a></li>
+      <li><a href="help/story.html"><span class="contents__t">Recaps, Story Map and the AI</span><span class="contents__n" data-minutes="help/story.html">24 min</span><span class="contents__d">What it reads, where it runs</span></a></li>
+      <li><a href="help/sync.html"><span class="contents__t">Sync with iCloud</span><span class="contents__n" data-minutes="help/sync.html">16 min</span><span class="contents__d">What syncs, and which page wins</span></a></li>
+      <li><a href="help/hands-free.html"><span class="contents__t">Hands-free reading</span><span class="contents__n" data-minutes="help/hands-free.html">14 min</span><span class="contents__d">Auto-Scroll, Blink, the watch</span></a></li>
+      <li><a href="help/settings.html"><span class="contents__t">Every setting</span><span class="contents__n" data-minutes="help/settings.html">28 min</span><span class="contents__d">Page by page, with the defaults</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Final call ------------------------------------------------------- -->
+<section class="band band--house finale" id="download" aria-labelledby="dl-title">
+  <div class="wrap finale__inner">
+    <img class="finale__icon" src="assets/img/icon-512.png" alt="" width="128" height="128">
+    <h2 id="dl-title">Open a book. Press play.</h2>
+    <p class="lead">Libretto is free on the App Store for iPhone and iPad.</p>
+    <a class="store" href="#download" data-store-link>
+      <svg class="store__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.7 4.2 9.5 4.3 12 6.2c2.5-1.9 5.3-2 8-.7v13c-2.7-1.3-5.5-1.2-8 .7-2.5-1.9-5.3-2-8-.7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 6.2v13" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span class="store__text"><small>Download on the</small>App Store</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__brand"><img src="assets/img/favicon.png" alt="" width="24" height="24"> Libretto</p>
+    <nav aria-label="Footer">
+      <a href="help/">Help</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="foot__legal">© <span data-year>2026</span> Libretto. Apple, iPhone, iPad, Apple Watch, Apple TV, Siri and Apple Intelligence are trademarks of Apple Inc. Hardcover is a trademark of its owner, and Libretto isn’t affiliated with it.</p>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
