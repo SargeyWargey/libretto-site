@@ -154,6 +154,47 @@ h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.3; letter-spacing: -0
 }
 .band--seam { padding-block-start: clamp(24px, 4vw, 56px); }
 
+/* Seams: neighbouring sections blend into each other instead of meeting at a hard edge. The top
+   of each band carries the colour above it and the bottom carries the colour below, each at half
+   strength right at the seam, so the two halves meet in the middle. The fades sit behind the
+   content (isolation keeps z-index -1 inside the band) and fade out before headings. */
+:is(.band--house, .band--day, .band--page, .band--forest) { position: relative; isolation: isolate; --seam: clamp(120px, 14vw, 220px); }
+/* The hero's caption sits close to its bottom edge, so its fade into the next band stays short. */
+.hero { --seam: clamp(48px, 5vw, 72px); }
+.band--house + * { --seam-from: var(--house); }
+.band--day + * { --seam-from: var(--day); }
+.band--page + * { --seam-from: var(--page); }
+.band--forest + * { --seam-from: var(--forest); }
+:has(+ .band--house) { --seam-to: var(--house); }
+:has(+ .band--day) { --seam-to: var(--day); }
+:has(+ .band--page) { --seam-to: var(--page); }
+:has(+ .band--forest) { --seam-to: var(--forest); }
+:is(.band--house, .band--day, .band--page, .band--forest)::before,
+:is(.band--house, .band--day, .band--page, .band--forest)::after {
+  content: ""; position: absolute; left: 0; right: 0; z-index: -1; pointer-events: none; height: var(--seam);
+}
+:is(.band--house, .band--day, .band--page, .band--forest)::before {
+  top: 0;
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--seam-from, transparent) 50%, transparent) 0%,
+    color-mix(in srgb, var(--seam-from, transparent) 32%, transparent) 25%,
+    color-mix(in srgb, var(--seam-from, transparent) 16%, transparent) 50%,
+    color-mix(in srgb, var(--seam-from, transparent) 5%, transparent) 75%,
+    transparent 100%);
+}
+:is(.band--house, .band--day, .band--page, .band--forest)::after {
+  bottom: 0;
+  background: linear-gradient(0deg,
+    color-mix(in srgb, var(--seam-to, transparent) 50%, transparent) 0%,
+    color-mix(in srgb, var(--seam-to, transparent) 32%, transparent) 25%,
+    color-mix(in srgb, var(--seam-to, transparent) 16%, transparent) 50%,
+    color-mix(in srgb, var(--seam-to, transparent) 5%, transparent) 75%,
+    transparent 100%);
+}
+
+/* Parallax (main.js sets --py on the devices; translate composes with any transform they use). */
+[data-parallax] { translate: 0 var(--py, 0px); will-change: translate; }
+
 .intro { display: grid; gap: 22px; margin-bottom: clamp(48px, 6vw, 80px); }
 
 /* Buttons ---------------------------------------------------------------- */

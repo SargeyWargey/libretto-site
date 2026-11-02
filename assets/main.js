@@ -1853,3 +1853,52 @@ document.querySelectorAll("[data-copy]").forEach((btn) => {
     update();
   }
 }
+
+/* Parallax: the devices drift a little against the page as it scrolls, so they read as sitting
+   in front of it. Text stays put. Skipped for reduced motion, and for the tour rail and the
+   iPhone Duo, which move on their own. */
+(() => {
+  if (reduceMotion) return;
+  const picks = [
+    [".hero__stage", 0.10],
+    ["#read-along .sync", 0.05],
+    ["#catch-up .phone", 0.09],
+    ["#story-map .slate", 0.05],
+    ["#reading figure:not(.fold) .phone", [0.06, 0.11, 0.06]],
+    ["#hands-free .watch", 0.12],
+    ["#notebook .phone", [0.05, 0.11]],
+    ["#sync .hand", 0.06],
+    ["#habits .phone", [0.05, 0.10, 0.07, 0.12]],
+    [".finale__icon", 0.14],
+  ];
+  const items = [];
+  for (const [sel, speed] of picks) {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      el.dataset.parallax = "";
+      items.push({ el, speed: Array.isArray(speed) ? speed[i % speed.length] : speed, y: 0 });
+    });
+  }
+  if (!items.length) return;
+  const MAX = 56;
+  let queued = false;
+  const update = () => {
+    queued = false;
+    const mid = window.innerHeight / 2;
+    const scale = window.innerWidth < 700 ? 0.6 : 1;
+    for (const it of items) {
+      const r = it.el.getBoundingClientRect();
+      const top = r.top - it.y; // where it would sit without the drift
+      if (top > window.innerHeight * 1.5 || top + r.height < -window.innerHeight * 0.5) continue;
+      const d = top + r.height / 2 - mid;
+      const y = Math.max(-MAX, Math.min(MAX, -d * it.speed * scale));
+      if (Math.abs(y - it.y) < 0.3) continue;
+      it.y = y;
+      it.el.style.setProperty("--py", y.toFixed(1) + "px");
+    }
+  };
+  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+  window.addEventListener("scroll", queue, { passive: true });
+  window.addEventListener("resize", queue);
+  update();
+})();
+
